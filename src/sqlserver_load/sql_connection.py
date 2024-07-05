@@ -46,5 +46,5 @@ def close_sql_connection(connection):
     except Exception as e:
         print(f"Error closing SQL connection: {e}")
 
-conn = open_sql_connection(sql_server, sql_database, sql_username, sql_password)
+# conn = open_sql_connection(sql_server, sql_database, sql_username, sql_password)
 

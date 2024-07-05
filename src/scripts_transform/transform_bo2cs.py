@@ -11,6 +11,18 @@ print(bo2cs_file_path)
 bo2cs_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_bo2cs.csv')
 print(bo2cs_processed_path)
 
+root_path = os.path.abspath(os.sep)
+print(root_path)
+
+sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+print(sql_data_path)
+
+mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+print(mat_sql_data_path)
+
+bo2cs_exported_path = os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv')
+print(bo2cs_exported_path)
+
 df_bo2cs = pd.read_csv(bo2cs_file_path, sep='\t', skiprows=3, encoding='latin1')
 
 unnamed_columns = [col for col in df_bo2cs.columns if 'Unnamed:' in col]
@@ -27,7 +39,7 @@ df_bo2cs['Name_1'] = df_bo2cs['Name_1'].astype(str).str.strip()
 df_bo2cs['CustLoy'] = df_bo2cs['CustLoy'].astype(str).str.strip()
 df_bo2cs['FocCust'] = df_bo2cs['FocCust'].astype(str).str.strip()
 df_bo2cs['Territory'] = df_bo2cs['Territory'].astype(str).str.strip()
-df_bo2cs['On'] = pd.to_datetime(df_bo2cs['On'], errors="coerce", format='%d.%m.%Y')
+df_bo2cs['Created_on'] = pd.to_datetime(df_bo2cs['Created_on'], errors="coerce", format='%d.%m.%Y')
 df_bo2cs['Typ'] = df_bo2cs['Typ'].astype(str).str.strip()
 df_bo2cs['Material'] = df_bo2cs['Material'].fillna(0).astype(int).astype(str).str.strip()
 df_bo2cs['Item_Description'] = df_bo2cs['Item_Description'].astype(str).str.strip()
@@ -45,7 +57,7 @@ df_bo2cs['DS'] = df_bo2cs['DS'].astype(str).str.strip()
 df_bo2cs['DB'] = df_bo2cs['DB'].astype(str).str.strip()
 df_bo2cs['BOstatus'] = df_bo2cs['BOstatus'].astype(str).str.strip()
 df_bo2cs['BO'] = df_bo2cs['BO'].astype(str).str.strip()
-df_bo2cs['BOstat_changed'] = pd.to_datetime(df_bo2cs['BOstat_changed'], errors="coerce", format='%d.%m.%Y')
+df_bo2cs['BO_status_changed'] = pd.to_datetime(df_bo2cs['BO_status_changed'], errors="coerce", format='%d.%m.%Y')
 df_bo2cs['GM'] = df_bo2cs['GM'].astype(str).str.strip()
 df_bo2cs['unc'] = df_bo2cs['unc'].astype(str).str.strip()
 df_bo2cs['Description'] = df_bo2cs['Description'].astype(str).str.strip()
@@ -57,4 +69,6 @@ df_bo2cs['key_material'] = df_bo2cs['SOrg'] + '/' + df_bo2cs['Material']
 df_bo2cs['key_material'] = df_bo2cs['key_material'].astype(str).str.strip()
 
 df_bo2cs.to_csv(bo2cs_processed_path, index=False, encoding='latin1')
+df_bo2cs.to_csv(bo2cs_exported_path, index=False, encoding='latin1')
+
 

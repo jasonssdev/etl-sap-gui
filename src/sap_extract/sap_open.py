@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 # Get base path
 base_path = os.getcwd()
+print(base_path)
 
 # Get env path
 env_path = os.path.join(base_path, '.env')

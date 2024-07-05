@@ -34,18 +34,22 @@ def execute_sql_command(connection, sql_command):
     except Exception as e:
         print(f"Error executing SQL command: {e}")
 
-# SQL command to truncate the table
-bulk_materials = """
-BULK INSERT dbo.tbl_SCM_materials
-FROM 'C:\\Users\\sepujas\\Dev\\mat2\\data\\processed\\tbl_material_8750.csv'
-WITH (
-    FORMAT = 'CSV',
-    FIELDTERMINATOR = ',',
-    ROWTERMINATOR = '0x0A',
-    FIRSTROW = 2,
-    CODEPAGE = '1252'
-);
-"""
+# SQL command to bulk the table
+bulk_material_moar = os.getenv('SQL_BULK_MATERIAL_MOAR')
+bulk_material_mocl = os.getenv('SQL_BULK_MATERIAL_MOCL')
+bulk_material_mobr = os.getenv('SQL_BULK_MATERIAL_MOBR')
+bulk_material_momx = os.getenv('SQL_BULK_MATERIAL_MOMX')
+bulk_stock = os.getenv('SQL_BULK_STOCK')
+bulk_bo2cs = os.getenv('SQL_BULK_BO2CS')
+bulk_inbound = os.getenv('SQL_BULK_INBOUND')
+bulk_outbound = os.getenv('SQL_BULK_OUTBOUND')
 
 # Execute the SQL command
-execute_sql_command(conn, bulk_materials)
+execute_sql_command(conn, bulk_material_moar)
+execute_sql_command(conn, bulk_material_mocl)
+execute_sql_command(conn, bulk_material_mobr)
+execute_sql_command(conn, bulk_material_momx)
+execute_sql_command(conn, bulk_stock)
+execute_sql_command(conn, bulk_bo2cs)
+execute_sql_command(conn, bulk_inbound)
+execute_sql_command(conn, bulk_outbound)

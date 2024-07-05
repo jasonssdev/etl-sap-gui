@@ -81,3 +81,4 @@ $RECYCLE.BIN/
 /.venv
 .vscode
 .env
+/src/sqlserver_load/__pycache__/

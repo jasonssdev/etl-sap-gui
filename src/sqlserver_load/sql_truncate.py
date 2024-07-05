@@ -35,14 +35,14 @@ def execute_sql_command(connection, sql_command):
         print(f"Error executing SQL command: {e}")
 
 # SQL command to truncate the table
-truncate_table_material = os.getenv("SQL_TRUNCATE_MATERIALS")
+truncate_table_materialS = os.getenv("SQL_TRUNCATE_MATERIALS")
 truncate_table_stock = os.getenv("SQL_TRUNCATE_STOCK")
 truncate_table_bo2cs = os.getenv("SQL_TRUNCATE_BO2CS")
 truncate_table_outbound = os.getenv("SQL_TRUNCATE_OUTBOUND")
 truncate_table_inbound = os.getenv("SQL_TRUNCATE_INBOUND")
 
 # Execute the SQL command
-execute_sql_command(conn, truncate_table_material)
+execute_sql_command(conn, truncate_table_materialS)
 execute_sql_command(conn, truncate_table_stock)
 execute_sql_command(conn, truncate_table_bo2cs)
 execute_sql_command(conn, truncate_table_outbound)

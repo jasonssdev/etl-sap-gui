@@ -14,8 +14,20 @@ print(base_path)
 stock_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_stock_mb52.txt')
 print(stock_file_path)
 
-stock_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_stock_mb52.csv')
+stock_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_stock.csv')
 print(stock_processed_path)
+
+root_path = os.path.abspath(os.sep)
+print(root_path)
+
+sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+print(sql_data_path)
+
+mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+print(mat_sql_data_path)
+
+stock_exported_path = os.path.join(mat_sql_data_path, 'tbl_stock.csv')
+print(stock_exported_path)
 
 df_stock = pd.read_csv(stock_file_path, sep='\t', skiprows=1, encoding='latin1')
 
@@ -49,3 +61,4 @@ df_stock['key_material'] = df_stock['Sorg'] + '/' + df_stock['Material']
 df_stock['key_material'] = df_stock['key_material'].astype(str).str.strip()
 
 df_stock.to_csv(stock_processed_path, index=False, encoding='latin1')
+df_stock.to_csv(stock_exported_path, index=False, encoding='latin1')

@@ -10,6 +10,18 @@ print(inbound_file_path)
 inbound_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_inbound.csv')
 print(inbound_processed_path)
 
+root_path = os.path.abspath(os.sep)
+print(root_path)
+
+sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+print(sql_data_path)
+
+mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+print(mat_sql_data_path)
+
+inbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_inbound.csv')
+print(inbound_exported_path)
+
 df_inbound = pd.read_csv(inbound_file_path, sep='\t', skiprows=3, encoding='latin1')
 
 unnamed_columns = [col for col in df_inbound.columns if 'Unnamed:' in col]
@@ -61,3 +73,4 @@ df_inbound['key_material'] = df_inbound['POrg'] + '/' + df_inbound['Material']
 df_inbound['key_material'] = df_inbound['key_material'].astype(str).str.strip()
 
 df_inbound.to_csv(inbound_processed_path, index=False, encoding='latin1')
+df_inbound.to_csv(inbound_exported_path, index=False, encoding='latin1')
