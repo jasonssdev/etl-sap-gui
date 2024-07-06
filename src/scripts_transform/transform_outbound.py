@@ -1,56 +1,67 @@
 import pandas as pd
-import os 
+import os
 
-base_path = os.getcwd()
-print(base_path)
+def get_file_paths(base_path):
+    outbound_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_vl06o.txt')
+    outbound_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_outbound.csv')
+    root_path = os.path.abspath(os.sep)
+    sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+    mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+    outbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_outbound.csv')
+    return outbound_file_path, outbound_processed_path, outbound_exported_path
 
-outbound_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_vl06o.txt')
-print(outbound_file_path)
+def clean_column_names(df):
+    new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
+    df.rename(columns=new_column_titles, inplace=True)
 
-outbound_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_outbound.csv')
-print(outbound_processed_path)
+def transform_columns(df):
+    str_columns = [
+        'SOrg', 'Material', 'Item_Description', 'SU', 'GM', 'Route',
+        'Name_of_Sold_to_Party', 'Pur_Doc'
+    ]
+    for col in str_columns:
+        df[col] = df[col].astype(str).str.strip()
 
-root_path = os.path.abspath(os.sep)
-print(root_path)
+    int_columns = ['Delivery', 'Item', 'Sold_to']
+    for col in int_columns:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
-sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
-print(sql_data_path)
+    float_columns = ['DlvQty', 'Batch', 'OPS', 'PickingSts', 'WM', 'SpStck_No']
+    for col in float_columns:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(float)
 
-mat_sql_data_path = os.path.join(sql_data_path, 'mat')
-print(mat_sql_data_path)
+    date_columns = ['TrpPlanDt']
+    for col in date_columns:
+        df[col] = pd.to_datetime(df[col], errors="coerce", format='%d.%m.%Y')
 
-outbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_outbound.csv')
-print(outbound_exported_path)
+def transform_outbound(outbound_file_path, processed_path, exported_path):
+    try:
+        df_outbound = pd.read_csv(outbound_file_path, sep='\t', skiprows=3, encoding='latin1', low_memory=False)
+        unnamed_columns = [col for col in df_outbound.columns if 'Unnamed:' in col]
+        df_outbound.drop(columns=unnamed_columns, inplace=True)
 
-df_outbound = pd.read_csv(outbound_file_path, sep='\t', skiprows=3, encoding='latin1')
+        clean_column_names(df_outbound)
+        transform_columns(df_outbound)
 
-unnamed_columns = [col for col in df_outbound.columns if 'Unnamed:' in col]
-df_outbound.drop(columns=unnamed_columns, inplace=True)
-column_titles = df_outbound.columns.tolist()
-new_column_titles = {col: col.strip().replace(' ', '_').replace('-','_').replace('.','') for col in column_titles}
-df_outbound.rename(columns=new_column_titles, inplace=True)
+        # Crear nueva columna 'key_material'
+        df_outbound['key_material'] = (df_outbound['SOrg'] + '/' + df_outbound['Material']).astype(str).str.strip()
 
-df_outbound['SOrg'] = df_outbound['SOrg'].fillna(0).astype(int).astype(str).str.strip()
-df_outbound['Delivery'] = df_outbound['Delivery'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(int)
-df_outbound['Item'] = df_outbound['Item'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(int)
-df_outbound['Material'] = df_outbound['Material'].fillna(0).astype(int).astype(str).str.strip()
-df_outbound['Item_Description'] = df_outbound['Item_Description'].astype(str).str.strip()
-df_outbound['DlvQty'] = df_outbound['DlvQty'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['SU'] = df_outbound['SU'].astype(str).str.strip()
-df_outbound['Batch'] = df_outbound['Batch'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['OPS'] = df_outbound['OPS'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['PickingSts'] = df_outbound['PickingSts'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['WM'] = df_outbound['WM'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['GM'] = df_outbound['GM'].astype(str).str.strip()
-df_outbound['Route'] = df_outbound['Route'].astype(str).str.strip()
-df_outbound['SpStck_No'] = df_outbound['SpStck_No'].fillna(0).astype(str).str.strip().astype(float)
-df_outbound['Sold_to'] = df_outbound['Sold_to'].fillna(0).astype(int).astype(str).str.strip()
-df_outbound['Name_of_Sold_to_Party'] = df_outbound['Name_of_Sold_to_Party'].astype(str).str.strip()
-df_outbound['Pur_Doc'] = df_outbound['Pur_Doc'].fillna(0).astype(int).astype(str)
-df_outbound['TrpPlanDt'] = pd.to_datetime(df_outbound['TrpPlanDt'], errors="coerce", format='%d.%m.%Y')
+        # Guardar los archivos transformados
+        df_outbound.to_csv(processed_path, index=False, encoding='latin1')
+        df_outbound.to_csv(exported_path, index=False, encoding='latin1')
 
-df_outbound['key_material'] = df_outbound['SOrg'] + '/' + df_outbound['Material']
-df_outbound['key_material'] = df_outbound['key_material'].astype(str).str.strip()
+        return df_outbound
 
-df_outbound.to_csv(outbound_processed_path, index=False, encoding='latin1')
-df_outbound.to_csv(outbound_exported_path, index=False, encoding='latin1')
+    except FileNotFoundError as e:
+        print(f"File not found: {e.filename}")
+    except pd.errors.ParserError as e:
+        print(f"Error parsing file: {e}")
+    except Exception as e:
+        print(f"Error processing file: {e}")
+
+    return None
+
+if __name__ == "__main__":
+    base_path = os.getcwd()
+    outbound_file_path, outbound_processed_path, outbound_exported_path = get_file_paths(base_path)
+    transform_outbound(outbound_file_path, outbound_processed_path, outbound_exported_path)

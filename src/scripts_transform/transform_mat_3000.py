@@ -1,82 +1,79 @@
 import pandas as pd
 import os
 
-base_path = os.getcwd()
-print(base_path)
+def get_file_paths(base_path):
+    material_momx_path = os.path.join(base_path, 'data', 'raw', 'tbl_material_3000.txt')
+    material_3000_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_material_3000.csv')
+    root_path = os.path.abspath(os.sep)
+    sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+    mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+    material_3000_exported_path = os.path.join(mat_sql_data_path, 'tbl_material_3000.csv')
+    return material_momx_path, material_3000_processed_path, material_3000_exported_path
 
-material_momx_path = os.path.join(base_path, 'data', 'raw', 'tbl_material_3000.txt')
-print(material_momx_path)
+def clean_column_names(df):
+    new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
+    df.rename(columns=new_column_titles, inplace=True)
 
-material_3000_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_material_3000.csv')
-print(material_3000_processed_path)
+def resolve_duplicate_columns(df):
+    column_counts = df.columns.value_counts()
+    duplicate_columns = column_counts[column_counts > 1].index
 
-root_path = os.path.abspath(os.sep)
-print(root_path)
+    for col in duplicate_columns:
+        col_indices = [i for i, x in enumerate(df.columns) if x == col]
+        for j, index in enumerate(col_indices):
+            df.columns.values[index] = f"{col}_{j + 1}"
 
-sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
-print(sql_data_path)
+def transform_columns(df):
+    str_columns = [
+        'SOrg', 'Plnt', 'Material', 'Material_number', 'X_Plant_Material_Status', 'MS', 'WUn', 'Spart', 
+        'BUn', 'Orig', 'Web', 'FM_rel', 'Av', 'PGr', 'Typ', 'MRPCn', 'BUn1', 'SPT', 'TABCD', 'XYZ', 
+        'Pl', 'Rounding_val', 'BUn2', 'Rprofile', 'LS', 'BUn3'
+    ]
+    for col in str_columns:
+        df[col] = df[col].astype(str).str.strip()
 
-mat_sql_data_path = os.path.join(sql_data_path, 'mat')
-print(mat_sql_data_path)
+    numeric_columns = ['SOrg', 'Plnt', 'Material', 'X_Plant_Material_Status', 'MS']
+    for col in numeric_columns:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
-material_3000_exported_path = os.path.join(mat_sql_data_path, 'tbl_material_3000.csv')
-print(material_3000_exported_path)
+    float_columns = ['Gross_weight', 'Minorder_qty', 'GRT', 'Minlot_size', 'PDT', 'Safety_Stock', 'Min_dely_qty']
+    for col in float_columns:
+        df[col] = df[col].astype(str).str.replace('.', '').str.replace(',', '.').astype(float)
 
-df_material_momx = pd.read_csv(material_momx_path, sep='\t', skiprows=3, encoding='latin1')
+    date_columns = ['ValidFrom']
+    for col in date_columns:
+        df[col] = pd.to_datetime(df[col], errors="coerce", format='%d.%m.%Y')
 
-unnamed_columns = [col for col in df_material_momx.columns if 'Unnamed:' in col]
-df_material_momx.drop(columns=unnamed_columns, inplace=True)
-column_titles = df_material_momx.columns.tolist()
-new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.','') for col in column_titles}
-df_material_momx.rename(columns=new_column_titles, inplace=True)
+def transform_mat_3000(material_momx_path, processed_path, exported_path):
+    try:
+        df_material_momx = pd.read_csv(material_momx_path, sep='\t', skiprows=3, encoding='latin1', low_memory=False)
+        unnamed_columns = [col for col in df_material_momx.columns if 'Unnamed:' in col]
+        df_material_momx.drop(columns=unnamed_columns, inplace=True)
 
-column_counts = df_material_momx.columns.value_counts()
-duplicate_columns = column_counts[column_counts > 1].index
+        clean_column_names(df_material_momx)
+        resolve_duplicate_columns(df_material_momx)
+        transform_columns(df_material_momx)
 
-for col in duplicate_columns:
-    col_indices = [i for i, x in enumerate(df_material_momx.columns) if x == col]
-    for j, index in enumerate(col_indices):
-        df_material_momx.columns.values[index] = f"{col}_{j+1}"
+        # Crear nueva columna 'key_material'
+        df_material_momx['key_material'] = (df_material_momx['SOrg'] + '/' + df_material_momx['Material']).astype(str).str.strip()
 
+        # Guardar los archivos transformados
+        df_material_momx.to_csv(processed_path, index=False, encoding='latin1')
+        df_material_momx.to_csv(exported_path, index=False, encoding='latin1')
 
-df_material_momx['SOrg'] = df_material_momx['SOrg'].fillna(0).astype(int).astype(str).str.strip()
-df_material_momx['Plnt'] = df_material_momx['Plnt'].fillna(0).astype(int).astype(str).str.strip()
-df_material_momx['Material'] = df_material_momx['Material'].fillna(0).astype(int).astype(str).str.strip()
-df_material_momx['Material_number'] = df_material_momx['Material_number'].astype(str).str.strip()
-df_material_momx['X_Plant_Material_Status'] = df_material_momx['X_Plant_Material_Status'].fillna(0).astype(int).astype(str).str.strip()
-df_material_momx['MS'] = df_material_momx['MS'].fillna(0).astype(int).astype(str).str.strip()
-df_material_momx['Gross_weight'] = df_material_momx['Gross_weight'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['WUn'] = df_material_momx['WUn'].astype(str).str.strip()
-df_material_momx['Spart'] = df_material_momx['Spart'].astype(str).str.strip()
-df_material_momx['ValidFrom'] = pd.to_datetime(df_material_momx['ValidFrom'], errors="coerce", format='%d.%m.%Y')
-df_material_momx['Minorder_qty'] = df_material_momx['Minorder_qty'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['BUn'] = df_material_momx['BUn'].astype(str).str.strip()
-df_material_momx['Orig'] = df_material_momx['Orig'].astype(str).str.strip()
-df_material_momx['Web'] = df_material_momx['Web'].astype(str).str.strip()
-df_material_momx['FM_rel'] = df_material_momx['FM_rel'].astype(str).str.strip()
-df_material_momx['Av'] = df_material_momx['Av'].astype(str).str.strip()
-df_material_momx['PGr'] = df_material_momx['PGr'].astype(str).str.strip()
-df_material_momx['GRT'] = df_material_momx['GRT'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['Typ'] = df_material_momx['Typ'].astype(str).str.strip()
-df_material_momx['MRPCn'] = df_material_momx['MRPCn'].astype(str).str.strip()
-df_material_momx['Minlot_size'] = df_material_momx['Minlot_size'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['BUn1'] = df_material_momx['BUn1'].astype(str).str.strip()
-df_material_momx['SPT'] = df_material_momx['SPT'].astype(str).str.strip()
-df_material_momx['PDT'] = df_material_momx['PDT'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['TABCD'] = df_material_momx['TABCD'].astype(str).str.strip()
-df_material_momx['XYZ'] = df_material_momx['XYZ'].astype(str).str.strip()
-df_material_momx['Pl'] = df_material_momx['Pl'].astype(str).str.strip()
-df_material_momx['Safety_Stock'] = df_material_momx['Safety_Stock'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['Rounding_val'] = df_material_momx['Rounding_val'].astype(str).str.strip()
-df_material_momx['BUn2'] = df_material_momx['BUn2'].astype(str).str.strip()
-df_material_momx['Rprofile'] = df_material_momx['Rprofile'].astype(str).str.strip()
-df_material_momx['LS'] = df_material_momx['LS'].astype(str).str.strip()
-df_material_momx['Min_dely_qty'] = df_material_momx['Min_dely_qty'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_momx['BUn3'] = df_material_momx['BUn3'].astype(str).str.strip()
-df_material_momx['key_material'] = df_material_momx['SOrg'] + '/' + df_material_momx['Material']
-df_material_momx['key_material'] = df_material_momx['key_material'].astype(str).str.strip()
+        return df_material_momx
 
-df_material_momx.to_csv(material_3000_processed_path, index=False, encoding='latin1')
-df_material_momx.to_csv(material_3000_exported_path, index=False, encoding='latin1')
+    except FileNotFoundError as e:
+        print(f"File not found: {e.filename}")
+    except pd.errors.ParserError as e:
+        print(f"Error parsing file: {e}")
+    except Exception as e:
+        print(f"Error processing file: {e}")
 
+    return None
+
+if __name__ == "__main__":
+    base_path = os.getcwd()
+    material_momx_path, material_3000_processed_path, material_3000_exported_path = get_file_paths(base_path)
+    transform_mat_3000(material_momx_path, material_3000_processed_path, material_3000_exported_path)
 

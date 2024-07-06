@@ -1,6 +1,12 @@
-import win32com.client
+import sys
 import os
 from dotenv import load_dotenv
+
+# Agregar el directorio base al PYTHONPATH
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(base_path)
+
+from sap_extract.sap_session import get_active_session
 
 # Get base path
 base_path = os.getcwd()
@@ -24,7 +30,7 @@ sorg_cl = os.getenv("SORG_CL")
 sorg_mx = os.getenv("SORG_MX")
 
 # Function to execute transaction ZBO2CS and download the report
-def download_report_zbo2cs(session, file_path, file_name, layout, sorgs):
+def download_report_zbo2cs(session, trans_bo ,file_path, file_name, layout, sorgs):
     try:
         session.findById("wnd[0]").maximize()
         session.findById("wnd[0]/tbar[0]/okcd").text = trans_bo
@@ -74,35 +80,11 @@ def download_report_zbo2cs(session, file_path, file_name, layout, sorgs):
     except Exception as e:
         print(f"Error downloading the report: {e}")
 
-# Connect to the existing session
-def get_active_session():
-    try:
-        SapGuiAuto = win32com.client.GetObject("SAPGUI")
-        if not SapGuiAuto:
-            raise Exception("Could not get the SAPGUI object")
-        
-        application = SapGuiAuto.GetScriptingEngine
-        if not application:
-            raise Exception("Could not get the SAP scripting engine")
-        
-        # Assume there is only one active connection
-        connection = application.Children(0)
-        if not connection:
-            raise Exception("Could not get the SAP connection")
-        
-        session = connection.Children(0)
-        if not session:
-            raise Exception("Could not get the SAP session")
+if __name__ == "__main__":
+    # Get the active session
+    session = get_active_session()
 
-        return session
-    except Exception as e:
-        print(f"Error getting the active session: {e}")
-        return None
-
-# Get the active session
-session = get_active_session()
-
-# Download the report if the session is obtained successfully
-if session:
-    sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
-    download_report_zbo2cs(session, sap_file_path, file_bo, sap_layout, sorgs)
+    # Download the report if the session is obtained successfully
+    if session:
+        sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
+        download_report_zbo2cs(session, trans_bo, sap_file_path, file_bo, sap_layout, sorgs)

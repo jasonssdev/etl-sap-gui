@@ -1,82 +1,82 @@
 import pandas as pd
 import os
 
-base_path = os.getcwd()
-print(base_path)
+def get_file_paths(base_path):
+    material_moar_path = os.path.join(base_path, 'data', 'raw', 'tbl_material_8750.txt')
+    material_8750_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_material_8750.csv')
+    root_path = os.path.abspath(os.sep)
+    sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+    mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+    material_8750_exported_path = os.path.join(mat_sql_data_path, 'tbl_material_8750.csv')
+    return material_moar_path, material_8750_processed_path, material_8750_exported_path
 
-material_moar_path = os.path.join(base_path, 'data', 'raw', 'tbl_material_8750.txt')
-print(material_moar_path)
+def clean_column_names(df):
+    new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
+    df.rename(columns=new_column_titles, inplace=True)
 
-material_8750_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_material_8750.csv')
-print(material_8750_processed_path)
+def resolve_duplicate_columns(df):
+    column_counts = df.columns.value_counts()
+    duplicate_columns = column_counts[column_counts > 1].index
 
-root_path = os.path.abspath(os.sep)
-print(root_path)
+    for col in duplicate_columns:
+        col_indices = [i for i, x in enumerate(df.columns) if x == col]
+        for j, index in enumerate(col_indices):
+            df.columns.values[index] = f"{col}_{j + 1}"
 
-sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
-print(sql_data_path)
+def transform_columns(df):
+    str_columns = [
+        'SOrg', 'Plnt', 'Material', 'Material_number', 'X_Plant_Material_Status', 'MS', 'WUn', 'Spart', 
+        'BUn', 'Orig', 'Web', 'FM_rel', 'Av', 'PGr', 'Typ', 'MRPCn', 'BUn1', 'SPT', 'TABCD', 'XYZ', 
+        'Pl', 'Rounding_val', 'BUn2', 'Rprofile', 'LS', 'BUn3'
+    ]
+    for col in str_columns:
+        df[col] = df[col].astype(str).str.strip()
 
-mat_sql_data_path = os.path.join(sql_data_path, 'mat')
-print(mat_sql_data_path)
+    numeric_columns = ['SOrg', 'Plnt', 'Material', 'X_Plant_Material_Status', 'MS']
+    for col in numeric_columns:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
-material_8750_exported_path = os.path.join(mat_sql_data_path, 'tbl_material_8750.csv')
-print(material_8750_exported_path)
+    float_columns = ['Gross_weight', 'Minorder_qty', 'GRT', 'Minlot_size', 'PDT', 'Safety_Stock', 'Min_dely_qty']
+    for col in float_columns:
+        df[col] = df[col].astype(str).str.replace('.', '').str.replace(',', '.').astype(float)
 
-df_material_moar = pd.read_csv(material_moar_path, sep='\t', skiprows=3, encoding='latin1')
+    date_columns = ['ValidFrom']
+    for col in date_columns:
+        df[col] = pd.to_datetime(df[col], errors="coerce", format='%d.%m.%Y')
 
-unnamed_columns = [col for col in df_material_moar.columns if 'Unnamed:' in col]
-df_material_moar.drop(columns=unnamed_columns, inplace=True)
-column_titles = df_material_moar.columns.tolist()
-new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.','') for col in column_titles}
-df_material_moar.rename(columns=new_column_titles, inplace=True)
+def transform_mat_8750(material_moar_path, processed_path, exported_path):
+    try:
+        df_material_moar = pd.read_csv(material_moar_path, sep='\t', skiprows=3, encoding='latin1', low_memory=False)
 
-column_counts = df_material_moar.columns.value_counts()
-duplicate_columns = column_counts[column_counts > 1].index
+        unnamed_columns = [col for col in df_material_moar.columns if 'Unnamed:' in col]
+        df_material_moar.drop(columns=unnamed_columns, inplace=True)
 
-for col in duplicate_columns:
-    col_indices = [i for i, x in enumerate(df_material_moar.columns) if x == col]
-    for j, index in enumerate(col_indices):
-        df_material_moar.columns.values[index] = f"{col}_{j+1}"
+        clean_column_names(df_material_moar)
+        resolve_duplicate_columns(df_material_moar)
+        transform_columns(df_material_moar)
 
+        # Crear nueva columna 'key_material'
+        df_material_moar['key_material'] = (df_material_moar['SOrg'] + '/' + df_material_moar['Material']).astype(str).str.strip()
 
-df_material_moar['SOrg'] = df_material_moar['SOrg'].fillna(0).astype(int).astype(str).str.strip()
-df_material_moar['Plnt'] = df_material_moar['Plnt'].fillna(0).astype(int).astype(str).str.strip()
-df_material_moar['Material'] = df_material_moar['Material'].fillna(0).astype(int).astype(str).str.strip()
-df_material_moar['Material_number'] = df_material_moar['Material_number'].astype(str).str.strip()
-df_material_moar['X_Plant_Material_Status'] = df_material_moar['X_Plant_Material_Status'].fillna(0).astype(int).astype(str).str.strip()
-df_material_moar['MS'] = df_material_moar['MS'].fillna(0).astype(int).astype(str).str.strip()
-df_material_moar['Gross_weight'] = df_material_moar['Gross_weight'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['WUn'] = df_material_moar['WUn'].astype(str).str.strip()
-df_material_moar['Spart'] = df_material_moar['Spart'].astype(str).str.strip()
-df_material_moar['ValidFrom'] = pd.to_datetime(df_material_moar['ValidFrom'], errors="coerce", format='%d.%m.%Y')
-df_material_moar['Minorder_qty'] = df_material_moar['Minorder_qty'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['BUn'] = df_material_moar['BUn'].astype(str).str.strip()
-df_material_moar['Orig'] = df_material_moar['Orig'].astype(str).str.strip()
-df_material_moar['Web'] = df_material_moar['Web'].astype(str).str.strip()
-df_material_moar['FM_rel'] = df_material_moar['FM_rel'].astype(str).str.strip()
-df_material_moar['Av'] = df_material_moar['Av'].astype(str).str.strip()
-df_material_moar['PGr'] = df_material_moar['PGr'].astype(str).str.strip()
-df_material_moar['GRT'] = df_material_moar['GRT'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['Typ'] = df_material_moar['Typ'].astype(str).str.strip()
-df_material_moar['MRPCn'] = df_material_moar['MRPCn'].astype(str).str.strip()
-df_material_moar['Minlot_size'] = df_material_moar['Minlot_size'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['BUn1'] = df_material_moar['BUn1'].astype(str).str.strip()
-df_material_moar['SPT'] = df_material_moar['SPT'].astype(str).str.strip()
-df_material_moar['PDT'] = df_material_moar['PDT'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['TABCD'] = df_material_moar['TABCD'].astype(str).str.strip()
-df_material_moar['XYZ'] = df_material_moar['XYZ'].astype(str).str.strip()
-df_material_moar['Pl'] = df_material_moar['Pl'].astype(str).str.strip()
-df_material_moar['Safety_Stock'] = df_material_moar['Safety_Stock'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['Rounding_val'] = df_material_moar['Rounding_val'].astype(str).str.strip()
-df_material_moar['BUn2'] = df_material_moar['BUn2'].astype(str).str.strip()
-df_material_moar['Rprofile'] = df_material_moar['Rprofile'].astype(str).str.strip()
-df_material_moar['LS'] = df_material_moar['LS'].astype(str).str.strip()
-df_material_moar['Min_dely_qty'] = df_material_moar['Min_dely_qty'].fillna(0).astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_material_moar['BUn3'] = df_material_moar['BUn3'].astype(str).str.strip()
-df_material_moar['key_material'] = df_material_moar['SOrg'] + '/' + df_material_moar['Material']
-df_material_moar['key_material'] = df_material_moar['key_material'].astype(str).str.strip()
+        # Guardar los archivos transformados
+        df_material_moar.to_csv(processed_path, index=False, encoding='latin1')
+        df_material_moar.to_csv(exported_path, index=False, encoding='latin1')
 
-df_material_moar.to_csv(material_8750_processed_path, index=False, encoding='latin1')
-df_material_moar.to_csv(material_8750_exported_path, index=False, encoding='latin1')
+        return df_material_moar
+
+    except FileNotFoundError as e:
+        print(f"File not found: {e.filename}")
+    except pd.errors.ParserError as e:
+        print(f"Error parsing file: {e}")
+    except Exception as e:
+        print(f"Error processing file: {e}")
+
+    return None
+
+if __name__ == "__main__":
+    base_path = os.getcwd()
+    material_moar_path, material_8750_processed_path, material_8750_exported_path = get_file_paths(base_path)
+    transform_mat_8750(material_moar_path, material_8750_processed_path, material_8750_exported_path)
+
 
 

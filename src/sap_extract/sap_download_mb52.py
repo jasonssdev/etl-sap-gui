@@ -1,6 +1,12 @@
-import win32com.client
+import sys
 import os
 from dotenv import load_dotenv
+
+# Agregar el directorio base al PYTHONPATH
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(base_path)
+
+from sap_extract.sap_session import get_active_session
 
 # Get base path
 base_path = os.getcwd()
@@ -14,7 +20,7 @@ load_dotenv(env_path)
 sap_layout = os.getenv("SAP_LAYOUT")
 sap_file_path = os.getenv("SAP_FILE_PATH")
 trans_stock = os.getenv("TRANS_STOCK")
-file_name = os.getenv("FILE_STOCK")
+file_stock = os.getenv("FILE_STOCK")
 
 # Get the plants from environment variables
 plants = [
@@ -38,7 +44,7 @@ plants = [
 ]
 
 # Function to execute transaction MB52 and download the report
-def download_report_mb52(session, file_path, file_name, layout, plants):
+def download_report_mb52(session, trans_stock, file_path, file_name, layout, plants):
     try:
         session.findById("wnd[0]").maximize()
         session.findById("wnd[0]/tbar[0]/okcd").text = trans_stock
@@ -84,34 +90,12 @@ def download_report_mb52(session, file_path, file_name, layout, plants):
     except Exception as e:
         print(f"Error downloading the report: {e}")
 
-# Connect to the existing session
-def get_active_session():
-    try:
-        SapGuiAuto = win32com.client.GetObject("SAPGUI")
-        if not SapGuiAuto:
-            raise Exception("Could not get the SAPGUI object")
-        
-        application = SapGuiAuto.GetScriptingEngine
-        if not application:
-            raise Exception("Could not get the SAP scripting engine")
-        
-        # Assume there is only one active connection
-        connection = application.Children(0)
-        if not connection:
-            raise Exception("Could not get the SAP connection")
-        
-        session = connection.Children(0)
-        if not session:
-            raise Exception("Could not get the SAP session")
+if __name__ == "__main__":
+    # Get the active session
+    session = get_active_session()
 
-        return session
-    except Exception as e:
-        print(f"Error getting the active session: {e}")
-        return None
+    # Download the report if the session is obtained successfully
+    if session:
+        download_report_mb52(session, trans_stock, sap_file_path, file_stock, sap_layout, plants)
 
-# Get the active session
-session = get_active_session()
 
-# Download the report if the session is obtained successfully
-if session:
-    download_report_mb52(session, sap_file_path, file_name, sap_layout, plants)

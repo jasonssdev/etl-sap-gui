@@ -81,4 +81,9 @@ $RECYCLE.BIN/
 /.venv
 .vscode
 .env
-/src/sqlserver_load/__pycache__/
+src/sap_extract/__pycache__/
+src/scrips_transform/__pycache__/
+src/sqlserver_load/__pycache__/
+__pycache__/
+**__pycache__/
+**/__init__.py

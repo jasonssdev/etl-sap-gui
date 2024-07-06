@@ -9409,7 +9409,7 @@ SOrg,Plnt,Material,Material_number,X_Plant_Material_Status,MS,Gross_weight,WUn,S
 8750,8750,277576,Circlip 5X0.6,14,80,1.0,G,X,2014-09-12,1.0,PC,DE,nan,nan,ZC,L05,0.0,ND,L05,1.0,PC,LK,200.0,D,Z,X,0.0,1,PC,Z004,PK,1.0,PC,8750/277576
 8750,8750,2237144,T-head bolt HBC-C-N M20x60 8.8F,14,40,228.971,G,nan,2023-06-16,50.0,PC,TW,nan,nan,ZC,L09,20.0,X6,L09,50.0,PC,U0,2090.0,D,N,nan,0.0,50,PC,Z004,PK,50.0,PC,8750/2237144
 8750,8750,373312,Labor screw interior fin.,14,80,10.0,G,nan,2019-02-27,1.0,PC,nan,nan,nan,nan,L10,20.0,ND,L10,1.0,PC,20,0.0,D,Z,X,0.0,1,PC,Z004,nan,1.0,PC,8750/373312
-8750,8750,2138787,Lever,14,40,495.0,G,nan,2023-06-16,1.0,PC,CN,X,nan,ZC,L05,20.0,X6,L05,5.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2138787
+8750,8750,2138787,Lever,14,40,495.0,G,X,2023-06-16,1.0,PC,CN,X,nan,ZC,L05,20.0,X6,L05,5.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2138787
 8750,8750,2103093,Elec. connector X-BT-ER W10/3 SN 4,14,80,27.0,G,nan,2020-01-15,100.0,PC,CZ,nan,nan,ZC,L04,20.0,ND,L04,100.0,PC,4C,600.0,D,Z,X,0.0,100,PC,Z004,PK,100.0,PC,8750/2103093
 8750,8750,49029,Circlip 22X1.2,14,40,1.4,G,X,2020-03-31,1.0,PC,GB,nan,nan,ZC,L08,0.0,ND,L08,1.0,PC,LK,20.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/49029
 8750,8750,4842,DX Cartridge 6.8/11 M BULK red,14,80,1.569,G,nan,2019-02-27,1.0,PC,US,nan,nan,ZC,L04,10.0,ND,L04,14000.0,PC,4C,410.0,D,Z,X,0.0,14.000,PC,Z004,nan,1.0,PC,8750/4842
@@ -11854,7 +11854,7 @@ SOrg,Plnt,Material,Material_number,X_Plant_Material_Status,MS,Gross_weight,WUn,S
 8750,8750,304915,"Twist drill bit HSS 4,75x86mm ""MP10",14,40,9.28,G,nan,2023-09-01,10.0,PC,CN,X,F,ZC,L09,20.0,X6,L09,10.0,PC,4C,680.0,D,N,nan,0.0,10,PC,Z004,PK,10.0,PC,8750/304915
 8750,8750,304913,"Twist drill bit HSS 4,25x75mm ""MP10",14,40,7.5,G,nan,2023-09-01,10.0,PC,CN,X,nan,ZC,L09,20.0,X6,L09,10.0,PC,4C,680.0,D,N,nan,0.0,10,PC,Z004,PK,10.0,PC,8750/304913
 8750,8750,304909,"Twist drill bit HSS 3,75x70mm ""MP10",14,40,4.45,G,nan,2023-09-01,10.0,PC,CN,X,nan,ZC,L09,20.0,X6,L09,10.0,PC,4C,680.0,D,N,nan,0.0,10,PC,Z004,PK,10.0,PC,8750/304909
-8750,8750,2137034,Cordl. impact driver SID 4-A22 case,14,80,2466.0,G,nan,2023-10-19,1.0,PC,CN,nan,nan,ZC,L15,20.0,ND,L15,12.0,PC,U0,660.0,A,X,X,0.0,4,PC,Z004,PK,1.0,PC,8750/2137034
+8750,8750,2137034,Cordl. impact driver SID 4-A22 case,14,80,2466.0,G,nan,2023-10-19,1.0,PC,CN,X,nan,ZC,L15,20.0,ND,L15,12.0,PC,U0,660.0,A,X,X,0.0,4,PC,Z004,PK,1.0,PC,8750/2137034
 8750,8750,273204,"Round steel brush HIT-RB 1/2""",14,40,39.4,G,nan,2022-11-09,1.0,PC,CH,X,nan,ZC,L01,20.0,X5,L01,10.0,PC,4C,680.0,D,Y,nan,20.0,10,PC,Z004,PK,1.0,PC,8750/273204
 8750,8750,2378318,Remote contr./laser rec. PRA 30,14,33,593.57,G,nan,2024-01-19,1.0,PC,CN,X,nan,ZC,L07,20.0,X5,L07,1.0,PC,4C,680.0,D,Z,nan,3.0,1,PC,Z004,PK,1.0,PC,8750/2378318
 8750,8750,2152678,T-head bolt HBC-T M20x60 8.8F,14,40,228.696,G,nan,2023-06-16,50.0,PC,TW,X,nan,ZC,L02,20.0,X6,L02,2500.0,PC,U0,2040.0,D,N,nan,0.0,50,PC,Z004,PK,50.0,PC,8750/2152678
@@ -14251,7 +14251,7 @@ SOrg,Plnt,Material,Material_number,X_Plant_Material_Status,MS,Gross_weight,WUn,S
 8750,8750,2253770,Batt.-actuated tool BX 3-ME-22 case,14,40,7500.0,G,nan,2023-09-01,1.0,PC,AT,X,nan,ZC,L04,20.0,X5,L04,1.0,PC,4C,680.0,B,Z,nan,3.0,1,PC,Z004,PK,1.0,PC,8750/2253770
 8750,8750,2262675,Recip. saw blade SPX 23 8 (10) metal,14,40,52.0,G,nan,2023-09-01,10.0,PC,CH,X,nan,ZC,L09,20.0,X5,L09,10.0,PC,4C,680.0,D,N,nan,40.0,10,PC,Z004,PK,10.0,PC,8750/2262675
 8750,8750,2413124,"Collet GDG - 1/4""",14,33,50.0,G,nan,2024-05-14,1.0,PC,CN,X,nan,ZC,L08,20.0,X6,L08,1.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2413124
-8750,8750,2434596,Comfort side handle TE500AVR/TE600/TE700,14,33,580.0,G,nan,2024-05-14,1.0,PC,DE,X,nan,ZC,L08,20.0,X0,L08,1.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2434596
+8750,8750,2434596,Comfort side handle TE500AVR/TE600/TE700,14,33,580.0,G,nan,2024-05-14,1.0,PC,DE,nan,nan,ZC,L08,20.0,X0,L08,1.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2434596
 8750,8750,386341,Gas can GC 22 (ROW),14,40,145.42,G,nan,2024-05-14,1.0,PC,DE,nan,nan,ZC,L04,20.0,ND,L04,20.0,PC,4C,280.0,B,Y,nan,0.0,20,PC,Z004,PK,1.0,PC,8750/386341
 8750,8750,2252741,Nibbler SPN 6-22 CN case,14,40,4000.0,G,nan,2024-05-14,1.0,PC,CH,nan,nan,ZC,L15,20.0,ND,L15,1.0,PC,4C,680.0,D,N,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2252741
 8750,8750,2291190,"Cordl. imp. wrench SIW 4AT-22 1/2"" box",14,33,1890.0,G,nan,2024-05-15,1.0,PC,CN,nan,nan,ZC,L15,20.0,ND,L15,1.0,PC,U0,660.0,D,Z,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2291190
@@ -14827,12 +14827,12 @@ SOrg,Plnt,Material,Material_number,X_Plant_Material_Status,MS,Gross_weight,WUn,S
 8750,8750,2151663,Hammer drill bit TE-CX 12/22 MP32,14,40,104.75,G,nan,2023-09-25,32.0,PC,DE,X,nan,ZC,L09,20.0,X6,L09,32.0,PC,4C,680.0,D,Z,nan,0.0,32,PC,Z004,PK,32.0,PC,8750/2151663
 8750,8750,2070370,"Impact socket SI-S 1/2""-12 S",14,33,73.0,G,nan,2023-12-19,1.0,PC,TW,X,nan,ZC,L09,20.0,X6,L09,20.0,PC,4C,680.0,D,N,nan,0.0,20,PC,Z004,PK,1.0,PC,8750/2070370
 8750,8750,2070367,"Impact socket SI-S 1/2""-8 S",14,33,65.4,G,nan,2023-12-19,1.0,PC,TW,X,nan,ZC,L09,20.0,X6,L09,20.0,PC,4C,680.0,D,N,nan,0.0,20,PC,Z004,PK,1.0,PC,8750/2070367
-8750,8750,2195443,Diamond grinder DGH 130 230V,14,80,4200.0,G,nan,2024-07-03,1.0,PC,CN,nan,F,ZC,L05,20.0,ND,L05,1.0,PC,4C,680.0,B,Z,nan,0.0,1,PC,Z004,PK,1.0,PC,8750/2195443
 8750,8750,2232909,Cordl. circular saw SC 30WR-22 case,14,40,8600.0,G,nan,2023-02-22,1.0,PC,CN,X,nan,ZC,L15,20.0,X5,L15,1.0,PC,U4,670.0,B,Y,nan,6.0,1,PC,Z004,PK,1.0,PC,8750/2232909
 8750,8750,2134761,Rotating laser PR 30-HVS A12,14,40,6109.0,G,nan,2019-04-19,1.0,PC,DE,X,nan,ZC,L07,20.0,X5,L07,2.0,PC,4C,680.0,A,X,nan,6.0,1,PC,Z004,PK,1.0,PC,8750/2134761
-0,0,0,nan,0,0,37385289.21,G,nan,,9.0,EA,nan,nan,nan,nan,nan,0.0,nan,nan,9.0,EA,nan,0.0,nan,nan,nan,0.0,9,EA,nan,nan,9.0,EA,0/0
-0,0,0,nan,0,0,200.106,KG,nan,,36.0,H,nan,nan,nan,nan,nan,0.0,nan,nan,30.0,H,nan,0.0,nan,nan,nan,0.0,"30,000",H,nan,nan,36.0,H,0/0
-0,0,0,nan,0,0,0.0,nan,nan,,1.0,L,nan,nan,nan,nan,nan,0.0,nan,nan,1.0,L,nan,0.0,nan,nan,nan,0.0,1,L,nan,nan,1.0,L,0/0
-0,0,0,nan,0,0,0.0,nan,nan,,1980.0,M,nan,nan,nan,nan,nan,0.0,nan,nan,12735.0,M,nan,0.0,nan,nan,nan,125.0,12.735,M,nan,nan,1980.0,M,0/0
-0,0,0,nan,0,0,0.0,nan,nan,,26.0,PRS,nan,nan,nan,nan,nan,0.0,nan,nan,8.0,PRS,nan,0.0,nan,nan,nan,0.0,8,PRS,nan,nan,26.0,PRS,0/0
-0,0,0,nan,0,0,0.0,nan,nan,,612741.0,PC,nan,nan,nan,nan,nan,0.0,nan,nan,964397.0,PC,nan,0.0,nan,nan,nan,354926.0,723.354,PC,nan,nan,612708.0,PC,0/0
+8750,8750,2195443,Diamond grinder DGH 130 230V,14,80,4200.0,G,nan,2024-07-03,1.0,PC,CN,nan,F,ZC,L05,20.0,ND,L05,1.0,PC,4C,680.0,B,Z,X,0.0,1,PC,Z004,PK,1.0,PC,8750/2195443
+0,0,0,nan,0,0,37385289.21,G,nan,,9.0,EA,nan,nan,nan,nan,nan,,nan,nan,9.0,EA,nan,,nan,nan,nan,0.0,9,EA,nan,nan,9.0,EA,0/0
+0,0,0,nan,0,0,200.106,KG,nan,,36.0,H,nan,nan,nan,nan,nan,,nan,nan,30.0,H,nan,,nan,nan,nan,0.0,"30,000",H,nan,nan,36.0,H,0/0
+0,0,0,nan,0,0,,nan,nan,,1.0,L,nan,nan,nan,nan,nan,,nan,nan,1.0,L,nan,,nan,nan,nan,0.0,1,L,nan,nan,1.0,L,0/0
+0,0,0,nan,0,0,,nan,nan,,1980.0,M,nan,nan,nan,nan,nan,,nan,nan,12735.0,M,nan,,nan,nan,nan,125.0,12.735,M,nan,nan,1980.0,M,0/0
+0,0,0,nan,0,0,,nan,nan,,26.0,PRS,nan,nan,nan,nan,nan,,nan,nan,8.0,PRS,nan,,nan,nan,nan,0.0,8,PRS,nan,nan,26.0,PRS,0/0
+0,0,0,nan,0,0,,nan,nan,,612741.0,PC,nan,nan,nan,nan,nan,,nan,nan,964397.0,PC,nan,,nan,nan,nan,354926.0,723.354,PC,nan,nan,612708.0,PC,0/0

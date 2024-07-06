@@ -1,76 +1,76 @@
 import pandas as pd
-import os 
+import os
 
-base_path = os.getcwd()
-print(base_path)
+def get_file_paths(base_path):
+    inbound_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_inbound.txt')
+    inbound_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_inbound.csv')
+    root_path = os.path.abspath(os.sep)
+    sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
+    mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+    inbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_inbound.csv')
+    return inbound_file_path, inbound_processed_path, inbound_exported_path
 
-inbound_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_inbound.txt')
-print(inbound_file_path)
+def clean_column_names(df):
+    new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
+    df.rename(columns=new_column_titles, inplace=True)
 
-inbound_processed_path = os.path.join(base_path, 'data', 'processed', 'tbl_inbound.csv')
-print(inbound_processed_path)
+def resolve_duplicate_columns(df):
+    column_counts = df.columns.value_counts()
+    duplicate_columns = column_counts[column_counts > 1].index
 
-root_path = os.path.abspath(os.sep)
-print(root_path)
+    for col in duplicate_columns:
+        col_indices = [i for i, x in enumerate(df.columns) if x == col]
+        for j, index in enumerate(col_indices):
+            df.columns.values[index] = f"{col}_{j + 1}"
 
-sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
-print(sql_data_path)
+def transform_columns(df):
+    str_columns = [
+        'Doc_No', 'Shipment', 'PurchDoc', 'Item_1', 'Material', 'Material_Description',
+        'Plnt', 'SLoc', 'OUn', 'OUn1', 'Item_2', 'Delivery', 'Reference', 'Supplier', 'POrg',
+        'PGr', 'Vendor', 'ShPt', 'Ext_Order_Pos', 'Ext_Order_Number', 'SupplVndr', 'TrackingNo',
+        'Reservation', 'Reservation_item'
+    ]
+    for col in str_columns:
+        df[col] = df[col].astype(str).str.strip()
 
-mat_sql_data_path = os.path.join(sql_data_path, 'mat')
-print(mat_sql_data_path)
+    numeric_columns = ['POrg', 'Doc_No', 'Plnt', 'SLoc', 'Material', 'ShPt', 'Delivery', 'Reference', 'Vendor', 'Shipment', 'PurchDoc', 'Reservation']
+    for col in numeric_columns:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
-inbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_inbound.csv')
-print(inbound_exported_path)
+    df['PO_Quantity'] = df['PO_Quantity'].astype(str).str.replace('.', '').str.replace(',', '.').astype(float)
 
-df_inbound = pd.read_csv(inbound_file_path, sep='\t', skiprows=3, encoding='latin1')
+    date_columns = ['DelivDate', 'Doc_Date', 'Reservation_order_date']
+    for col in date_columns:
+        df[col] = pd.to_datetime(df[col], errors="coerce", format='%d.%m.%Y')
 
-unnamed_columns = [col for col in df_inbound.columns if 'Unnamed:' in col]
-df_inbound.drop(columns=unnamed_columns, inplace=True)
-column_titles = df_inbound.columns.tolist()
-new_column_titles = {col: col.strip().replace(' ', '_').replace('-','_').replace('.','') for col in column_titles}
-df_inbound.rename(columns=new_column_titles, inplace=True)
+    df['Diffdays'] = df['Diffdays'].astype(str).str.strip().astype(float)
 
-column_counts = df_inbound.columns.value_counts()
-duplicate_columns = column_counts[column_counts > 1].index
+def transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path):
+    try:
+        df_inbound = pd.read_csv(inbound_file_path, sep='\t', skiprows=3, encoding='latin1')
 
-for col in duplicate_columns:
-    col_indices = [i for i, x in enumerate(df_inbound.columns) if x == col]
-    for j, index in enumerate(col_indices):
-        df_inbound.columns.values[index] = f"{col}_{j+1}"
+        # Eliminar columnas sin nombre
+        unnamed_columns = [col for col in df_inbound.columns if 'Unnamed:' in col]
+        df_inbound.drop(columns=unnamed_columns, inplace=True)
 
-df_inbound['Doc_No'] = df_inbound['Doc_No'].fillna(0).astype(int).astype(str)
-df_inbound['Shipment'] = df_inbound['Shipment'].fillna(0).astype(int).astype(str).str.strip()
-df_inbound['PurchDoc'] = df_inbound['PurchDoc'].fillna(0).astype(int).astype(str).str.strip()
-df_inbound['Item_1'] = df_inbound['Item_1'].fillna(0).astype(int).astype(str).str.strip()
-df_inbound['Material'] = df_inbound['Material'].fillna(0).astype(int).astype(str).str.strip()
-df_inbound['Material_Description'] = df_inbound['Material_Description'].astype(str).str.strip()
-df_inbound['Plnt'] = df_inbound['Plnt'].fillna(0).astype(int).astype(str)
-df_inbound['SLoc'] = df_inbound['SLoc'].fillna(0).astype(int).astype(str)
-df_inbound['PO_Quantity'] = df_inbound['PO_Quantity'].astype(str).str.strip().str.replace('.', '').str.replace(',', '.').astype(float)
-df_inbound['OUn'] = df_inbound['OUn'].astype(str).str.strip()
-df_inbound['OUn1'] = df_inbound['OUn1'].astype(str).str.strip()
-df_inbound['Item_2'] = df_inbound['Item_2'].fillna(0).astype(int).astype(str)
-df_inbound['Delivery'] = df_inbound['Delivery'].fillna(0).astype(int).astype(str)
-df_inbound['Reference'] = df_inbound['Reference'].astype(str).str.strip()
-df_inbound['Plnt'] = df_inbound['Plnt'].fillna(0).astype(int).astype(str)
-df_inbound['Supplier'] = df_inbound['Supplier'].astype(str).str.strip()
-df_inbound['POrg'] = df_inbound['POrg'].fillna(0).astype(int).astype(str)
-df_inbound['PGr'] = df_inbound['PGr'].astype(str).str.strip()
-df_inbound['Vendor'] = df_inbound['Vendor'].astype(str).str.strip()
-df_inbound['ShPt'] = df_inbound['ShPt'].fillna(0).astype(int).astype(str)
-df_inbound['DelivDate'] = pd.to_datetime(df_inbound['DelivDate'], errors="coerce", format='%d.%m.%Y')
-df_inbound['Doc_Date'] = pd.to_datetime(df_inbound['Doc_Date'], errors="coerce", format='%d.%m.%Y')
-df_inbound['Ext_Order_Pos'] = df_inbound['Ext_Order_Pos'].fillna(0).astype(int).astype(str)
-df_inbound['Ext_Order_Number'] = df_inbound['Ext_Order_Number'].fillna(0).astype(int).astype(str)
-df_inbound['SupplVndr'] = df_inbound['SupplVndr'].astype(str).str.strip()
-df_inbound['TrackingNo'] = df_inbound['TrackingNo'].astype(str).str.strip()
-df_inbound['Reservation'] = df_inbound['Reservation'].fillna(0).astype(int).astype(str).str.strip()
-df_inbound['Reservation_item'] = df_inbound['Reservation_item'].fillna(0).astype(int).astype(str)
-df_inbound['Reservation_order_date'] = pd.to_datetime(df_inbound['Reservation_order_date'], errors="coerce", format='%d.%m.%Y')
-df_inbound['Diffdays'] = df_inbound['Diffdays'].astype(str).str.strip().astype(float)
+        clean_column_names(df_inbound)
+        resolve_duplicate_columns(df_inbound)
+        transform_columns(df_inbound)
 
-df_inbound['key_material'] = df_inbound['POrg'] + '/' + df_inbound['Material']
-df_inbound['key_material'] = df_inbound['key_material'].astype(str).str.strip()
+        # Crear nueva columna 'key_material'
+        df_inbound['key_material'] = (df_inbound['POrg'] + '/' + df_inbound['Material']).astype(str).str.strip()
 
-df_inbound.to_csv(inbound_processed_path, index=False, encoding='latin1')
-df_inbound.to_csv(inbound_exported_path, index=False, encoding='latin1')
+        # Guardar los archivos transformados
+        df_inbound.to_csv(inbound_processed_path, index=False, encoding='latin1')
+        df_inbound.to_csv(inbound_exported_path, index=False, encoding='latin1')
+
+        return df_inbound
+
+    except Exception as e:
+        print(f"Error processing file: {e}")
+        return None
+
+if __name__ == "__main__":
+    base_path = os.getcwd()
+    inbound_file_path, inbound_processed_path, inbound_exported_path = get_file_paths(base_path)
+    transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path)

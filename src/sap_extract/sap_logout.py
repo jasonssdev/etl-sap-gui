@@ -69,4 +69,5 @@ def logout_from_sap():
         print(f"Error logging out of session: {e}")
 
 # Call the function to log out from SAP
-logout_from_sap()
+if __name__ == "__main__":
+    logout_from_sap()

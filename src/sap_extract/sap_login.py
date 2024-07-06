@@ -11,7 +11,7 @@ env_path = os.path.join(base_path, '.env')
 # Load environment variables from .env
 load_dotenv(env_path)
 
-# get environment variables from .env
+# Get environment variables from .env
 username = os.getenv("SAP_USERNAME")
 password = os.getenv("SAP_PASSWORD")
 client = os.getenv("SAP_CLIENT")
@@ -36,10 +36,10 @@ def login_to_sap(username, password, client, language, sap_gui_environment):
         print(f"Login error: {e}")
     return None
 
-# Login and verification
-session = login_to_sap(username, password, client, language, sap_gui_environment)
+if __name__ == "__main__":
+    session = login_to_sap(username, password, client, language, sap_gui_environment)
 
-if session:
-    print("Session started successfully.")
-else:
-    print("Failed to start session.")
+    if session:
+        print("Session started successfully.")
+    else:
+        print("Failed to start session.")

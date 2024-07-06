@@ -96,12 +96,11 @@ def download_outbound_report(session, trans_code, file_path, file_name, layout, 
     except Exception as e:
         print(f"Error downloading the report: {e}")
 
-# Get the active session
-session = get_active_session()
+if __name__ == "__main__":
+    # Get the active session
+    session = get_active_session()
 
-# Download the report if the session is obtained successfully
-if session:
-    sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
-    download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, sorgs)
-
-
+    # Download the report if the session is obtained successfully
+    if session:
+        sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
+        download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, sorgs)

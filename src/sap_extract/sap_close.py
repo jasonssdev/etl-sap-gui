@@ -19,4 +19,5 @@ def close_sap_logon():
         print(f"Error closing SAP Logon: {e}")
 
 # Call the function to close SAP Logon
-close_sap_logon()
+if __name__ == "__main__":
+    close_sap_logon()

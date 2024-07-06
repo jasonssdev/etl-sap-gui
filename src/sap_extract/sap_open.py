@@ -23,8 +23,11 @@ def open_sap_gui(sap_gui_path):
         
         subprocess.Popen([sap_gui_path])
         print("SAP GUI loading...")
+        return True
     except Exception as e:
         print(f"SAP GUI error: {e}")
 
-# Llamar a la función para abrir SAP GUI
-open_sap_gui(sap_gui_path)
+
+# Comprobación para evitar la ejecución al importar
+if __name__ == "__main__":
+    open_sap_gui(sap_gui_path)

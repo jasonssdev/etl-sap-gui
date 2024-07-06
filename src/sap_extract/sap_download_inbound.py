@@ -1,7 +1,15 @@
+import sys
 import os
 import win32com.client
 from dotenv import load_dotenv
 from datetime import datetime
+
+# Agregar el directorio base al PYTHONPATH
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(base_path)
+
+from sap_extract.sap_session import get_active_session
+
 
 # Get base path
 base_path = os.getcwd()
@@ -32,31 +40,6 @@ code_mx = os.getenv("CODE_MX")
 
 # Get today's date in the desired format
 date = datetime.today().strftime('%d.%m.%Y')
-
-# Function to connect to the active SAP session
-def get_active_session():
-    try:
-        SapGuiAuto = win32com.client.GetObject("SAPGUI")
-        if not SapGuiAuto:
-            raise Exception("Could not get the SAPGUI object")
-        
-        application = SapGuiAuto.GetScriptingEngine
-        if not application:
-            raise Exception("Could not get the SAP scripting engine")
-        
-        # Assume there is only one active connection
-        connection = application.Children(0)
-        if not connection:
-            raise Exception("Could not get the SAP connection")
-        
-        session = connection.Children(0)
-        if not session:
-            raise Exception("Could not get the SAP session")
-
-        return session
-    except Exception as e:
-        print(f"Error getting the active session: {e}")
-        return None
 
 # Function to download inbound report from SAP
 def download_inbound_report(session, trans_code, file_path, file_name, layout, sorgs, company_codes, date):
@@ -164,11 +147,12 @@ def download_inbound_report(session, trans_code, file_path, file_name, layout, s
     except Exception as e:
         print(f"Error downloading the report: {e}")
 
-# Get the active session
-session = get_active_session()
+if __name__ == "__main__":
+    # Get the active session
+    session = get_active_session()
+    # Download the report if the session is obtained successfully
+    if session:
+        sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
+        company_codes = [code_ar, code_br, code_cl, code_mx]
+        download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, sorgs, company_codes, date)
 
-# Download the report if the session is obtained successfully
-if session:
-    sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
-    company_codes = [code_ar, code_br, code_cl, code_mx]
-    download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, sorgs, company_codes, date)
