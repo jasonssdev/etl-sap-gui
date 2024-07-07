@@ -1,4 +1,4 @@
-06.07.2024                                                      Dynamic List Display                                                                                                                1
+07.07.2024                                                      Dynamic List Display                                                                                                                1
 
 
 	SOrg.	Delivery	Item	Material	Item Description	Dlv.Qty	SU	Batch	OPS	PickingSts	WM	GM	Route	Sp.Stck No	Sold-to	Name of Sold-to Party	Pur. Doc.	TrpPlanDt

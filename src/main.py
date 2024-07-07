@@ -210,7 +210,7 @@ def main():
     env_path = os.path.join(base_path, '.env')
     env_vars = load_environment_variables(env_path)
     
-    # EXTRACT -> (11 MINUTES)
+    # OPEN -> (00:01:02)
     is_sap_open = open_sap_gui(env_vars['SAP_GUI_PATH'])
     time.sleep(60)
     if is_sap_open:
@@ -224,18 +224,19 @@ def main():
                 company_codes = [env_vars['CODE_AR'], env_vars['CODE_BR'], env_vars['CODE_CL'], env_vars['CODE_MX']]
                 date = datetime.today().strftime('%d.%m.%Y')
                 plants = [env_vars['PLANT_AR1'], env_vars['PLANT_AR2'], env_vars['PLANT_BR1'], env_vars['PLANT_BR2'], env_vars['PLANT_CL1'], env_vars['PLANT_CL2'], env_vars['PLANT_CL3'], env_vars['PLANT_CL4'], env_vars['PLANT_CL5'], env_vars['PLANT_CL6'], env_vars['PLANT_MX1'], env_vars['PLANT_MX2'], env_vars['PLANT_MX3'], env_vars['PLANT_MX4'], env_vars['PLANT_MX5'], env_vars['PLANT_MX6'], env_vars['PLANT_MX7']]
-                # reports download 
+                # reports download 1 - EXTRACT -> (00:01:18)
                 download_report_zbo2cs(session, env_vars['TRANS_BO'],env_vars['SAP_FILE_PATH'], env_vars['FILE_BO'], env_vars['SAP_LAYOUT'], sorgs)
                 download_inbound_report(session, env_vars['TRANS_INBOUND'], env_vars['SAP_FILE_PATH'], env_vars['FILE_INBOUND'], env_vars['SAP_LAYOUT'], sorgs, company_codes, date)
                 download_report_mb52(session, env_vars['TRANS_STOCK'], env_vars['SAP_FILE_PATH'], env_vars['FILE_STOCK'], env_vars['SAP_LAYOUT'], plants)
                 download_outbound_report(session, env_vars['TRANS_OUTBOUND'],env_vars['SAP_FILE_PATH'], env_vars['FILE_OUTBOUND'], env_vars['SAP_LAYOUT'], sorgs)
+                # reports download 2 - EXTRACT -> (00:07:35)
                 download_material_report(session, env_vars['TRANS_MATAR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATAR'], env_vars['SAP_LAYOUT'], env_vars['SORG_AR'], env_vars['PLANT_AR1'])
                 download_material_report(session, env_vars['TRANS_MATBR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATBR'], env_vars['SAP_LAYOUT'], env_vars['SORG_BR'], env_vars['PLANT_BR1'])
                 download_material_report(session, env_vars['TRANS_MATCL'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATCL'], env_vars['SAP_LAYOUT'], env_vars['SORG_CL'], env_vars['PLANT_CL1'])
                 download_material_report(session, env_vars['TRANS_MATMX'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATMX'], env_vars['SAP_LAYOUT'], env_vars['SORG_MX'], env_vars['PLANT_MX1'])
             logout_from_sap()
         close_sap_logon()
-    # TRANSFORM -> (11 MINUTES)
+    # TRANSFORM -> (00:00:10)
     paths = get_file_paths(base_path)
     bo2cs_paths = paths["bo2cs"]
     transform_bo2cs(bo2cs_paths["raw"], bo2cs_paths["processed"], bo2cs_paths["exported"])
@@ -253,7 +254,7 @@ def main():
     transform_outbound(outbound_paths["raw"], outbound_paths["processed"], outbound_paths["exported"])
     stock_paths = paths["stock"]
     transform_stock(stock_paths["raw"], stock_paths["processed"], stock_paths["exported"])
-    # LOAD -> (11 MINUTES)
+    # LOAD -> (00:00:10)
     conn = open_sql_connection(env_vars['SQL_SERVER'], env_vars['SQL_DATABASE'], env_vars['SQL_USERNAME'], env_vars['SQL_PASSWORD'])
     if conn:
         truncate_commands = [
