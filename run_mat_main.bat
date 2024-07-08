@@ -1,5 +1,5 @@
 @echo off
-cd /d "C:\ruta\de\tu\proyecto\mat2"
+cd /d "C:\ruta\de\tu\proyecto\mat"
 call .\.venv\Scripts\activate.bat
 python src\main.py
 
