@@ -25,6 +25,8 @@ from sqlserver_load.sql_open_conn import open_sql_connection
 from sqlserver_load.sql_truncate import execute_sql_truncate
 from sqlserver_load.sql_bulk import execute_sql_bulk
 from sqlserver_load.sql_close_conn import close_sql_connection
+from sqlserver_load.sql_lastrun import update_last_run
+
 
 def load_environment_variables(env_path):
     """Load environment variables from the .env file."""
@@ -230,10 +232,10 @@ def main():
                 download_report_mb52(session, env_vars['TRANS_STOCK'], env_vars['SAP_FILE_PATH'], env_vars['FILE_STOCK'], env_vars['SAP_LAYOUT'], plants)
                 download_outbound_report(session, env_vars['TRANS_OUTBOUND'],env_vars['SAP_FILE_PATH'], env_vars['FILE_OUTBOUND'], env_vars['SAP_LAYOUT'], sorgs)
                 # reports download 2 - EXTRACT -> (00:07:35)
-                download_material_report(session, env_vars['TRANS_MATAR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATAR'], env_vars['SAP_LAYOUT'], env_vars['SORG_AR'], env_vars['PLANT_AR1'])
-                download_material_report(session, env_vars['TRANS_MATBR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATBR'], env_vars['SAP_LAYOUT'], env_vars['SORG_BR'], env_vars['PLANT_BR1'])
-                download_material_report(session, env_vars['TRANS_MATCL'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATCL'], env_vars['SAP_LAYOUT'], env_vars['SORG_CL'], env_vars['PLANT_CL1'])
-                download_material_report(session, env_vars['TRANS_MATMX'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATMX'], env_vars['SAP_LAYOUT'], env_vars['SORG_MX'], env_vars['PLANT_MX1'])
+                # download_material_report(session, env_vars['TRANS_MATAR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATAR'], env_vars['SAP_LAYOUT'], env_vars['SORG_AR'], env_vars['PLANT_AR1'])
+                # download_material_report(session, env_vars['TRANS_MATBR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATBR'], env_vars['SAP_LAYOUT'], env_vars['SORG_BR'], env_vars['PLANT_BR1'])
+                # download_material_report(session, env_vars['TRANS_MATCL'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATCL'], env_vars['SAP_LAYOUT'], env_vars['SORG_CL'], env_vars['PLANT_CL1'])
+                # download_material_report(session, env_vars['TRANS_MATMX'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATMX'], env_vars['SAP_LAYOUT'], env_vars['SORG_MX'], env_vars['PLANT_MX1'])
             logout_from_sap()
         close_sap_logon()
     # TRANSFORM -> (00:00:10)
@@ -254,6 +256,8 @@ def main():
     transform_outbound(outbound_paths["raw"], outbound_paths["processed"], outbound_paths["exported"])
     stock_paths = paths["stock"]
     transform_stock(stock_paths["raw"], stock_paths["processed"], stock_paths["exported"])
+    time.sleep(30)
+    print('data transformation phase was completed')
     # LOAD -> (00:00:10)
     conn = open_sql_connection(env_vars['SQL_SERVER'], env_vars['SQL_DATABASE'], env_vars['SQL_USERNAME'], env_vars['SQL_PASSWORD'])
     if conn:
@@ -284,6 +288,8 @@ def main():
         # Execute the SQL commands
         for command in bulk_commands:
             execute_sql_bulk(conn, command)
+
+        update_last_run(conn)
     
     close_sql_connection(conn)
 
