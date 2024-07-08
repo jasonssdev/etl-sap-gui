@@ -29,8 +29,7 @@
 	32979	Setting tool HAND 3/8"	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
 	32980	Setting tool HAND 1/2"	0001		3000	PC	            29	             0	             0	             0	             0	             0	             0
 	32980	Setting tool HAND 1/2"	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
-	32980	Setting tool HAND 1/2"			3014	PC	             0	             3	             0	             0	             0	             0	             3
-	32980	Setting tool HAND 1/2"	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	32980	Setting tool HAND 1/2"	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
 	32980	Setting tool HAND 1/2"	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	32980	Setting tool HAND 1/2"	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	32980	Setting tool HAND 1/2"	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -170,7 +169,7 @@
 	229138	Handle HIT-RBH	0001		3000	PC	           106	             0	             0	             0	             0	             0	             0
 	229138	Handle HIT-RBH	0001		3002	PC	             2	             0	             0	             0	             0	             0	             0
 	229138	Handle HIT-RBH	0001		3010	PC	             3	             0	             0	             0	             0	             0	             0
-	229138	Handle HIT-RBH			3014	PC	             0	             4	             0	             0	             0	             0	             4
+	229138	Handle HIT-RBH	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
 	229138	Handle HIT-RBH	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	229138	Handle HIT-RBH			3018	PC	             0	             4	             0	             0	             0	             0	             4
 	229138	Handle HIT-RBH	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
@@ -289,7 +288,7 @@
 	273204	Round steel brush HIT-RB 1/2"	0001		3000	PC	             4	             0	             0	             0	             0	             0	             0
 	273204	Round steel brush HIT-RB 1/2"	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
 	273204	Round steel brush HIT-RB 1/2"	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
-	273204	Round steel brush HIT-RB 1/2"			3014	PC	             0	             4	             0	             0	             0	             0	             4
+	273204	Round steel brush HIT-RB 1/2"	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
 	273204	Round steel brush HIT-RB 1/2"	0001		3016	PC	             4	             0	             0	             0	             0	             0	             0
 	273204	Round steel brush HIT-RB 1/2"	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	273204	Round steel brush HIT-RB 1/2"	0001		3022	PC	             3	             0	             0	             0	             0	             0	             0
@@ -1170,8 +1169,7 @@
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3000	PC	           209	             0	             6	             0	             0	             0	             0
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3002	PC	            30	             0	             0	             0	             0	             0	             0
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3010	PC	             4	             0	             0	             0	             0	             0	             0
-	435000	Hammer drill bit TE-CX 1/4"-6"			3014	PC	             0	             4	             0	             0	             0	             0	             4
-	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3014	PC	             5	             0	             0	             0	             0	             0	             0
+	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3014	PC	             9	             0	             0	             0	             0	             0	             0
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3016	PC	             2	             0	             0	             0	             0	             0	             0
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3018	PC	             8	             0	             0	             0	             0	             0	             0
 	435000	Hammer drill bit TE-CX 1/4"-6"	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -1194,8 +1192,7 @@
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3000	PC	           399	             0	            10	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3002	PC	            25	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3010	PC	             5	             0	             0	             0	             0	             0	             0
-	435006	Hammer drill bit TE-CX 3/8"-6"			3014	PC	             0	             3	             0	             0	             0	             0	             3
-	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3014	PC	             5	             0	             0	             0	             0	             0	             0
+	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3014	PC	             8	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3016	PC	             5	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3018	PC	             9	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -1305,8 +1302,7 @@
 	2007057	Cartridge holder HIT-CB 500	0001		3000	PC	           230	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3002	PC	            17	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3010	PC	             9	             0	             0	             0	             0	             0	             0
-	2007057	Cartridge holder HIT-CB 500			3014	PC	             0	             7	             0	             0	             0	             0	             7
-	2007057	Cartridge holder HIT-CB 500	0001		3014	PC	             6	             0	             0	             0	             0	             0	             0
+	2007057	Cartridge holder HIT-CB 500	0001		3014	PC	            13	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3016	PC	             6	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3018	PC	             7	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3022	PC	            10	             0	             0	             0	             0	             0	             0
@@ -1321,8 +1317,7 @@
 	2007059	Cartridge holder HIT-CR 500	0001		3000	PC	            73	             0	             0	             0	             0	             0	             0
 	2007059	Cartridge holder HIT-CR 500	0001		3002	PC	             6	             0	             0	             0	             0	             0	             0
 	2007059	Cartridge holder HIT-CR 500	0001		3010	PC	             3	             0	             0	             0	             0	             0	             0
-	2007059	Cartridge holder HIT-CR 500			3014	PC	             0	             3	             0	             0	             0	             0	             3
-	2007059	Cartridge holder HIT-CR 500	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
+	2007059	Cartridge holder HIT-CR 500	0001		3014	PC	             6	             0	             0	             0	             0	             0	             0
 	2007059	Cartridge holder HIT-CR 500	0001		3016	PC	             5	             0	             0	             0	             0	             0	             0
 	2007059	Cartridge holder HIT-CR 500	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	2007059	Cartridge holder HIT-CR 500	0001		3022	PC	             4	             0	             0	             0	             0	             0	             0
@@ -1455,7 +1450,7 @@
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3000	PC	         1.375	             0	             3	             0	             0	             0	             0
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3002	PC	            25	             0	             0	             0	             0	             0	             0
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3010	PC	            17	             0	             0	             0	             0	             0	             0
-	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3014	PC	            37	             0	             0	             0	             0	             0	             0
+	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3014	PC	            36	             0	             0	             0	             0	             0	             0
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3016	PC	            67	             0	             0	             0	             0	             0	             0
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3018	PC	            20	             0	             0	             0	             0	             0	             0
 	2031400	Injectable mortar HIT-MM PLUS 500/2	0001		3022	PC	            26	             0	             0	             0	             0	             0	             0
@@ -2112,7 +2107,7 @@
 	2122285	Hammer drill bit TE-YX 32/57	0001		8750	PC	            40	             0	             0	             0	             0	             0	             0
 	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3000	PC	           104	             0	             1	             0	             0	             0	             0
 	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
-	2122287	Hammer drill bit TE-YX 26/32, 1"-			3014	PC	             0	             2	             0	             0	             0	             0	             2
+	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3014	PC	             2	             0	             0	             0	             0	             0	             0
 	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3018	PC	             8	             0	             0	             0	             0	             0	             0
 	2122287	Hammer drill bit TE-YX 26/32, 1"-	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -2151,18 +2146,17 @@
 	2123166	Quick-release chuck packed	0001		8750	PC	             6	             0	             0	             0	             0	             0	             0
 	2123384	Injectable mortar HIT-RE 100/500/1	0001		3000	PC	           856	             0	           398	             0	             0	             0	             0
 	2123384	Injectable mortar HIT-RE 100/500/1	0001		3010	PC	             6	             0	             0	             0	             0	             0	             0
-	2123384	Injectable mortar HIT-RE 100/500/1			3014	PC	             0	           100	             0	             0	             0	             0	           100
+	2123384	Injectable mortar HIT-RE 100/500/1	0001		3014	PC	           100	             0	             0	             0	             0	             0	             0
 	2123384	Injectable mortar HIT-RE 100/500/1	0001		3022	PC	            25	             0	             0	             0	             0	             0	             0
 	2123384	Injectable mortar HIT-RE 100/500/1	0001		8750	PC	         1.609	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3000	PC	         2.613	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0002		3000	PC	           128	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3002	PC	           360	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3010	PC	           113	             0	             0	             0	             0	             0	             0
-	2123401	Injectable mortar HIT-RE 500 V3/33			3014	PC	             0	            73	             0	             0	             0	             0	            73
-	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
+	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3014	PC	            77	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3016	PC	           101	             0	             0	             0	             0	             0	             0
 	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3018	PC	            20	             0	             0	             0	             0	             0	             0
-	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3022	PC	           150	             0	             0	             0	             0	             0	             0
+	2123401	Injectable mortar HIT-RE 500 V3/33	0001		3022	PC	           149	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3000	PC	        23.000	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50	0002		3000	PC	           140	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3002	PC	           680	             0	             0	             0	             0	             0	             0
@@ -2170,7 +2164,7 @@
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3014	PC	           160	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3016	PC	           140	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3018	PC	           220	             0	             0	             0	             0	             0	             0
-	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3022	PC	           200	             0	             0	             0	             0	             0	             0
+	2123404	Injectable mortar HIT-RE 500 V3/50	0001		3022	PC	           180	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50			8662	PC	             0	            20	             0	             0	             0	             0	            20
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		8662	PC	            39	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50			8750	PC	             0	            40	             0	             0	             0	             0	            40
@@ -2186,8 +2180,7 @@
 	2123994	Concrete nail X-C 24 B3 MX	0001		3000	PC	       352.000	             0	             0	             0	             0	             0	             0
 	2123994	Concrete nail X-C 24 B3 MX	0001		3002	PC	        13.000	             0	             0	             0	             0	             0	             0
 	2123994	Concrete nail X-C 24 B3 MX	0001		3010	PC	         3.000	             0	             0	             0	             0	             0	             0
-	2123994	Concrete nail X-C 24 B3 MX			3014	PC	             0	         4.000	             0	             0	             0	             0	         4.000
-	2123994	Concrete nail X-C 24 B3 MX	0001		3014	PC	         4.000	             0	             0	             0	             0	             0	             0
+	2123994	Concrete nail X-C 24 B3 MX	0001		3014	PC	         8.000	             0	             0	             0	             0	             0	             0
 	2123994	Concrete nail X-C 24 B3 MX	0001		3016	PC	        15.000	             0	             0	             0	             0	             0	             0
 	2123994	Concrete nail X-C 24 B3 MX			3018	PC	             0	        13.000	             0	             0	             0	             0	        13.000
 	2123994	Concrete nail X-C 24 B3 MX	0001		3018	PC	         7.000	             0	             0	             0	             0	             0	             0
@@ -2300,7 +2293,7 @@
 	2141083	Universal nail X-U 16 P8	0001		3000	PC	         3.100	             0	             0	             0	             0	             0	             0
 	2141083	Universal nail X-U 16 P8	0001		3002	PC	         1.500	             0	             0	             0	             0	             0	             0
 	2141083	Universal nail X-U 16 P8	0001		3010	PC	           200	             0	             0	             0	             0	             0	             0
-	2141083	Universal nail X-U 16 P8	0001		3014	PC	           800	             0	             0	             0	             0	             0	             0
+	2141083	Universal nail X-U 16 P8	0001		3014	PC	           700	             0	             0	             0	             0	             0	             0
 	2141083	Universal nail X-U 16 P8	0001		3016	PC	           300	             0	             0	             0	             0	             0	             0
 	2141083	Universal nail X-U 16 P8	0001		3018	PC	           600	             0	             0	             0	             0	             0	             0
 	2141083	Universal nail X-U 16 P8	0001		3022	PC	           100	             0	             0	             0	             0	             0	             0
@@ -2638,7 +2631,7 @@
 	2163831	Cordl. lamp SL 2-A12 box	0001		8750	PC	             4	             0	             0	             0	             0	             0	             0
 	2164505	Adhesive capsule HVU2 M8x80	0001		8750	PC	           360	             0	             0	             0	             0	             0	             0
 	2164506	Adhesive capsule HVU2 M10x90	0001		8750	PC	           560	             0	             0	             0	             0	             0	             0
-	2164507	Adhesive capsule HVU2 M12x110	0001		8750	PC	         1.740	             0	             0	             0	             0	             0	             0
+	2164507	Adhesive capsule HVU2 M12x110	0001		8750	PC	         1.680	             0	             0	             0	             0	             0	             0
 	2164508	Adhesive capsule HVU2 M16x125	0001		8750	PC	           320	             0	             0	             0	             0	             0	             0
 	2164509	Adhesive capsule HVU2 M20x170	0001		8750	PC	           730	             0	             0	             0	             0	             0	             0
 	2164562	Adhesive capsule HVU2 M30x270	0001		8750	PC	            36	             0	             0	             0	             0	             0	             0
@@ -2731,8 +2724,7 @@
 	2168873	Pointed chisel TE-SX SM 70	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
 	2168874	Flat chisel TE-SX FM 36	0001		3000	PC	            26	             0	             0	             0	             0	             0	             0
 	2168874	Flat chisel TE-SX FM 36	0001		3010	PC	             4	             0	             0	             0	             0	             0	             0
-	2168874	Flat chisel TE-SX FM 36			3014	PC	             0	             2	             0	             0	             0	             0	             2
-	2168874	Flat chisel TE-SX FM 36	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	2168874	Flat chisel TE-SX FM 36	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
 	2168874	Flat chisel TE-SX FM 36	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2168874	Flat chisel TE-SX FM 36	0001		3022	PC	             3	             0	             0	             0	             0	             0	             0
 	2168874	Flat chisel TE-SX FM 36	0001		8750	PC	            13	             0	             0	             0	             0	             0	             0
@@ -3007,20 +2999,19 @@
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3000	PC	           900	             0	             0	             0	             0	             0	             0
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3002	PC	            10	             0	             0	             0	             0	             0	             0
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3010	PC	            30	             0	             0	             0	             0	             0	             0
-	2197987	Anchor rod HAS-E-55 3/8"x8"			3014	PC	             0	            40	             0	             0	             0	             0	            40
-	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3014	PC	            60	             0	             0	             0	             0	             0	             0
+	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3014	PC	           100	             0	             0	             0	             0	             0	             0
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3016	PC	            90	             0	             0	             0	             0	             0	             0
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3018	PC	            60	             0	             0	             0	             0	             0	             0
 	2197987	Anchor rod HAS-E-55 3/8"x8"	0001		3022	PC	            90	             0	             0	             0	             0	             0	             0
 	2197988	Anchor rod HAS-E-55 3/8"x12"	0001		3000	PC	            50	             0	             0	             0	             0	             0	             0
 	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3000	PC	         5.660	             0	             0	             0	             0	             0	             0
 	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3010	PC	            60	             0	             0	             0	             0	             0	             0
-	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3014	PC	           120	             0	             0	             0	             0	             0	             0
+	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3014	PC	            80	             0	             0	             0	             0	             0	             0
 	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3018	PC	            60	             0	             0	             0	             0	             0	             0
 	2197990	Anchor rod HAS-E-55 1/2"x4-1/2"	0001		3022	PC	            20	             0	             0	             0	             0	             0	             0
 	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3000	PC	         7.480	             0	             0	             0	             0	             0	             0
 	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3002	PC	           600	             0	             0	             0	             0	             0	             0
-	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3010	PC	            40	             0	             0	             0	             0	             0	             0
+	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3010	PC	            20	             0	             0	             0	             0	             0	             0
 	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3014	PC	           140	             0	             0	             0	             0	             0	             0
 	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3016	PC	           140	             0	             0	             0	             0	             0	             0
 	2197991	Anchor rod HAS-E-55 1/2"x6-1/2"	0001		3022	PC	            60	             0	             0	             0	             0	             0	             0
@@ -3286,7 +3277,7 @@
 	2206016	Floor nozzle VC 2D-22 & VC 5/75(A)	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
 	2206611	Elec. connector S-BT-ER W10 HC AWG	0001		8750	PC	           100	             0	             0	             0	             0	             0	             0
 	2206617	Hammer drill bit TE-CX 20/32	0001		8750	PC	            16	             0	             0	             0	             0	             0	             0
-	2206619	Hammer drill bit TE-CX 22/27	0001		8750	PC	            16	             0	             0	             0	             0	             0	             0
+	2206619	Hammer drill bit TE-CX 22/27	0001		8750	PC	            17	             0	             0	             0	             0	             0	             0
 	2206730	Hammer drill bit TE-CX 22/48	0001		8750	PC	             5	             0	             0	             0	             0	             0	             0
 	2206731	Hammer drill bit TE-CX 24/27	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	2206733	Hammer drill bit TE-CX 25/27	0001		8750	PC	            11	             0	             0	             0	             0	             0	             0
@@ -3623,7 +3614,7 @@
 	2223707	Anchor rod HAS-U 5.8 M10x130	0001		8750	PC	         4.260	             0	             0	             0	             0	             0	             0
 	2223820	Anchor rod HAS-U 5.8 M10x190	0001		8750	PC	         1.000	             0	             0	             0	             0	             0	             0
 	2223822	Anchor rod HAS-U 5.8 M12x120	0001		8750	PC	            80	             0	             0	             0	             0	             0	             0
-	2223823	Anchor rod HAS-U 5.8 M12x160	0001		8750	PC	         2.200	             0	             0	             0	             0	             0	             0
+	2223823	Anchor rod HAS-U 5.8 M12x160	0001		8750	PC	         2.140	             0	             0	             0	             0	             0	             0
 	2223827	Anchor rod HAS-U 5.8 M12x220	0001		8750	PC	            20	             0	             0	             0	             0	             0	             0
 	2223828	Anchor rod HAS-U 5.8 M16x150	0001		8750	PC	           200	             0	             0	             0	             0	             0	             0
 	2223830	Anchor rod HAS-U 5.8 M16x190	0001		3000	PC	           360	             0	             0	             0	             0	             0	             0
@@ -3807,7 +3798,7 @@
 	2231464	Premium exp anc KB1 5/8x6	0001		3018	PC	            45	             0	             0	             0	             0	             0	             0
 	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3000	PC	           180	             0	             0	             0	             0	             0	             0
 	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3002	PC	           130	             0	             0	             0	             0	             0	             0
-	2231466	Premium exp anc KB1 3/4x4 3/4			3014	PC	             0	            80	             0	             0	             0	             0	            80
+	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3014	PC	            80	             0	             0	             0	             0	             0	             0
 	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3016	PC	            70	             0	             0	             0	             0	             0	             0
 	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3018	PC	            30	             0	             0	             0	             0	             0	             0
 	2231466	Premium exp anc KB1 3/4x4 3/4	0001		3022	PC	            30	             0	             0	             0	             0	             0	             0
@@ -3896,7 +3887,6 @@
 	2234720	Adhesive capsule HVU2 3/8" x 3 1/2"	0001		3002	PC	           480	             0	             0	             0	             0	             0	             0
 	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3000	PC	         2.720	             0	             0	             0	             0	             0	             0
 	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3002	PC	           140	             0	             0	             0	             0	             0	             0
-	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3010	PC	            20	             0	             0	             0	             0	             0	             0
 	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3014	PC	            20	             0	             0	             0	             0	             0	             0
 	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3016	PC	            60	             0	             0	             0	             0	             0	             0
 	2234721	Adhesive capsule HVU2 1/2" x 4 1/4"	0001		3022	PC	            20	             0	             0	             0	             0	             0	             0
@@ -4182,7 +4172,7 @@
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3000	PC	            96	             0	             0	             0	             0	             0	             0
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
-	2251583	Rotary hammer TE 6-CL 120V case			3014	PC	             0	             1	             0	             0	             0	             0	             1
+	2251583	Rotary hammer TE 6-CL 120V case	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	2251583	Rotary hammer TE 6-CL 120V case	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -4329,8 +4319,7 @@
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3000	PC	            59	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3002	PC	             2	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
-	2254883	Cordl. ham. dr. driver SF 6H-22 ca			3014	PC	             0	             2	             0	             0	             0	             0	             2
-	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3018	PC	             6	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
@@ -4462,7 +4451,7 @@
 	2261683	Core bit B 72/430 P-U abras	0001		3000	PC	            12	             0	             0	             0	             0	             0	             0
 	2261683	Core bit B 72/430 P-U abras	0001		3002	PC	             2	             0	             0	             0	             0	             0	             0
 	2261683	Core bit B 72/430 P-U abras	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
-	2261683	Core bit B 72/430 P-U abras			3014	PC	             0	             2	             0	             0	             0	             0	             2
+	2261683	Core bit B 72/430 P-U abras	0001		3014	PC	             2	             0	             0	             0	             0	             0	             0
 	2261683	Core bit B 72/430 P-U abras	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2261683	Core bit B 72/430 P-U abras			3018	PC	             0	             5	             0	             0	             0	             0	             5
 	2261683	Core bit B 72/430 P-U abras	0001		3018	PC	             1	             0	             0	             0	             0	             0	             0
@@ -4504,7 +4493,7 @@
 	2261692	Core bit B 127/430 P-U abras	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
 	2261692	Core bit B 127/430 P-U abras	0001		3002	PC	             2	             0	             0	             0	             0	             0	             0
 	2261692	Core bit B 127/430 P-U abras	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
-	2261692	Core bit B 127/430 P-U abras			3014	PC	             0	             2	             0	             0	             0	             0	             2
+	2261692	Core bit B 127/430 P-U abras	0001		3014	PC	             2	             0	             0	             0	             0	             0	             0
 	2261692	Core bit B 127/430 P-U abras	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2261692	Core bit B 127/430 P-U abras	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2261693	Core bit B 132/430 P-U abras	0001		8750	PC	             1	             0	             0	             0	             0	             0	             0
@@ -4563,7 +4552,7 @@
 	2261784	Core bit BI 24/320 SP-L abras	0001		8750	PC	            12	             0	             0	             0	             0	             0	             0
 	2261789	Core bit BI 35/320 SP-L abras	0001		3000	PC	            11	             0	             0	             0	             0	             0	             0
 	2261789	Core bit BI 35/320 SP-L abras	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
-	2261789	Core bit BI 35/320 SP-L abras			3014	PC	             0	             1	             0	             0	             0	             0	             1
+	2261789	Core bit BI 35/320 SP-L abras	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
 	2261789	Core bit BI 35/320 SP-L abras	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2261789	Core bit BI 35/320 SP-L abras	0001		3022	PC	             1	             0	             0	             0	             0	             0	             0
 	2261789	Core bit BI 35/320 SP-L abras	0001		8750	PC	            27	             0	             0	             0	             0	             0	             0
@@ -4945,7 +4934,6 @@
 	2289575	Supply cord 120V 5m / 15A	0001		3000	PC	            28	             0	             0	             0	             0	             0	             0
 	2289575	Supply cord 120V 5m / 15A	0001		3002	PC	             2	             0	             0	             0	             0	             0	             0
 	2289575	Supply cord 120V 5m / 15A	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
-	2289575	Supply cord 120V 5m / 15A	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
 	2289575	Supply cord 120V 5m / 15A	0001		3018	PC	             6	             0	             0	             0	             0	             0	             0
 	2289575	Supply cord 120V 5m / 15A	0001		3022	PC	             3	             0	             0	             0	             0	             0	             0
 	2289589	Cable C 4-22 / C 6-22 / C 8-22 115V	0001		3000	PC	            20	             0	             0	             0	             0	             0	             0
@@ -5129,8 +5117,7 @@
 	2326712	Cordl. dispenser HDE 500-A12	0001		3000	PC	           161	             0	             0	             0	             0	             0	             0
 	2326712	Cordl. dispenser HDE 500-A12	0001		3002	PC	            13	             0	             0	             0	             0	             0	             0
 	2326712	Cordl. dispenser HDE 500-A12	0001		3010	PC	             4	             0	             0	             0	             0	             0	             0
-	2326712	Cordl. dispenser HDE 500-A12			3014	PC	             0	             8	             0	             0	             0	             0	             8
-	2326712	Cordl. dispenser HDE 500-A12	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	2326712	Cordl. dispenser HDE 500-A12	0001		3014	PC	             9	             0	             0	             0	             0	             0	             0
 	2326712	Cordl. dispenser HDE 500-A12	0001		3016	PC	             3	             0	             0	             0	             0	             0	             0
 	2326712	Cordl. dispenser HDE 500-A12	0001		3018	PC	             4	             0	             0	             0	             0	             0	             0
 	2326712	Cordl. dispenser HDE 500-A12	0001		3022	PC	            11	             0	             0	             0	             0	             0	             0
@@ -5187,8 +5174,7 @@
 	2333570	Battery pack B 12-30 Li-ion	0001		3000	PC	           183	             0	             0	             0	             0	             0	             0
 	2333570	Battery pack B 12-30 Li-ion	0001		3002	PC	            18	             0	             0	             0	             0	             0	             0
 	2333570	Battery pack B 12-30 Li-ion	0001		3010	PC	             4	             0	             0	             0	             0	             0	             0
-	2333570	Battery pack B 12-30 Li-ion			3014	PC	             0	             8	             0	             0	             0	             0	             8
-	2333570	Battery pack B 12-30 Li-ion	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	2333570	Battery pack B 12-30 Li-ion	0001		3014	PC	             9	             0	             0	             0	             0	             0	             0
 	2333570	Battery pack B 12-30 Li-ion	0001		3016	PC	             2	             0	             0	             0	             0	             0	             0
 	2333570	Battery pack B 12-30 Li-ion	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2333570	Battery pack B 12-30 Li-ion	0001		3022	PC	            14	             0	             0	             0	             0	             0	             0
@@ -5317,8 +5303,7 @@
 	2341107	Hammer drill bit TE-CX Set (6) M4	0001		3000	PC	            17	             0	             0	             0	             0	             0	             0
 	2341237	Pointed chisel TE-SX SM 36	0001		3000	PC	            74	             0	             0	             0	             0	             0	             0
 	2341237	Pointed chisel TE-SX SM 36	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
-	2341237	Pointed chisel TE-SX SM 36			3014	PC	             0	             2	             0	             0	             0	             0	             2
-	2341237	Pointed chisel TE-SX SM 36	0001		3014	PC	             2	             0	             0	             0	             0	             0	             0
+	2341237	Pointed chisel TE-SX SM 36	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
 	2341237	Pointed chisel TE-SX SM 36	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2341237	Pointed chisel TE-SX SM 36	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
 	2341237	Pointed chisel TE-SX SM 36	0001		8662	PC	             5	             0	             0	             0	             0	             0	             0
@@ -5348,8 +5333,7 @@
 	2341251	Pointed chisel TE-SX SM 36 (4)	0001		8750	PC	           160	             0	             0	             0	             0	             0	             0
 	2341252	Pointed chisel TE-SX SM 43 (4)	0001		8750	PC	           116	             0	             0	             0	             0	             0	             0
 	2341253	Pointed chisel TE-SX SM 50 (4)	0001		3000	PC	           288	             0	             0	             0	             0	             0	             0
-	2341253	Pointed chisel TE-SX SM 50 (4)			3014	PC	             0	             8	             0	             0	             0	             0	             8
-	2341253	Pointed chisel TE-SX SM 50 (4)	0001		3014	PC	             4	             0	             0	             0	             0	             0	             0
+	2341253	Pointed chisel TE-SX SM 50 (4)	0001		3014	PC	            12	             0	             0	             0	             0	             0	             0
 	2341253	Pointed chisel TE-SX SM 50 (4)	0001		3018	PC	            16	             0	             0	             0	             0	             0	             0
 	2341253	Pointed chisel TE-SX SM 50 (4)	0001		8750	PC	           216	             0	             0	             0	             0	             0	             0
 	2341929	ON!Track tag AI L3 TaS	0001		3000	PC	           700	             0	             0	             0	             0	             0	             0
@@ -5499,8 +5483,7 @@
 	2372875	Battery charger C 4/12-50 115V box	0001		3000	PC	           400	             0	             0	             0	             0	             0	             0
 	2372875	Battery charger C 4/12-50 115V box	0001		3002	PC	            10	             0	             0	             0	             0	             0	             0
 	2372875	Battery charger C 4/12-50 115V box	0001		3010	PC	             4	             0	             0	             0	             0	             0	             0
-	2372875	Battery charger C 4/12-50 115V box			3014	PC	             0	             8	             0	             0	             0	             0	             8
-	2372875	Battery charger C 4/12-50 115V box	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
+	2372875	Battery charger C 4/12-50 115V box	0001		3014	PC	             9	             0	             0	             0	             0	             0	             0
 	2372875	Battery charger C 4/12-50 115V box			3018	PC	             0	             4	             0	             0	             0	             0	             4
 	2372875	Battery charger C 4/12-50 115V box	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	2372875	Battery charger C 4/12-50 115V box	0001		3022	PC	            15	             0	             0	             0	             0	             0	             0
