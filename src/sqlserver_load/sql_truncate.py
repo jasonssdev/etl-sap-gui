@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 from sqlserver_load.sql_open_conn import open_sql_connection
 from sqlserver_load.sql_close_conn import close_sql_connection
 
-
 def load_environment_variables(env_path):
     """Load environment variables from the .env file."""
     load_dotenv(env_path)
@@ -24,7 +23,7 @@ def load_environment_variables(env_path):
 def execute_sql_truncate(connection, sql_command):
     """
     Execute a SQL command on the given connection.
-    
+
     Args:
     - connection: SQL Server connection object.
     - sql_command (str): SQL command to execute.
@@ -66,6 +65,6 @@ def main():
     if conn:
         # Close the connection
         close_sql_connection(conn)
-        
+
 if __name__ == "__main__":
     main()

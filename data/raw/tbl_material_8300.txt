@@ -1,4 +1,4 @@
-07.07.2024				                                                                                                                          List complete material master																																  1
+08.07.2024				                                                                                                                          List complete material master																																  1
 
 List complete material master
 
@@ -560,7 +560,6 @@ List complete material master
 		8300	8330		20896	Heavy-d. pipe ring MP-MI 219.1 C	14	40	       802,200	G		25.09.2023	          10	PC	ES	X		ZC	L06	 2	X6	L06	           10	PC	U0	 52	D	N		             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		24631	Cleaner CFR1 500ML	14	40	       456,438	G		24.02.2022	           1	PC	SI	X		ZC	L03	 2	X0	L03	          156	PC	4C	 12	C	X		            57	          156	PC	Z004	PK	           1		PC
 		8300	8330		24669	Dispenser CS 270-P1	14	40	     1.051,900	G		10.08.2020	           1	PC	GB	X		ZC	L03	 2	X6	L03	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
-		8300	8330		24806	Adhesive CA-CG KW.B.3400	14	80	         1.107	G		10.04.2023	           1	PC	US	X		ZC	L03	 2	ND	L03	       16.896	PC	20	 70	B	X	X	             0	       16.896	PC	Z004	PK	           1		PC
 		8300	8330		24825	Dispenser CS-CG-2400/2300	14	80	           460	G		03.09.2011	           1	PC	GB			ZC	L03	 2	ND	L03	            5	PC	20	 34	D	Y	X	             0	            5	PC	Z004	PK	           1		PC
 		8300	8330		26195	Gre. Turmogrease ALN1001/00 (1kg)	14	80	     1.093,367	G	X	28.04.2022	           1	PC	DE			ZC	L08	 2	ND	L08	            3	PC	4C	 48	B	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		26351	Retaining ring SP 52	14	80	         3,600	G	X	03.09.2011	           1	PC	DE			ZC	BR1	 2	ND	BR1	            1	PC	4C	 57	D	Z	X	             0	            1	PC	Z004	PK	           1		PC
@@ -863,7 +862,6 @@ List complete material master
 		8300	8330		241383	Injectable mortar HIT-RE 500-SD/500/1 WH	18	80	           795	G		29.08.2018	           1	PC	DE			ZC	L01	 2	ND	L01	           20	PC	4C	 80	D	Z	X	             0	           20	PC	Z004	PK	           1		PC
 		8300	8330		241396	Flush anchor HDV 1/4"x1"	14	80	        10,050	G		05.02.2018	         100	PC	TW			ZC	L02	 2	ND	L02	       16.000	PC	4C	 48	D	X	X	             0	       16.000	PC	Z004	PK	         100		PC
 		8300	8330		241397	Flush anchor HDV 3/8"	14	80	        28,108	G		22.12.2023	          50	PC	TW			ZC	L02	 2	ND	L02	           50	PC	4C	257	D	N	X	             0	           50	PC	Z004	PK	          50		PC
-		8300	8330		241398	Flush anchor HDV 1/2"x2"	14	80	        53,640	G		20.03.2024	          25	PC	TW	X		ZC	L02	 2	ND	L02	        1.500	PC	4C	264	C	X	X	             0	          500	PC	Z004	PK	          25		PC
 		8300	8330		242050	Servicing set DS-TS5E	14	80	         2.503	G		17.09.2019	           1	PC	AT			ZC	L13	 2	ND	L13	            1	PC	4C	 57	D	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		242110	Detent ring assy	14	80	            20	G	X	15.10.2020	           1	PC	LI			ZC	U26	 2	ND	U26	            1	PC	4C	 64	D	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		242372	Assembly tool SCHLUES.	14	40	           457	G		01.09.2023	           1	PC	CH	X		ZC	L12	 2	X6	L12	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
@@ -1448,7 +1446,6 @@ List complete material master
 		8300	8330		304882	Connector MIC-MI/MQ-M8	14	80	            64	G		04.07.2023	           5	PC	TR			ZC	L06	 2	ND	L06	           20	PC	U0	 55	D	N	X	             0	            5	PC	Z004	PK	           5		PC
 		8300	8330		304884	Connector MQV-UB-M12	14	40	            74	G		07.06.2023	           0	PC	TR	X		ZC	L06	 2	X6	L06	           20	PC	U0	 52	D	N		             0	           10	PC	Z007	PK	           0		PC
 		8300	8330		304887	Easyhand screw MIA-EH90	14	40	       181,250	G		01.11.2021	           0	PC	ES	X		ZC	L06	 2	X6	L06	           10	PC	U0	 70	D	N		             0	           10	PC	Z007	PK	           0		PC
-		8300	8330		304888	Easyhand screw MIA-EH120	14	80	       210,583	G		25.08.2022	          10	PC	ES	X		ZC	L06	 2	ND	L06	           10	PC	U0	 70	D	N	X	             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		304889	Onehand screw MIA-OH90	14	40	        95,600	G		28.08.2023	          10	PC	CN	X		ZC	L06	 2	ND	L06	           20	PC	U0	 65	D	Z		             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		304890	Onehand screw MIA-OH120	14	80	       117,400	G		13.06.2024	           0	PC	ES	X		ZC	L06	 2	X6	L06	           10	PC	U0	 65	D	Y	X	             0	           10	PC	Z007	PK	           0		PC
 		8300	8330		304891	Backing plate MIA-EH-P	14	80	           290	G		03.08.2022	          10	PC	CN	X		ZC	L06	 2	X6	L06	           10	PC	U0	 65	D	N	X	             0	           10	PC	Z004	PK	          10		PC
@@ -2708,7 +2705,6 @@ List complete material master
 		8300	8330		431898	A.-Channel HAC-30 68/3050 F	14	80	         5.400	G		15.03.2024	           1	PC	DE	X		ZC	L02	 2	ND	L02	            1	PC	U4	 74	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		431900	A.-Channel HAC-30 68/5800 F	14	80	        10.200	G		15.03.2024	           1	PC	DE	X		ZC	L02	 2	ND	L02	            1	PC	U4	 74	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		432077	Girder end cap MIA-EC90	14	40	        23,405	G		07.06.2023	           1	PC	SI	X		ZC	L06	 2	X6	L06	           50	PC	4C	 54	D	Y		             0	           25	PC	Z004	PK	           1		PC
-		8300	8330		432078	Girder end cap MIA-EC120	14	40	        31,788	G		07.06.2023	          25	PC	SI	X		ZC	L06	 2	ND	L06	           25	PC	4C	 66	D	N		             0	           25	PC	Z004	PK	          25		PC
 		8300	8330		432274	Threaded stud X-SEA-R 30 M8 adapter	14	40	        17,200	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 54	D	N		             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		432947	Cable tie with holder X-ECT 40 MX	14	40	         5,980	G		14.08.2019	          50	PC	SI	X		ZC	L04	 2	X0	L04	       12.800	PC	4C	 54	T	X		       344.801	       12.800	PC	Z004	PK	          50		PC
 		8300	8330		433326	Diamond coring tool DD 150-U 220V	16	40	        15.500	G		18.05.2023	           1	PC	AT		F	ZC	L05	 2	ND	L05	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
@@ -4421,7 +4417,6 @@ List complete material master
 		8300	8330		2107510	A.-Channel HAC-50 106/150 F	14	80	           510	G		15.03.2024	           1	PC	DE			ZC	L01	 2	ND	L01	            1	PC	U4	 74	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2107511	A.-Channel HAC-50 106/300 F	14	80	           860	G		15.03.2024	           1	PC	DE			ZC	L01	 2	ND	L01	            1	PC	U4	 53	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2107829	Comfort side handle TE SH-STD 2	14	40	       584,770	G	X	16.05.2023	           1	PC	DE	X		ZC	L08	 2	X5	L08	           10	PC	4C	 54	A	X		            20	            1	PC	Z004	PK	           1		PC
-		8300	8330		2108735	Screw anchor HUS3-HF 8x65 15/5/-	14	80	        38,037	G		05.12.2023	          50	PC	LI	X		ZC	L02	 2	ND	L02	           50	PC	4C	 54	D	Z	X	             0	           50	PC	Z004	PK	          50		PC
 		8300	8330		2108737	Screw anchor HUS3-HF 8x85 35/25/15	14	80	        46,940	G		06.12.2023	          50	PC	LI			ZC	L02	 2	ND	L02	           50	PC	4C	 54	D	N	X	             0	           50	PC	Z004	PK	          50		PC
 		8300	8330		2109004	DC car charger C 4/36-DC box	14	80	           777	G		25.06.2024	           1	PC	SK			ZC	L15	 2	ND	L15	            1	PC	U0	 68	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2109031	Multi-bay charger C 4/36-MC4 220V box	14	80	         1.700	G		15.06.2024	           1	PC	SK	X	F	ZC	L15	 2	ND	L15	            6	PC	U0	 66	B	Z	X	             0	            6	PC	Z004	PK	           1		PC
@@ -4808,7 +4803,6 @@ List complete material master
 		8300	8330		2139948	Wire saw DSW 1005-E 3x400V	14	80	       260.000	G		31.03.2020	           1	PC	AT			ZC	L12	 2	ND	L12	            1	PC	4C	 54	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2139994	Stud anchor KB-VTZ 5/8"x4-3/4"	14	80	       202,667	G		25.09.2020	          15	PC	CN			ZC	L02	 2	ND	L02	           15	PC	90	 47	D	Z	X	             0	           15	PC	Z004	PK	          15		PC
 		8300	8330		2140257	Connector MIQC-90-MI	14	40	         2.225	G		10.08.2018	           0	PC	ES	X		ZC	L06	 2	X6	L06	            4	PC	U0	 65	A	Z		             0	            4	PC	Z004	PK	           0		PC
-		8300	8330		2140258	Connector MIQC-90-MI-V	14	80	     2.212,500	G		03.08.2022	           0	PC	ES	X		ZC	L06	 2	X6	L06	            4	PC	U0	 65	B	Z	X	             0	            4	PC	Z007	PK	           0		PC
 		8300	8330		2140259	Connector MIQC-90-E	14	40	         3.476	G		25.01.2023	           2	PC	CZ			ZC	L06	 2	ND	L06	            2	PC	U0	 63	D	N		             0	            2	PC	Z004	PK	           2		PC
 		8300	8330		2140378	Recip. saw blade SPX 23 68 (3) univ	14	40	        46,530	G		16.06.2023	           3	PC	CH	X		ZC	L09	 2	X6	L09	            3	PC	4C	 54	D	Z		             0	            3	PC	Z004	PK	           3		PC
 		8300	8330		2140379	Recip. saw blade SPX 23 68 (10) univ	14	40	        46,087	G		16.06.2023	          10	PC	CH	X		ZC	L09	 2	X5	L09	           10	PC	4C	 54	D	Z		            50	           10	PC	Z004	PK	          10		PC
@@ -5020,7 +5014,6 @@ List complete material master
 		8300	8330		2151584	Hammer drill bit TE-CX 12/27 MP8	14	40	       144,850	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X5	L09	            8	PC	4C	 54	D	Z		             5	            8	PC	Z004	PK	           8		PC
 		8300	8330		2151585	Hammer drill bit TE-CX 12.5/17 MP8	14	40	            84	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X6	L09	            8	PC	4C	 54	D	Z		             0	            8	PC	Z004	PK	           8		PC
 		8300	8330		2151586	Hammer drill bit TE-CX 14/17 MP8	14	40	       112,575	G		23.05.2023	           8	PC	DE	X		ZC	L09	 2	X0	L09	            8	PC	4C	 54	C	Y		            32	            8	PC	Z004	PK	           8		PC
-		8300	8330		2151587	Hammer drill bit TE-CX 14/22 MP8	14	80	       145,513	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X5	L09	            8	PC	4C	 54	D	N	X	             5	            8	PC	Z004	PK	           8		PC
 		8300	8330		2151588	Hammer drill bit TE-CX 14/27 MP8	14	40	           178	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X6	L09	            8	PC	4C	 54	D	Z		             0	            8	PC	Z004	PK	           8		PC
 		8300	8330		2151589	Hammer drill bit TE-CX 16/17 MP8	14	40	       134,875	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X6	L09	            8	PC	4C	 54	D	Z		             0	            8	PC	Z004	PK	           8		PC
 		8300	8330		2151590	Hammer drill bit TE-CX 16/22 MP8	14	40	       177,150	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X6	L09	            8	PC	4C	 54	D	N		             0	            8	PC	Z004	PK	           8		PC
@@ -6911,7 +6904,6 @@ List complete material master
 		8300	8330		2211596	Strut clamp MH-RSC 1" HDG rigid	14	40	        70,306	G		16.06.2023	         100	PC	US	X		ZC	L06	 2	X6	L06	          100	PC	90	 47	A	N		             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		2211597	Strut clamp MH-RSC 1-1/4" HDG rigid	14	40	        81,646	G		16.06.2023	          50	PC	US	X		ZC	L06	 2	X6	L06	          100	PC	90	 47	D	N		             0	          100	PC	Z004	PK	          50		PC
 		8300	8330		2211598	Strut clamp MH-RSC 1-1/2" HDG rigid	14	40	       136,077	G		16.06.2023	           1	PC	US	X		ZC	L06	 2	X6	L06	          100	PC	90	 47	B	Z		             0	          100	PC	Z004	PK	           1		PC
-		8300	8330		2211599	Strut clamp MH-RSC 2" HDG rigid	14	33	       154,221	G		16.06.2023	          50	PC	US	X		ZC	L06	 2	Y1	L06	          100	PC	90	 47	B	Z		             0	          100	PC	Z004	PK	          50		PC
 		8300	8330		2212420	Strut clamp MH-RSC 2-1/2" HDG rigid	14	40	       181,437	G		16.06.2023	          50	PC	US	X		ZC	L06	 2	X6	L06	          100	PC	90	 47	D	N		             0	          100	PC	Z004	PK	          50		PC
 		8300	8330		2212421	Strut clamp MH-RSC 3" HDG rigid	14	33	       204,116	G		16.06.2023	          25	PC	US	X		ZC	L06	 2	Y1	L06	          100	PC	90	 47	D	N		             0	          100	PC	Z004	PK	          25		PC
 		8300	8330		2212423	Strut clamp MH-RSC 4" HDG rigid	14	33	       290,299	G		16.06.2023	          25	PC	US	X		ZC	L06	 2	Y1	L06	          100	PC	90	 47	D	Z		             0	          100	PC	Z004	PK	          25		PC
@@ -7870,7 +7862,6 @@ List complete material master
 		8300	8330		2243837	Punch SPN CN round	14	40	            26	G	X	16.06.2023	           1	PC	CH	X		ZC	L09	 2	X6	L09	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2243838	Punch SPN RN rectangular	14	40	            20	G	X	16.06.2023	           1	PC	CH	X		ZC	L09	 2	X6	L09	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2243839	Side blades SSH (2)	14	40	            35	G	X	16.06.2023	           2	PC	CH	X		ZC	L09	 2	X6	L09	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           2		PC
-		8300	8330		2243858	Cordless breaker TE 500-A36	14	80	        10.200	G		27.09.2023	           1	PC	AT	X	F	ZC	L15	 2	ND	L15	            1	PC	4C	 70	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2243953	Ladder OS FOE-70 CL-200-3 FRP	14	40	         1.952	G		16.06.2023	           3	M	MY			ZC	L11	 2	X6	L11	            3	M	20	 62	D	N		             0	            3	M	Z004	PK	           3		M
 		8300	8330		2243954	Ladder OS FOE-70 CL-150-3 FRP	14	40	         1.892	G		16.06.2023	           3	M	MY			ZC	L11	 2	X6	L11	            3	M	20	 62	D	N		             0	            3	M	Z004	PK	           3		M
 		8300	8330		2243955	Ladder OS FOE-70 CL-300-3 FRP	14	40	         2.087	G		16.06.2023	           3	M	MY			ZC	L11	 2	X6	L11	            3	M	20	 62	D	N		             0	            3	M	Z004	PK	           3		M
@@ -10503,7 +10494,6 @@ List complete material master
 		8300	8330		2281192	Adapter W10-MF 50 (25)	14	40	           116	G		01.09.2023	          25	PC	CH	X		ZC	L10	 2	X6	L10	           25	PC	4C	154	D	N		             0	           25	PC	Z004	PK	          25		PC
 		8300	8330		2281193	Adapter M10-MR 50 (25)	14	40	           116	G		01.09.2023	          25	PC	CH	X		ZC	L10	 2	X6	L10	           25	PC	4C	154	D	Z		             0	           25	PC	Z004	PK	          25		PC
 		8300	8330		2281194	Adapter M10-MF 50 (25)	14	40	           116	G		01.09.2023	          25	PC	CH	X		ZC	L10	 2	X6	L10	           25	PC	4C	154	D	N		             0	           25	PC	Z004	PK	          25		PC
-		8300	8330		2281195	Exoskeleton HA EXO-O1 overhead	14	80	     5.503,200	G		14.02.2024	           1	PC	DE	X	F	ZC	L05	 2	ND	L05	            1	PC	4C	 15	B	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2281685	Tool case FX 3 empty	14	33	         5.660	G		12.12.2023	           1	PC	CH			ZC	L04	 2	X6	L04	            1	PC	4C	 54	D	Z		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2281804	Gas nail GX-WF 75x2,8 RD 34 HDG	14	33	         4,002	G		26.07.2023	       3.000	PC	CN	X		ZC	L04	 2	Y1	L04	        3.000	PC	4C	 54	D	Z		             0	        3.000	PC	Z004	PK	       3.000		PC
 		8300	8330		2281860	Pin SPN CN	14	40	            40	G	X	01.09.2023	           5	PC	CH	X		ZC	L09	 2	X6	L09	            5	PC	4C	 54	D	N		             0	            5	PC	Z004	PK	           5		PC
@@ -12236,7 +12226,6 @@ List complete material master
 		8300	8330		2343283	Twist-Lock MT-TL M6	14	33	        36,020	G		17.02.2023	          50	PC	BG	X		ZC	L14	 2	X6	L14	           50	PC	U0	 52	D	Z		             0	           50	PC	Z004	PK	          50		PC
 		8300	8330		2343288	Grating disc X-FCM-F HL 23/28	14	40	        33,800	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 82	D	N		             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		2343289	Grating disc X-FCM-F HL 28/33	14	40	        39,562	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 82	D	N		             0	          100	PC	Z004	PK	         100		PC
-		8300	8330		2343480	Gusset plate Mekano 100-2T GP-X-NP SS	16	80	         2.200	G		09.05.2024	           1	PC	NO			ZC	L11	 2	ND	L11	            1	PC	20	 92	C	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2343690	Grating disc X-FCM-F HL 32/37	14	40	        42,072	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 82	D	N		             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		2343691	Grating disc X-FCM-F HL 38/43	14	40	        46,092	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 82	D	N		             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		2343692	Grating disc X-FCM-F HL 48/53	14	40	        52,412	G		01.09.2023	         100	PC	AT	X		ZC	L04	 2	X6	L04	          100	PC	4C	 82	D	N		             0	          100	PC	Z004	PK	         100		PC
@@ -13047,7 +13036,6 @@ List complete material master
 		8300	8330		236442	Anchor tester HAT 28 DX Gunite kit	14	40	         5.900	G		09.03.2020	           1	PC	GB			ZC	L02	 2	X6	L02	            1	PC	4C	 54	C	N		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		238727	Brush extension HIT-RBV manual	14	40	        58,700	G		03.09.2011	           1	PC	CH	X		ZC	L01	 2	X5	L01	            5	PC	4C	 54	D	Z		             5	            1	PC	Z004	PK	           1		PC
 		8300	8330		243743	Setting tool HSD-G M12 1/2"X50	14	40	           446	G		06.09.2012	           1	PC	DE	X		ZC	L02	 2	X6	L02	            1	PC	U0	 52	D	Z		             0	            1	PC	Z004	PK	           1		PC
-		8300	8330		247183	Grating disc X-FCM-R 45/50	14	80	        35,762	G		26.06.2024	         100	PC	AT	X		ZC	L04	 2	ND	L04	          100	PC	4C	 54	C	Z	X	             0	          100	PC	Z007	PK	         100		PC
 		8300	8330		247184	Grating disc X-FCM-R 1 1/4	14	80	        32,174	G		30.08.2022	         100	PC	AT	X		ZC	L04	 2	ND	L04	          100	PC	4C	 54	B	Y	X	             0	          100	PC	Z004	PK	         100		PC
 		8300	8330		259271	Cleaning kit DX	14	40	           180	G		03.09.2011	           1	PC	DE	X		ZC	L04	 2	X0	L04	            1	PC	4C	 54	D	Y		             6	            1	PC	Z004	PK	           1		PC
 		8300	8330		259768	Dispenser gun CF DS-1	14	40	       491,900	G		03.09.2011	           1	PC	CH	X		ZC	L03	 2	X0	L03	           75	PC	4C	 54	B	X		            79	           25	PC	Z004	PK	           1		PC
@@ -13069,7 +13057,6 @@ List complete material master
 		8300	8330		282302	Scaling chisel TE-CX SC 18/6	14	40	           220	G		31.03.2020	           1	PC	HU	X		ZC	L09	 2	X6	L09	            1	PC	4C	 54	D	Z		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		282341	Quick-release chuck TE 16/TE 30	14	40	       634,850	G		03.09.2011	           1	PC	AT	X		ZC	L08	 2	X5	L08	            1	PC	4C	 54	D	Z		             4	            1	PC	Z004	PK	           1		PC
 		8300	8330		282990	Jack screw DD-CS-1/2"	14	40	           280	G		27.02.2019	           1	PC	DE	X	F	ZC	L05	 2	X0	L05	           20	PC	4C	 54	C	X		            22	            1	PC	Z004	PK	           1		PC
-		8300	8330		284239	Swivel beam clamp MQT-G M10	14	80	       271,500	G		06.07.2023	          20	PC	GB	X		ZC	L06	 2	ND	L06	           20	PC	4C	 54	C	Z	X	             0	           20	PC	Z004	PK	          20		PC
 		8300	8330		284244	Clamping claw MQT-M16	14	40	       224,100	G		01.09.2023	          10	PC	DE			ZC	L06	 2	X6	L06	           10	PC	4C	 54	D	N		             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		284385	I.-Channel MQ-21-D-HDG plus 6m	14	33	         3.124	G		27.09.2018	           6	M	AT	X		ZC	L06	 2	Y1	L06	          150	M	U4	 66	C	X		             0	          150	M	Z004	PK	           6		M
 		8300	8330		285296	Guide rail extension DD-HD30-XT30	14	40	         3.055	G		10.08.2020	           1	PC	CN	X		ZC	L05	 2	X6	L05	            1	PC	4C	 54	C	Z		             0	            1	PC	Z004	PK	           1		PC
@@ -13096,7 +13083,6 @@ List complete material master
 		8300	8330		304054	4-hole Angle MQW-4-R	14	40	       250,500	G		27.09.2018	          10	PC	TR	X		ZC	L06	 2	X0	L06	           80	PC	U0	 52	C	Y		           200	           80	PC	Z004	PK	          10		PC
 		8300	8330		304096	I.-Channel MQ-21-F 3m	14	33	         1.562	G		31.07.2014	           3	M	DE	X		ZC	L06	 2	Y1	L06	          150	M	U4	 67	C	Z		             0	          150	M	Z004	PK	           3		M
 		8300	8330		304098	I.-Channel MQ-21-HDG plus 6m	14	33	         1.562	G		27.09.2018	           6	M	AT	X		ZC	L06	 2	Y1	L06	          300	M	U4	 66	B	Y		             0	          300	M	Z004	PK	           6		M
-		8300	8330		304115	Bracket MQK-41/300-F	14	33	         1.017	G		27.09.2018	           1	PC	DE	X		ZC	L06	 2	Y1	L06	           10	PC	4C	 54	D	Y		             0	           10	PC	Z004	PK	           1		PC
 		8300	8330		304116	Bracket MQK-41/450-F	14	33	         1.362	G		27.09.2018	           1	PC	DE	X		ZC	L06	 2	X6	L06	           10	PC	4C	 54	C	Y		             0	           10	PC	Z004	PK	           1		PC
 		8300	8330		304117	Bracket MQK-41/600-F	14	33	         1.680	G		27.09.2018	           1	PC	DE	X		ZC	L06	 2	X6	L06	           10	PC	4C	 54	C	Y		             0	           10	PC	Z004	PK	           1		PC
 		8300	8330		304118	Bracket MQK-41/1000-F	14	33	         2.609	G		27.09.2018	           1	PC	DE	X		ZC	L06	 2	X6	L06	           10	PC	4C	 54	C	Y		             0	           10	PC	Z004	PK	           1		PC
@@ -13123,7 +13109,6 @@ List complete material master
 		8300	8330		304774	Threaded rod AM12x1000-F 4.8	14	33	       666,660	G		27.09.2018	           1	PC	CN	X		ZC	L06	 2	Y1	L06	           15	PC	U4	 53	D	Y		             0	           15	PC	Z004	PK	           1		PC
 		8300	8330		304775	Threaded rod AM12x2000-F 4.8	14	40	     1.333,333	G		31.07.2014	           1	PC	CN	X		ZC	L06	 2	X6	L06	           15	PC	U4	 53	C	Z		             0	           15	PC	Z004	PK	           1		PC
 		8300	8330		304776	Threaded rod AM16x1000-F 4.8	14	33	         1.274	G		31.07.2014	           1	PC	CN	X		ZC	L06	 2	X0	L06	            5	PC	U4	 53	C	Y		            42	            5	PC	Z004	PK	           1		PC
-		8300	8330		304805	Connector MIC-90-L	14	33	         4.214	G		31.07.2014	           2	PC	ES	X		ZC	L06	 2	X6	L06	            2	PC	U0	 65	C	Y		             0	            2	PC	Z004	PK	           2		PC
 		8300	8330		304809	Connector MIC-90-E	14	40	         3.685	G		25.08.2022	           2	PC	ES	X		ZC	L06	 2	ND	L06	            2	PC	U0	 65	B	Z		             0	            2	PC	Z004	PK	           2		PC
 		8300	8330		304811	Connector MIC-S90-AA steel	14	40	         4.650	G		22.09.2023	           2	PC	ES	X		ZC	L06	 2	X6	L06	            2	PC	U0	 65	B	N		             0	            2	PC	Z004	PK	           2		PC
 		8300	8330		304831	Connector U-bolt MIC-UB90-M12	14	40	         1.269	G		07.06.2023	           1	PC	TR	X		ZC	L06	 2	X6	L06	           10	PC	U0	 92	C	Z		             0	           10	PC	Z004	PK	           1		PC
@@ -13227,7 +13212,6 @@ List complete material master
 		8300	8330		2018421	Anchor rod HIT-Z M20x250	14	40	       595,833	G		14.08.2019	           6	PC	LI	X		ZC	L01	 2	X6	L01	            6	PC	4C	 54	D	N		             0	            6	PC	Z004	PK	           6		PC
 		8300	8330		2018447	Anchor rod HIT-Z 5/8" x 8"	14	40	           325	G		14.08.2019	          12	PC	LI	X		ZC	L01	 2	X6	L01	           12	PC	4C	 54	C	Z		             0	           12	PC	Z007	PK	          12		PC
 		8300	8330		2018449	Anchor rod HIT-Z 3/4" x 8 1/2"	14	40	       505,797	G		14.08.2019	           0	PC	LI	X		ZC	L01	 2	X6	L01	            6	PC	4C	 54	D	N		             0	            6	PC		PK	           0		PC
-		8300	8330		2021420	Cordless rotary hammer TE 2-A22 case	14	80	         4.960	G		16.05.2023	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	           24	PC	U4	124	C	X	X	             0	           24	PC	Z004	PK	           1		PC
 		8300	8330		2021422	Cordless rotary hammer TE 2-A22 box	14	80	         2.998	G		16.05.2023	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	            1	PC	U4	124	D	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2022794	Injectable mortar HIT-HY 200-R 500/1/WH	14	80	       985,570	G		22.12.2023	           1	PC	DE			ZC	L01	 2	ND	L01	           20	PC	4C	 54	D	Z	X	             0	           20	PC	Z004	PK	           1		PC
 		8300	8330		2023990	Circ. saw blade SC-C MS 165 AL	14	40	       271,700	G		15.08.2019	           1	PC	DE	X		ZC	L09	 2	X6	L09	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
@@ -13289,7 +13273,6 @@ List complete material master
 		8300	8330		2106417	Grating disc X-GR 35/40	14	40	        46,321	G		15.08.2019	         100	PC	DE	X		ZC	L04	 2	X5	L04	          100	PC	4C	 54	C	N		           500	          100	PC	Z004	PK	         100		PC
 		8300	8330		2107707	Circ. saw blade SCB WU 190x30 z18	14	40	       284,775	G		10.08.2020	           1	PC	CN	X		ZC	L09	 2	X0	L09	           10	PC	4C	 54	C	Y		            13	            1	PC	Z004	PK	           1		PC
 		8300	8330		2112324	Circ. saw blade SCB WS CC 190x30 z54	14	40	           210	G		10.08.2020	           1	PC	CN	X		ZC	L09	 2	X5	L09	            1	PC	4C	 54	D	N		             4	            1	PC	Z004	PK	           1		PC
-		8300	8330		2112651	Adaptive torque module SI-AT-A22	14	80	           480	G		14.09.2023	           1	PC	CH	X	F	ZC	L15	 2	ND	L15	            3	PC	4C	 54	C	Y	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2112751	Setting tool HKD-TE-CX M10 3/8"x30	14	40	       307,880	G		18.05.2023	           1	PC	HU	X		ZC	L09	 2	X5	L09	            1	PC	4C	 54	D	Y		            12	            1	PC	Z004	PK	           1		PC
 		8300	8330		2112766	Setting tool HDI+/HDI-TZ 1/2"	14	40	           380	G		07.01.2020	           1	PC	HU	X		ZC	L09	 2	X5	L09	            1	PC	4C	 54	D	N		             4	            1	PC	Z004	PK	           1		PC
 		8300	8330		2118703	Cutting disc P-S 125/22.2 (6) univ	14	80	       144,833	G		15.06.2024	           6	PC	IN			ZC	L05	 2	ND	L05	            6	PC	4C	 54	C	X	X	             0	            6	PC	Z004	PK	           6		PC
@@ -13313,12 +13296,10 @@ List complete material master
 		8300	8330		2145833	Filtration bag DD-WMS 100 MP5 large	14	40	       127,800	G		10.08.2018	           5	PC	DE	X		ZC	L05	 2	X5	L05	            5	PC	4C	 54	D	Z		            15	            5	PC	Z004	PK	           5		PC
 		8300	8330		2145834	Filtration bag DD-WMS 100 MP25 large	14	40	           175	G		10.08.2018	          25	PC	DE	X		ZC	L05	 2	X5	L05	           25	PC	4C	 54	D	N		             2	           25	PC	Z004	PK	          25		PC
 		8300	8330		2107708	Circ. saw blade SCB WU 190x30 z18 (5)	14	33	       233,110	G		25.10.2023	           5	PC	CN	X	F	ZC	L09	 2	X5	L09	            5	PC	4C	 54	D	Z		            10	            5	PC	Z004	PK	           5		PC
-		8300	8330		2149765	Rotating laser PR 3-HVSG	14	80	         5.440	G		01.08.2023	           1	PC	DE	X	F	ZC	L07	 2	ND	L07	            1	PC	4C	 54	C	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2150701	Cutting disc AC-D SP 115x1.0	14	40	        29,360	G		28.04.2022	          25	PC	PL	X		ZC	L09	 2	X0	L09	        2.700	PC	4C	 54	B	X		         3.528	        1.350	PC	Z004	PK	          25		PC
 		8300	8330		2150732	Cutting disc AC-D SP 180x1.5	14	40	        95,267	G		28.04.2022	          25	PC	PL	X		ZC	L09	 2	X0	L09	          600	PC	4C	 54	B	X		         1.175	          600	PC	Z004	PK	          25		PC
 		8300	8330		2150735	Cutting disc AC-D SP 230x1.8	14	40	       187,440	G		16.06.2023	          25	PC	PL	X		ZC	L09	 2	X5	L09	           25	PC	4C	 54	C	Z		           100	           25	PC	Z004	PK	          25		PC
 		8300	8330		2150738	Grinding wheel AG-D SP 115x6.4	14	40	       168,879	G		08.02.2021	          10	PC	PL	X		ZC	L09	 2	X0	L09	        1.200	PC	4C	 54	B	X		           849	          600	PC	Z004	PK	          10		PC
-		8300	8330		2150744	Grinding wheel AG-D SP 180x6.4	14	40	       405,934	G		08.02.2021	          10	PC	PL	X		ZC	L09	 2	X5	L09	          240	PC	4C	 54	C	Y		           500	          240	PC	Z004	PK	          10		PC
 		8300	8330		2150746	Grinding wheel AG-D SP 230x6.4	14	40	       645,082	G		16.06.2023	          10	PC	PL	X		ZC	L09	 2	X6	L09	           10	PC	4C	 54	D	Z		             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		2153828	Hammer drill bit TE-CX 5/8"-6"	14	80	       136,970	G		26.09.2023	           1	PC	DE			ZC	L09	 2	ND	L09	            1	PC	4C	 57	D	Z	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2153880	Cordl. dispenser HDE 500-A22	14	80	         1.960	G		13.06.2024	           1	PC	CN		F	ZC	L01	 2	ND	L01	            4	PC	90	 47	C	Y	X	             0	            4	PC	Z004	PK	           1		PC
@@ -13362,7 +13343,6 @@ List complete material master
 		8300	8330		2159811	Water collector sys DD-WCS-122	14	40	           568	G		10.08.2018	           1	PC	CN	X		ZC	L05	 2	X6	L05	            1	PC	U0	 52	D	Z		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2159983	Heavy-duty anchor HSL-3-R M12 25/-/-	14	40	       238,431	G		16.06.2023	          20	PC	CN	X		ZC	L02	 2	X6	L02	           20	PC	U0	 52	B	Z		             0	           20	PC	Z004	PK	          20		PC
 		8300	8330		2162757	Cordless rotary hammer TE 6-A22 case	14	80	         5.583	G		19.04.2023	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	            4	PC	U4	124	B	Z	X	             0	            4	PC	Z004	PK	           1		PC
-		8300	8330		2162910	Cordless rotary hammer TE 6-A22 box	14	80	         3.820	G		21.12.2022	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	            8	PC	U4	124	B	Z	X	             0	            8	PC	Z004	PK	           1		PC
 		8300	8330		2163394	Crimping jaw NCR J SU BULK	14	40	         1.000	G		10.08.2020	           1	PC	DE	X	F	ZC	L09	 2	X5	L09	            1	PC	U0	 52	C	Z		             6	            1	PC	Z004	PK	           1		PC
 		8300	8330		2163395	Cutting jaw NCT J CUAL BULK	14	40	         1.068	G		10.08.2020	           1	PC	DE	X	F	ZC	L09	 2	X5	L09	            1	PC	U0	 52	C	Z		             6	            1	PC	Z004	PK	           1		PC
 		8300	8330		2164505	Adhesive capsule HVU2 M8x80	14	40	        12,568	G		31.03.2020	          20	PC	DE	X		ZC	L01	 2	X6	L01	           20	PC	4C	 54	D	Z		             0	           20	PC	Z004	PK	          20		PC
@@ -13409,7 +13389,6 @@ List complete material master
 		8300	8330		2190880	Ferroscan PS 300 kit	14	40	         7.025	G		16.06.2023	           1	PC	CH	X	F	ZC	L07	 2	X6	L07	            1	PC	4C	 54	A	Z		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2192229	Filter VC 2D-22 & VC 5/75(A)-22 dry	14	40	           210	G	X	31.03.2020	           1	PC	CN	X		ZC	L05	 2	X6	L05	            1	PC	U0	 52	D	N		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2192525	Cordl. combihammer TE 30-A36 case	14	80	         7.793	G		27.09.2023	           1	PC	AT	X	F	ZC	L15	 2	ND	L15	            4	PC	4C	 70	B	Y	X	             0	            1	PC	Z004	PK	           1		PC
-		8300	8330		2192595	Holder D=3/8"-1/2"-5/8" inch	14	80	           131	G		24.02.2023	           1	PC	CN	X		ZC	L02	 2	ND	L02	            1	PC	4C	 54	D	N	X	             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2194248	Injectable mortar HIT-HY 270 500/1	14	40	           936	G		31.03.2020	           1	PC	DE	X		ZC	L01	 2	X6	L01	            1	PC	90	 47	D	Y		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2194554	Cutting disc EQD SPX-SL 150 (2) univ	14	40	           249	G		25.09.2023	           2	PC	IN	X		ZC	L05	 2	X6	L05	            2	PC	4C	 54	D	Y		             0	            2	PC	Z004	PK	           2		PC
 		8300	8330		2194555	Cutting disc EQD SPX-SL 150 (6) univ	14	40	       231,667	G		25.09.2023	           6	PC	IN	X		ZC	L05	 2	X5	L05	            6	PC	4C	 54	D	Z		            12	            6	PC	Z004	PK	           6		PC
@@ -13447,7 +13426,6 @@ List complete material master
 		8300	8330		2198025	Anchor rod HAS-V-36 5/8"x8"	14	40	           320	G		10.02.2020	          10	PC	MX	X		ZC	L01	 2	X5	L01	           10	PC	90	 47	C	Z		           100	           10	PC	Z004	PK	          10		PC
 		8300	8330		2198028	Anchor rod HAS-V-36 3/4"x6"	14	40	           378	G		31.03.2020	          10	PC	MX	X		ZC	L01	 2	X6	L01	           10	PC	90	 47	D	N		             0	           10	PC	Z004	PK	          10		PC
 		8300	8330		2198033	Anchor rod HAS-V-36 1"x12"	14	40	     1.053,900	G		31.03.2020	           4	PC	MX	X		ZC	L01	 2	X6	L01	            4	PC	90	 47	C	Z		             0	            4	PC	Z004	PK	           4		PC
-		8300	8330		2198034	Anchor rod HAS-V-36 HDG 3/8"x4-3/8"	14	40	        65,550	G		31.03.2020	          20	PC	MX	X		ZC	L01	 2	X6	L01	           20	PC	90	 47	D	N		             0	           20	PC	Z004	PK	          20		PC
 		8300	8330		2199633	Core bit BI 25/320 SP-L abras	14	40	           382	G		23.07.2021	           1	PC	HU	X		ZC	L05	 2	Y1	L05	            8	PC	4C	 54	B	Y		            20	            8	PC	Z004	PK	           1		PC
 		8300	8330		2199635	Core bit BI 28/320 SP-L abras	14	40	           415	G		16.06.2023	           1	PC	HU	X		ZC	L05	 2	X0	L05	            4	PC	4C	 54	B	Y		            40	            1	PC	Z004	PK	           1		PC
 		8300	8330		2199640	Core bit BI 32/320 SP-L abras	14	40	           503	G		16.06.2023	           1	PC	HU	X		ZC	L05	 2	X0	L05	            5	PC	4C	 54	B	Y		            12	            1	PC	Z004	PK	           1		PC
@@ -13848,6 +13826,28 @@ List complete material master
 		8300	8330		2108815	Multi-bay charger C 4/36-MC4 115V BULK	14	60	         1.700	G		19.04.2023	           1	PC	SK	X	F	ZC	L15	 2	ND	L15	            1	PC	90	 47	D	Z		             0	            1	PC	Z004	PK	           1		PC
 		8300	8330		2332785	Connector MT-C-GSP T A OC	14	33	           470	G		23.01.2023	           1	PC	CN	X		ZC	L14	 2	X6	L14	           10	PC	U0	 52	D	Z		             0	           10	PC	Z004	PK	           1		PC
 		8300	8330		2225458	Hexagon bolt OS S-M HE-M12x25 A4	14	40	            40	G		31.03.2020	           1	PC	TW	X		ZC	L11	 2	X6	L11	            1	PC	20	 78	D	N		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		2021420	Cordless rotary hammer TE 2-A22 case	14	60	         4.960	G		16.05.2023	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	           24	PC	U4	124	C	X		             0	           24	PC	Z004	PK	           1		PC
+		8300	8330		2281195	Exoskeleton HA EXO-O1 overhead	14	60	     5.503,200	G		14.02.2024	           1	PC	DE	X	F	ZC	L05	 2	ND	L05	            1	PC	4C	 15	B	Z		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		2343480	Gusset plate Mekano 100-2T GP-X-NP SS	16	60	         2.200	G		09.05.2024	           1	PC	NO			ZC	L11	 2	ND	L11	            1	PC	20	 92	C	Z		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		304888	Easyhand screw MIA-EH120	14	60	       210,583	G		25.08.2022	          10	PC	ES	X		ZC	L06	 2	ND	L06	           10	PC	U0	 70	D	N		             0	           10	PC	Z004	PK	          10		PC
+		8300	8330		2149765	Rotating laser PR 3-HVSG	14	60	         5.440	G		01.08.2023	           1	PC	DE	X	F	ZC	L07	 2	ND	L07	            1	PC	4C	 54	C	N		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		2140258	Connector MIQC-90-MI-V	14	60	     2.212,500	G		03.08.2022	           0	PC	ES	X		ZC	L06	 2	X6	L06	            4	PC	U0	 65	B	Z		             0	            4	PC	Z007	PK	           0		PC
+		8300	8330		432078	Girder end cap MIA-EC120	14	40	        31,788	G		07.06.2023	           1	PC	SI	X		ZC	L06	 2	ND	L06	           25	PC	4C	 66	D	N		             0	           25	PC	Z004	PK	           1		PC
+		8300	8330		304805	Connector MIC-90-L	14	33	         4.214	G		31.07.2014	           1	PC	ES	X		ZC	L06	 2	X6	L06	            2	PC	U0	 65	C	Y		             0	            2	PC	Z004	PK	           1		PC
+		8300	8330		2162910	Cordless rotary hammer TE 6-A22 box	14	60	         3.820	G		21.12.2022	           1	PC	CN	X	F	ZC	L15	 2	ND	L15	            8	PC	U4	124	B	Z		             0	            8	PC	Z004	PK	           1		PC
+		8300	8330		284239	Swivel beam clamp MQT-G M10	14	60	       271,500	G		06.07.2023	          20	PC	GB	X		ZC	L06	 2	ND	L06	           20	PC	4C	 54	C	Z		             0	           20	PC	Z004	PK	          20		PC
+		8300	8330		2151587	Hammer drill bit TE-CX 14/22 MP8	14	60	       145,513	G		25.09.2023	           8	PC	DE	X	F	ZC	L09	 2	X5	L09	            8	PC	4C	 54	D	N		             5	            8	PC	Z004	PK	           8		PC
+		8300	8330		241398	Flush anchor HDV 1/2"x2"	14	60	        53,640	G		20.03.2024	          25	PC	TW	X		ZC	L02	 2	ND	L02	        1.500	PC	4C	264	C	X		             0	          500	PC	Z004	PK	          25		PC
+		8300	8330		2192595	Holder D=3/8"-1/2"-5/8" inch	14	60	           131	G		24.02.2023	           1	PC	CN	X		ZC	L02	 2	ND	L02	            1	PC	4C	 54	D	N		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		2112651	Adaptive torque module SI-AT-A22	14	60	           480	G		14.09.2023	           1	PC	CH	X	F	ZC	L15	 2	ND	L15	            3	PC	4C	 54	C	Y		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		2108735	Screw anchor HUS3-HF 8x65 15/5/-	14	60	        38,037	G		05.12.2023	          50	PC	LI	X		ZC	L02	 2	ND	L02	           50	PC	4C	 54	D	Z		             0	           50	PC	Z004	PK	          50		PC
+		8300	8330		2243858	Cordless breaker TE 500-A36	14	60	        10.200	G		27.09.2023	           1	PC	AT	X	F	ZC	L15	 2	ND	L15	            1	PC	4C	 70	D	N		             0	            1	PC	Z004	PK	           1		PC
+		8300	8330		247183	Grating disc X-FCM-R 45/50	14	60	        35,762	G		07.07.2024	         100	PC	AT	X		ZC	L04	 2	ND	L04	          100	PC	4C	 54	C	Z		             0	          100	PC	Z007	PK	         100		PC
+		8300	8330		2198034	Anchor rod HAS-V-36 HDG 3/8"x4-3/8"	14	40	        65,550	G		31.03.2020	           1	PC	MX	X		ZC	L01	 2	X6	L01	           20	PC	90	 47	D	N		             0	           20	PC	Z004	PK	           1		PC
+		8300	8330		2211599	Strut clamp MH-RSC 2" HDG rigid	14	33	       154,221	G		16.06.2023	           1	PC	US	X		ZC	L06	 2	Y1	L06	          100	PC	90	 47	B	Z		             0	          100	PC	Z004	PK	           1		PC
+		8300	8330		304115	Bracket MQK-41/300-F	14	33	         1.017	G		27.09.2018	           1	PC	DE	X		ZC	L06	 2	Y1	L06	           10	PC	4C	 54	D	Y		             0	           10	PC	Z004	PK	           1		PC
+		8300	8330		24806	Adhesive CA-CG KW.B.3400	14	60	         1.107	G		10.04.2023	           1	PC	US	X		ZC	L03	 2	ND	L03	       16.896	PC	20	 70	B	X		             0	       16.896	PC	Z004	PK	           1		PC
+		8300	8330		2150744	Grinding wheel AG-D SP 180x6.4	14	40	       405,934	G		08.02.2021	           1	PC	PL	X		ZC	L09	 2	X5	L09	          240	PC	4C	 54	C	Y		           500	          240	PC	Z004	PK	           1		PC
 
 	*								47.542.278,019	G			           1	BOX									            0	BOX						             0	            0	BOX			           0		BOX
 									        54,079	KG			           2	EA									            0	EA						             0	            0	EA			           2		EA
@@ -13857,4 +13857,4 @@ List complete material master
 													           1	PAC									            1	PAC						             0	            1	PAC			           1		PAC
 													           1	PAL									            0	PAL						             0	            0	PAL			           0		PAL
 													          26	PRS									            8	PRS						             0	            8	PRS			          26		PRS
-													     502.235	PC									    3.597.600	PC						    13.339.922	    2.930.901	PC			     502.449		PC
+													     502.133	PC									    3.597.600	PC						    13.339.922	    2.930.901	PC			     502.347		PC

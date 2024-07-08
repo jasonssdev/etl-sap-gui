@@ -106,7 +106,7 @@
 	207323	Sealing washer DD-SW-122/132-M	0001		3000	PC	             2	             0	             0	             0	             0	             0	             0
 	207323	Sealing washer DD-SW-122/132-M	0001		8750	PC	             2	             0	             0	             0	             0	             0	             0
 	208548	Coupling sleeve	0001		3000	PC	            18	             0	             0	             0	             0	             0	             0
-	209625	FS joint filler CP 606 310ml white	0001		8750	PC	            88	             0	             0	             0	             0	             0	             0
+	209625	FS joint filler CP 606 310ml white	0001		8750	PC	            41	             0	             0	             0	             0	             0	             0
 	209634	FS joint filler CP 606 580ml HNA r	0001		3000	PC	           140	             0	             0	             0	             0	             0	             0
 	209636	FS joint filler CP 606 5GAL red	0001		3000	PC	             4	             0	             0	             0	             0	             0	             0
 	212131	Depth gauge DCH 300	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
@@ -165,7 +165,6 @@
 	228342	Ceiling clip X-ECC MX	0001		3002	PC	         2.400	             0	             0	             0	             0	             0	             0
 	228342	Ceiling clip X-ECC MX	0001		3010	PC	           200	             0	             0	             0	             0	             0	             0
 	228342	Ceiling clip X-ECC MX	0001		3014	PC	         2.100	             0	             0	             0	             0	             0	             0
-	228342	Ceiling clip X-ECC MX	0001		3016	PC	         2.000	             0	             0	             0	             0	             0	             0
 	228342	Ceiling clip X-ECC MX	0001		3022	PC	           400	             0	             0	             0	             0	             0	             0
 	228342	Ceiling clip X-ECC MX	0001		8750	PC	         4.000	             0	             0	             0	             0	             0	             0
 	229138	Handle HIT-RBH	0001		3000	PC	           106	             0	             0	             0	             0	             0	             0
@@ -715,7 +714,7 @@
 	337111	Mixer HIT-RE-M	0001		3018	PC	            60	             0	             0	             0	             0	             0	             0
 	337111	Mixer HIT-RE-M	0001		3022	PC	            37	             0	             0	             0	             0	             0	             0
 	337111	Mixer HIT-RE-M	0001		8662	PC	           161	             0	             0	             0	             0	             0	             0
-	337111	Mixer HIT-RE-M	0001		8750	PC	         1.820	             0	             0	             0	             0	             0	             0
+	337111	Mixer HIT-RE-M	0001		8750	PC	         1.810	             0	             0	             0	             0	             0	             0
 	337918	Setting tool HS-SC 150	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
 	337918	Setting tool HS-SC 150	0001		8750	PC	             4	             0	             0	             0	             0	             0	             0
 	338718	Mixer CP 620-M	0001		8750	PC	            58	             0	             0	             0	             0	             0	             0
@@ -726,7 +725,7 @@
 	338720	Dispenser DSC box	0001		3022	PC	             1	             0	             0	             0	             0	             0	             0
 	338720	Dispenser DSC box	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	338725	Firestop foam CP 620 US	0001		3000	PC	             0	             0	           212	             0	             0	             0	             0
-	338725	Firestop foam CP 620 US	0001		8750	PC	         1.221	             0	             0	             0	             0	             0	             0
+	338725	Firestop foam CP 620 US	0001		8750	PC	         1.218	             0	             0	             0	             0	             0	             0
 	339300	Tool set DS WS	0001		8750	PC	             1	             0	             0	             0	             0	             0	             0
 	339590	Connector MV 3/2 D-X	0001		3000	PC	           210	             0	            30	             0	             0	             0	             0
 	339785	Impact socket S-NSD 1/2"-7/16" L	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
@@ -836,6 +835,7 @@
 	372097	Firestop cable coating CP 679 A 20	0001		3000	PC	             3	             0	             7	             0	             0	             0	             0
 	373297	Piston X-6-5-P8	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
 	373297	Piston X-6-5-P8	0001		3016	PC	             2	             0	             0	             0	             0	             0	             0
+	373300	Piston X-6-5-P10	0001		8750	PC	             1	             0	             0	             0	             0	             0	             0
 	373303	Piston X-5-460-PSM	0001		8750	PC	            11	             0	             0	             0	             0	             0	             0
 	373330	Buffer X-6-5-B	0001		3000	PC	            62	             0	             0	             0	             0	             0	             0
 	373330	Buffer X-6-5-B	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
@@ -1200,11 +1200,11 @@
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3018	PC	             9	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
 	435006	Hammer drill bit TE-CX 3/8"-6"	0001		8662	PC	             5	             0	             0	             0	             0	             0	             0
-	435006	Hammer drill bit TE-CX 3/8"-6"	0001		8750	PC	            66	             0	             0	             0	             0	             0	             0
+	435006	Hammer drill bit TE-CX 3/8"-6"	0001		8750	PC	            61	             0	             0	             0	             0	             0	             0
 	435007	Hammer drill bit TE-CX 3/8"-12"	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
 	435007	Hammer drill bit TE-CX 3/8"-12"	0001		3018	PC	             5	             0	             0	             0	             0	             0	             0
 	435007	Hammer drill bit TE-CX 3/8"-12"	0001		3022	PC	             1	             0	             0	             0	             0	             0	             0
-	435007	Hammer drill bit TE-CX 3/8"-12"	0001		8750	PC	            18	             0	             0	             0	             0	             0	             0
+	435007	Hammer drill bit TE-CX 3/8"-12"	0001		8750	PC	            17	             0	             0	             0	             0	             0	             0
 	435008	Hammer drill bit TE-CX 3/8"-18"	0001		3002	PC	             1	             0	             0	             0	             0	             0	             0
 	435008	Hammer drill bit TE-CX 3/8"-18"	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
 	435008	Hammer drill bit TE-CX 3/8"-18"	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
@@ -1282,7 +1282,7 @@
 	2005640	Dispenser HDM 330 box	0001		3018	PC	             3	             0	             0	             0	             0	             0	             0
 	2005640	Dispenser HDM 330 box	0001		3022	PC	             6	             0	             0	             0	             0	             0	             0
 	2005641	Dispenser HDM 500 box	0001		8662	PC	            11	             0	             0	             0	             0	             0	             0
-	2005641	Dispenser HDM 500 box	0001		8750	PC	           202	             0	             0	             0	             0	             0	             0
+	2005641	Dispenser HDM 500 box	0001		8750	PC	           197	             0	             0	             0	             0	             0	             0
 	2005843	Dispenser CFS-DISP	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
 	2005843	Dispenser CFS-DISP	0001		3016	PC	             6	             0	             0	             0	             0	             0	             0
 	2005843	Dispenser CFS-DISP	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
@@ -1310,7 +1310,7 @@
 	2007057	Cartridge holder HIT-CB 500	0001		3016	PC	             6	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3018	PC	             7	             0	             0	             0	             0	             0	             0
 	2007057	Cartridge holder HIT-CB 500	0001		3022	PC	            10	             0	             0	             0	             0	             0	             0
-	2007057	Cartridge holder HIT-CB 500	0001		8750	PC	           297	             0	             0	             0	             0	             0	             0
+	2007057	Cartridge holder HIT-CB 500	0001		8750	PC	           292	             0	             0	             0	             0	             0	             0
 	2007058	Cartridge holder HIT-CR 330	0001		3000	PC	            14	             0	             0	             0	             0	             0	             0
 	2007058	Cartridge holder HIT-CR 330	0001		3002	PC	             5	             0	             0	             0	             0	             0	             0
 	2007058	Cartridge holder HIT-CR 330	0001		3010	PC	             3	             0	             0	             0	             0	             0	             0
@@ -2174,7 +2174,7 @@
 	2123404	Injectable mortar HIT-RE 500 V3/50			8662	PC	             0	            20	             0	             0	             0	             0	            20
 	2123404	Injectable mortar HIT-RE 500 V3/50	0001		8662	PC	            39	             0	             0	             0	             0	             0	             0
 	2123404	Injectable mortar HIT-RE 500 V3/50			8750	PC	             0	            40	             0	             0	             0	             0	            40
-	2123404	Injectable mortar HIT-RE 500 V3/50	0001		8750	PC	         9.115	             0	             0	             0	             0	             0	             0
+	2123404	Injectable mortar HIT-RE 500 V3/50	0001		8750	PC	         9.075	             0	             0	             0	             0	             0	             0
 	2123719	Cordl. drill SF BT 22-A	0001		3000	PC	             8	             0	             0	             0	             0	             0	             0
 	2123719	Cordl. drill SF BT 22-A	0001		8750	PC	             2	             0	             0	             0	             0	             0	             0
 	2123993	Concrete nail X-C 20 B3 MX	0001		3002	PC	         8.000	             0	             0	             0	             0	             0	             0
@@ -2355,6 +2355,7 @@
 	2145833	Filtration bag DD-WMS 100 MP5 large	0001		3022	PC	            10	             0	             0	             0	             0	             0	             0
 	2145833	Filtration bag DD-WMS 100 MP5 large	0001		8750	PC	           110	             0	             0	             0	             0	             0	             0
 	2145834	Filtration bag DD-WMS 100 MP25 lar	0001		3000	PC	            50	             0	             0	             0	             0	             0	             0
+	2146846	Breaker TE 500-AVR 220V			8662	PC	             0	             3	             0	             0	             0	             0	             3
 	2146847	Breaker TE 500-AVR 220V	0001		8750	PC	            17	             0	             0	             0	             0	             0	             0
 	2146853	Breaker TE 500-AVR 120V	0001		3000	PC	            57	             0	             0	             0	             0	             0	             0
 	2146853	Breaker TE 500-AVR 120V	0001		3002	PC	             3	             0	             0	             0	             0	             0	             0
@@ -2470,7 +2471,6 @@
 	2151509	Hammer drill bit TE-CX M10 (4) set	0001		8750	PC	             5	             0	             0	             0	             0	             0	             0
 	2151582	Hammer drill bit TE-CX 12/17 MP8	0001		8750	PC	            56	             0	             0	             0	             0	             0	             0
 	2151584	Hammer drill bit TE-CX 12/27 MP8	0001		8750	PC	            16	             0	             0	             0	             0	             0	             0
-	2151586	Hammer drill bit TE-CX 14/17 MP8	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	2151588	Hammer drill bit TE-CX 14/27 MP8	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	2151589	Hammer drill bit TE-CX 16/17 MP8	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	2151591	Hammer drill bit TE-CX 16/27 MP8	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
@@ -2537,7 +2537,7 @@
 	2156392	Steel nail X-S 14 B3 MX	0001		3018	PC	           800	             0	             0	             0	             0	             0	             0
 	2156392	Steel nail X-S 14 B3 MX	0001		3022	PC	           800	             0	             0	             0	             0	             0	             0
 	2156392	Steel nail X-S 14 B3 MX	0001		8750	PC	        11.200	             0	             0	             0	             0	             0	             0
-	2156393	Steel nail X-S 14 B3 MX BULK	0001		8750	PC	        56.000	             0	             0	             0	             0	             0	             0
+	2156393	Steel nail X-S 14 B3 MX BULK	0001		8750	PC	        55.000	             0	             0	             0	             0	             0	             0
 	2156539	Dust extr. hood DC-EX230/ 9" cutti	0001		8750	PC	             1	             0	             0	             0	             0	             0	             0
 	2158085	Core bit BS-F 52/450 SP-H abras	0001		8750	PC	            16	             0	             0	             0	             0	             0	             0
 	2158087	Core bit BS-F 62/450 SP-H abras	0001		8750	PC	             1	             0	             0	             0	             0	             0	             0
@@ -4155,7 +4155,7 @@
 	2251355	Battery pack B 22-110 Li-ion	0001		3018	PC	            10	             0	             0	             0	             0	             0	             0
 	2251355	Battery pack B 22-110 Li-ion	0001		3022	PC	             7	             0	             0	             0	             0	             0	             0
 	2251355	Battery pack B 22-110 Li-ion	0001		8662	PC	             5	             0	             0	             0	             0	             0	             0
-	2251355	Battery pack B 22-110 Li-ion	0001		8750	PC	            95	             0	            94	             0	             0	             0	             0
+	2251355	Battery pack B 22-110 Li-ion	0001		8750	PC	            91	             0	            94	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3000	PC	            26	             0	             0	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
@@ -4223,7 +4223,7 @@
 	2253086	Cordless rotary hammer TE 4-22 case	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2253086	Cordless rotary hammer TE 4-22 case	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	2253086	Cordless rotary hammer TE 4-22 case	0001		3022	PC	             1	             0	             0	             0	             0	             0	             0
-	2253086	Cordless rotary hammer TE 4-22 case	0001		8750	PC	            27	             0	             0	             0	             0	             0	             0
+	2253086	Cordless rotary hammer TE 4-22 case	0001		8750	PC	            25	             0	             0	             0	             0	             0	             0
 	2253099	Cordl. combihammer TE 60-22 case	0001		3000	PC	            31	             0	             2	             0	             0	             0	             0
 	2253099	Cordl. combihammer TE 60-22 case	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
 	2253099	Cordl. combihammer TE 60-22 case	0001		3014	PC	             1	             0	             0	             0	             0	             0	             0
@@ -4368,6 +4368,7 @@
 	2260054	Battery charger C 8-22 115V box	0001		3022	PC	             1	             0	             0	             0	             0	             0	             0
 	2260559	Dia blade 230/22 P univ	0001		3000	PC	            20	             0	             0	             0	             0	             0	             0
 	2260561	Dia blade 180/22 P univ	0001		3000	PC	            11	             0	             0	             0	             0	             0	             0
+	2260561	Dia blade 180/22 P univ	0001		8750	PC	             6	             0	             0	             0	             0	             0	             0
 	2260565	Dia blade 115/22 (6) P univ	0001		3000	PC	            78	             0	             0	             0	             0	             0	             0
 	2260565	Dia blade 115/22 (6) P univ	0001		8662	PC	            30	             0	             0	             0	             0	             0	             0
 	2260565	Dia blade 115/22 (6) P univ	0001		8750	PC	           336	             0	             0	             0	             0	             0	             0
@@ -4581,6 +4582,7 @@
 	2262095	Dust bag VC 40-X/150-10 X (10) pla	0001		8750	PC	            30	             0	             0	             0	             0	             0	             0
 	2262097	Diamond cup DG-CW 115/4.5" SPX univ	0001		8750	PC	            40	             0	             0	             0	             0	             0	             0
 	2262130	Dust bag VC 40-X/150-10 X (10) fle	0001		8750	PC	            60	             0	             0	             0	             0	             0	             0
+	2262139	Recip. saw blade SPX 15 8 (10) met	0001		8750	PC	            20	             0	             0	             0	             0	             0	             0
 	2262476	Bar SR 30 assy packed	0001		8750	PC	             2	             0	             0	             0	             0	             0	             0
 	2262676	Recip. saw blade SPX 30 8 (3) metal	0001		8750	PC	             3	             0	             0	             0	             0	             0	             0
 	2262683	Hilti Grease 50ml	0001		3000	PC	           299	             0	             0	             0	             0	             0	             0
@@ -5211,7 +5213,7 @@
 	2334277	Injectable mortar HY 200-R V3 500/	0001		3022	PC	            40	             0	             0	             0	             0	             0	             0
 	2334277	Injectable mortar HY 200-R V3 500/	0001		8662	PC	            20	             0	             0	             0	             0	             0	             0
 	2334277	Injectable mortar HY 200-R V3 500/			8750	PC	             0	           200	             0	             0	             0	             0	           200
-	2334277	Injectable mortar HY 200-R V3 500/	0001		8750	PC	         1.303	             0	             0	             0	             0	             0	             0
+	2334277	Injectable mortar HY 200-R V3 500/	0001		8750	PC	         1.288	             0	             0	             0	             0	             0	             0
 	2335623	Connector DS-WCC 9.2-11mm (10) set	0001		3000	PC	             2	             0	             0	             0	             0	             0	             0
 	2335624	Connector DS-WCC 9.2-11mm (20) set	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
 	2335625	Drive wheel DSW-W280 assy	0001		3000	PC	             2	             0	             0	             0	             0	             0	             0
@@ -5280,7 +5282,7 @@
 	2341092	Hammer drill bit TE-CX 1/2"-6"	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
 	2341092	Hammer drill bit TE-CX 1/2"-6"	0001		3014	PC	             7	             0	             0	             0	             0	             0	             0
 	2341092	Hammer drill bit TE-CX 1/2"-6"	0001		3022	PC	             6	             0	             0	             0	             0	             0	             0
-	2341092	Hammer drill bit TE-CX 1/2"-6"	0001		8750	PC	            80	             0	             0	             0	             0	             0	             0
+	2341092	Hammer drill bit TE-CX 1/2"-6"	0001		8750	PC	            75	             0	             0	             0	             0	             0	             0
 	2341093	Hammer drill bit TE-CX 1/2"-12"	0001		3000	PC	           165	             0	             0	             0	             0	             0	             0
 	2341093	Hammer drill bit TE-CX 1/2"-12"	0001		3010	PC	             3	             0	             0	             0	             0	             0	             0
 	2341093	Hammer drill bit TE-CX 1/2"-12"	0001		3022	PC	             6	             0	             0	             0	             0	             0	             0
@@ -5516,7 +5518,7 @@
 	2386181	Impact socket SI-S 3/8"-15 S	0001		8750	PC	             8	             0	             0	             0	             0	             0	             0
 	2386379	Tool holder EXO-T-22 L-shaped	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
 	2388147	Anchor rod HAS-E-55 7/8"x36"	0001		3000	PC	           112	             0	             0	             0	             0	             0	             0
-	2388396	Battery charger C 4-22 220V box	0001		8750	PC	             0	             0	           239	             0	             0	             0	             0
+	2388396	Battery charger C 4-22 220V box	0001		8750	PC	             0	             0	           237	             0	             0	             0	             0
 	2388488	Anchor rod HAS-E-55 1"x36"	0001		3000	PC	           100	             0	             0	             0	             0	             0	             0
 	2388543	Anchor rod HAS-E-55 3/4"x36"	0001		3000	PC	            28	             0	             0	             0	             0	             0	             0
 	2388621	Anchor rod HAS-E-55 1-1/4"x36"	0001		3000	PC	            28	             0	             0	             0	             0	             0	             0

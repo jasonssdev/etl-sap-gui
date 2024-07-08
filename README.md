@@ -21,6 +21,33 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ##### install dependencies
 pip install -r requirements.txt
 
+#### CDM
+set PYTHONPATH=%PYTHONPATH%;C:\Users\sepujas\Dev\mat
+
+#### BASH
+export PYTHONPATH="$PYTHONPATH:/c/Users/sepujas/Dev/mat"
+
+#### Powershell
+$env:PYTHONPATH = "$env:PYTHONPATH;C:\Users\sepujas\Dev\mat\src"
+echo %PYTHONPATH%
+
+#### settings.json
+notepad %APPDATA%\Code\User\settings.json
+
+```json
+{
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    }
+}
+```
+
+
+
+
 ```cdm
 git clone
 python -m venv .venv
