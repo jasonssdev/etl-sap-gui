@@ -21578,12 +21578,36 @@ SOrg,Plnt,Material,Material_number,X_Plant_Material_Status,MS,Gross_weight,WUn,S
 3000,3000,435021,Hammer drill bit TE-CX M4 GC set,14,80,507.08,G,nan,2024-07-03,1.0,PC,DE,nan,nan,ZC,L09,20.0,ND,L09,12.0,PC,4C,650.0,B,X,X,0.0,12,PC,Z004,PK,1.0,PC,3000/435021
 3000,3000,435016,"Hammer drill bit TE-CX 9/16""-12""",14,80,200.0,G,nan,2024-07-03,1.0,PC,DE,nan,nan,ZC,L09,20.0,ND,L09,8.0,PC,4C,650.0,C,Y,X,0.0,1,PC,Z004,PK,1.0,PC,3000/435016
 3000,3000,405032,Cordl. imp. wrench SIW 22T-A case,14,80,4997.0,G,nan,2024-07-04,1.0,PC,CN,nan,F,ZC,L15,20.0,ND,L15,10.0,PC,U0,630.0,A,X,X,0.0,1,PC,Z004,PK,1.0,PC,3000/405032
-0,0,0,nan,0,0,74690646.898,G,nan,,1.0,D,nan,nan,nan,nan,nan,,nan,nan,0.0,D,nan,,nan,nan,nan,0.0,0,D,nan,nan,1.0,D,0/0
+3000,3000,2322428,Clamp MT-CC-30D,14,33,343.0,G,nan,2024-07-08,20.0,PC,CN,X,nan,ZC,L14,10.0,X6,L14,20.0,PC,20,400.0,nan,nan,nan,0.0,20,PC,Z004,PK,20.0,PC,3000/2322428
+3000,3000,2330874,Hinge MT-S-AP-8,14,33,174.0,G,nan,2024-07-08,10.0,PC,CZ,X,nan,ZC,L14,10.0,X6,L14,10.0,PC,20,400.0,nan,nan,nan,0.0,10,PC,Z004,PK,10.0,PC,3000/2330874
+3000,3000,2330876,Hinge MT-S-AP-12,14,33,174.0,G,nan,2024-07-08,10.0,PC,CZ,X,nan,ZC,L14,10.0,X6,L14,10.0,PC,20,400.0,nan,nan,nan,0.0,10,PC,Z004,PK,10.0,PC,3000/2330876
+3000,3000,2330877,Hinge MT-S-HR-8,14,33,65.0,G,nan,2024-07-08,10.0,PC,CZ,X,nan,ZC,L14,10.0,X6,L14,10.0,PC,20,400.0,nan,nan,nan,0.0,10,PC,Z004,PK,10.0,PC,3000/2330877
+3000,3000,2333072,Rail adapter MT-C-GS 12 EDB,14,33,1250.0,G,nan,2024-07-08,8.0,PC,CN,nan,nan,ZC,L14,10.0,X6,L14,8.0,PC,20,400.0,nan,nan,nan,0.0,8,PC,Z004,PK,8.0,PC,3000/2333072
+3000,3000,2333073,Rail adapter MT-C-GS 16 EDB,14,33,1230.0,G,nan,2024-07-08,8.0,PC,CN,nan,nan,ZC,L14,10.0,X6,L14,8.0,PC,20,400.0,nan,nan,nan,0.0,8,PC,Z004,PK,8.0,PC,3000/2333073
+3000,3000,2346395,Angle brace MT-AB A set adjustable,14,33,533.666,G,nan,2024-07-08,12.0,PC,CN,X,nan,ZC,L14,10.0,X6,L14,12.0,PC,20,400.0,nan,nan,nan,0.0,12,PC,Z004,PK,12.0,PC,3000/2346395
+3000,3000,2348158,Angle MT-S-L,14,33,375.0,G,nan,2024-07-08,10.0,PC,CN,X,nan,ZC,L14,10.0,X6,L14,10.0,PC,20,400.0,nan,nan,nan,0.0,10,PC,Z004,PK,10.0,PC,3000/2348158
+3000,3000,2348159,Angle MT-S-L OC,14,33,375.0,G,nan,2024-07-08,10.0,PC,CN,X,nan,ZC,L14,10.0,X6,L14,10.0,PC,20,400.0,nan,nan,nan,0.0,10,PC,Z004,PK,10.0,PC,3000/2348159
+3000,3000,2358236,Baseplate MT-B-O2B 60D,14,33,2575.0,G,nan,2024-07-08,6.0,PC,ES,X,nan,ZC,L14,10.0,X6,L14,6.0,PC,20,400.0,nan,nan,nan,0.0,6,PC,Z004,PK,6.0,PC,3000/2358236
+3000,3000,2358237,Baseplate MT-B-O2B 60D OC,14,33,2575.0,G,nan,2024-07-08,6.0,PC,ES,X,nan,ZC,L14,10.0,X6,L14,6.0,PC,20,400.0,nan,nan,nan,0.0,6,PC,Z004,PK,6.0,PC,3000/2358237
+3000,3000,2362706,Channel MT-30D,14,33,3006.667,G,nan,2024-07-08,6.0,M,TR,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362706
+3000,3000,2362708,Channel MT-30D S,14,33,3006.667,G,nan,2024-07-08,3.0,M,TR,X,nan,ZC,L14,10.0,X6,L14,3.0,M,20,400.0,nan,nan,nan,0.0,3,M,Z004,PK,3.0,M,3000/2362708
+3000,3000,2362709,Channel MT-30D S OC,14,33,3073.333,G,nan,2024-07-08,3.0,M,TR,X,nan,ZC,L14,10.0,X6,L14,3.0,M,20,400.0,nan,nan,nan,0.0,3,M,Z004,PK,3.0,M,3000/2362709
+3000,3000,2362800,Channel MT-60D,14,33,8046.667,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362800
+3000,3000,2362801,Channel MT-60D OC,14,33,8046.667,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362801
+3000,3000,2362802,Channel MT-60D S,14,33,8046.667,G,nan,2024-07-08,3.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,3.0,M,20,400.0,nan,nan,nan,0.0,3,M,Z004,PK,3.0,M,3000/2362802
+3000,3000,2362803,Channel MT-50D,14,33,5246.667,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362803
+3000,3000,2362804,Channel MT-50D S,14,33,5246.667,G,nan,2024-07-08,3.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,3.0,M,20,400.0,nan,nan,nan,0.0,3,M,Z004,PK,3.0,M,3000/2362804
+3000,3000,2362805,Channel MT-40D U,14,33,4626.667,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362805
+3000,3000,2362806,Channel MT-40 U,14,33,2313.333,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362806
+3000,3000,2362807,Channel MT-50D U,14,33,5886.667,G,nan,2024-07-08,6.0,M,AT,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362807
+3000,3000,2362808,Channel MT-50 U,14,33,2943.333,G,nan,2024-07-08,6.0,M,TR,X,nan,ZC,L14,10.0,X6,L14,6.0,M,20,400.0,nan,nan,nan,0.0,6,M,Z004,PK,6.0,M,3000/2362808
+3000,3000,2368806,Adapter plate MT-FPS-AP OC,14,33,1325.0,G,nan,2024-07-08,12.0,PC,CN,X,nan,ZC,L14,10.0,X6,L14,12.0,PC,20,400.0,nan,nan,nan,0.0,12,PC,Z004,PK,12.0,PC,3000/2368806
+0,0,0,nan,0,0,74761131.566,G,nan,,1.0,D,nan,nan,nan,nan,nan,,nan,nan,0.0,D,nan,,nan,nan,nan,0.0,0,D,nan,nan,1.0,D,0/0
 0,0,0,nan,0,0,1252.9,KG,nan,,41.0,H,nan,nan,nan,nan,nan,,nan,nan,36.0,H,nan,,nan,nan,nan,0.0,"36,000",H,nan,nan,41.0,H,0/0
 0,0,0,nan,0,0,1096.675,LB,nan,,3.0,KG,nan,nan,nan,nan,nan,,nan,nan,0.0,KG,nan,,nan,nan,nan,0.0,0,KG,nan,nan,3.0,KG,0/0
-0,0,0,nan,0,0,,nan,nan,,3527.7,M,nan,nan,nan,nan,nan,,nan,nan,23047.2,M,nan,,nan,nan,nan,9165.0,"23.047,200",M,nan,nan,3516.7,M,0/0
+0,0,0,nan,0,0,,nan,nan,,3587.7,M,nan,nan,nan,nan,nan,,nan,nan,23107.2,M,nan,,nan,nan,nan,9165.0,"23.107,200",M,nan,nan,3576.7,M,0/0
 0,0,0,nan,0,0,,nan,nan,,26.0,PRS,nan,nan,nan,nan,nan,,nan,nan,8.0,PRS,nan,,nan,nan,nan,0.0,8,PRS,nan,nan,26.0,PRS,0/0
-0,0,0,nan,0,0,,nan,nan,,840366.0,PC,nan,nan,nan,nan,nan,,nan,nan,3784088.0,PC,nan,,nan,nan,nan,2433782.0,3.188.293,PC,nan,nan,664608.0,PC,0/0
+0,0,0,nan,0,0,,nan,nan,,840488.0,PC,nan,nan,nan,nan,nan,,nan,nan,3784210.0,PC,nan,,nan,nan,nan,2433782.0,3.188.415,PC,nan,nan,664730.0,PC,0/0
 0,0,0,nan,0,0,,nan,nan,,2.0,DAY,nan,nan,nan,nan,nan,,nan,nan,2.0,DAY,nan,,nan,nan,nan,0.0,2,DAY,nan,nan,2.0,DAY,0/0
 0,0,0,nan,0,0,,nan,nan,,3.0,WK,nan,nan,nan,nan,nan,,nan,nan,1.0,WK,nan,,nan,nan,nan,0.0,1,WK,nan,nan,3.0,WK,0/0
 0,0,0,nan,0,0,,nan,nan,,1.0,ZPX,nan,nan,nan,nan,nan,,nan,nan,1.0,ZPX,nan,,nan,nan,nan,0.0,1,ZPX,nan,nan,1.0,ZPX,0/0
