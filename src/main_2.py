@@ -240,6 +240,7 @@ def main():
                 # download_material_report(session, env_vars['TRANS_MATCL'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATCL'], env_vars['SAP_LAYOUT'], env_vars['SORG_CL'], env_vars['PLANT_CL1'])
                 # download_material_report(session, env_vars['TRANS_MATMX'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATMX'], env_vars['SAP_LAYOUT'], env_vars['SORG_MX'], env_vars['PLANT_MX1'])
             logout_from_sap()
+        time.sleep(30)
         close_sap_logon()
     # TRANSFORM -> (00:00:10)
     paths = get_file_paths(base_path)
