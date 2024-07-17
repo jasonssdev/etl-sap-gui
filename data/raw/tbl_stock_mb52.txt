@@ -109,7 +109,7 @@
 	209625	FS joint filler CP 606 310ml white	0001		8750	PC	             9	             0	             0	             0	             0	             0	             0
 	209634	FS joint filler CP 606 580ml HNA r	0001		3000	PC	           200	             0	             0	             0	             0	             0	             0
 	209636	FS joint filler CP 606 5GAL red	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
-	212131	Depth gauge DCH 300	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
+	212131	Depth gauge DCH 300-X/ DCH 300	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	212187	Depth gauge DCH 230	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
 	212253	Conversion set DCH 230 / 180-SL	0001		3000	PC	             2	             0	             0	             0	             0	             0	             0
 	213950	Twist drill bit HSS 2-8 (6) set	0001		3000	PC	            18	             0	             0	             0	             0	             0	             0

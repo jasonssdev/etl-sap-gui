@@ -9,9 +9,18 @@ def close_sap_logon():
             # Check if the process name is 'saplogon.exe'
             if proc.info['name'] == 'saplogon.exe':
                 print(f"Closing SAP Logon (PID: {proc.info['pid']})")
-                proc.terminate()
-                proc.wait(timeout=5)
-                print("SAP Logon closed successfully")
+                try:
+                    proc.terminate()
+                    proc.wait(timeout=5)
+                    print("SAP Logon closed successfully")
+                except psutil.NoSuchProcess:
+                    print(f"No such process: {proc.info['pid']}")
+                except psutil.AccessDenied:
+                    print(f"Access denied when trying to terminate process: {proc.info['pid']}")
+                except psutil.TimeoutExpired:
+                    print(f"Timeout expired when trying to terminate process: {proc.info['pid']}")
+                except Exception as e:
+                    print(f"Unexpected error: {e}")
                 return
         
         print("SAP Logon is not running")
