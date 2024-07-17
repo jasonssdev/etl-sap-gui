@@ -1,5 +1,18 @@
 import pandas as pd
 import os
+from dotenv import load_dotenv
+
+# Get base path
+base_path = os.getcwd()
+
+# Get env path
+env_path = os.path.join(base_path, '.env')
+
+# Load environment variables from .env
+load_dotenv(env_path)
+
+#get variables from .env
+mapped_network_path = os.getenv("MAPPED_SERVER_PATH")
 
 def get_file_paths(base_path):
     bo2cs_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_bo2cs.txt')
@@ -8,7 +21,8 @@ def get_file_paths(base_path):
     sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
     mat_sql_data_path = os.path.join(sql_data_path, 'mat')
     bo2cs_exported_path = os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv')
-    return bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path
+    bo2cs_uploaded_path = os.path.join(mapped_network_path,'data','tbl_bo2cs.csv')
+    return bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path, bo2cs_uploaded_path
 
 def clean_column_names(df):
     new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
@@ -39,7 +53,7 @@ def transform_columns(df):
     for col in float_columns:
         df[col] = df[col].astype(str).str.replace('.', '').str.replace(',', '.').astype(float)
 
-def transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path):
+def transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path, bo2cs_uploaded_path):
     try:
         df_bo2cs = pd.read_csv(bo2cs_file_path, sep='\t', skiprows=3, encoding='latin1')
 
@@ -54,8 +68,9 @@ def transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path):
         df_bo2cs['key_material'] = (df_bo2cs['SOrg'] + '/' + df_bo2cs['Material']).astype(str).str.strip()
 
         # Guardar los archivos transformados
-        df_bo2cs.to_csv(bo2cs_processed_path, index=False, encoding='latin1')
-        df_bo2cs.to_csv(bo2cs_exported_path, index=False, encoding='latin1')
+        df_bo2cs.to_csv(bo2cs_processed_path, index=False, encoding='latin1', sep='|')
+        df_bo2cs.to_csv(bo2cs_exported_path, index=False, encoding='latin1', sep='|')
+        df_bo2cs.to_csv(bo2cs_uploaded_path, index=False, encoding='latin1', sep='|')
 
         return df_bo2cs
 
@@ -70,8 +85,8 @@ def transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path):
 
 if __name__ == "__main__":
     base_path = os.getcwd()
-    bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path = get_file_paths(base_path)
-    transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path)
+    bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path, bo2cs_uploaded_path = get_file_paths(base_path)
+    transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path, bo2cs_uploaded_path)
 
 
 

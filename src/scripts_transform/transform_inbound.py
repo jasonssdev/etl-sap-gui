@@ -1,5 +1,18 @@
 import pandas as pd
 import os
+from dotenv import load_dotenv
+
+# Get base path
+base_path = os.getcwd()
+
+# Get env path
+env_path = os.path.join(base_path, '.env')
+
+# Load environment variables from .env
+load_dotenv(env_path)
+
+#get variables from .env
+mapped_network_path = os.getenv("MAPPED_SERVER_PATH")
 
 def get_file_paths(base_path):
     inbound_file_path = os.path.join(base_path, 'data', 'raw', 'tbl_inbound.txt')
@@ -8,7 +21,8 @@ def get_file_paths(base_path):
     sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
     mat_sql_data_path = os.path.join(sql_data_path, 'mat')
     inbound_exported_path = os.path.join(mat_sql_data_path, 'tbl_inbound.csv')
-    return inbound_file_path, inbound_processed_path, inbound_exported_path
+    inbound_uploaded_path = os.path.join(mapped_network_path,'data','tbl_inbound.csv')
+    return inbound_file_path, inbound_processed_path, inbound_exported_path, inbound_uploaded_path
 
 def clean_column_names(df):
     new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
@@ -45,7 +59,7 @@ def transform_columns(df):
 
     df['Diffdays'] = df['Diffdays'].astype(str).str.strip().astype(float)
 
-def transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path):
+def transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path, inbound_uploaded_path):
     try:
         df_inbound = pd.read_csv(inbound_file_path, sep='\t', skiprows=3, encoding='latin1')
 
@@ -61,8 +75,10 @@ def transform_inbound(inbound_file_path, inbound_processed_path, inbound_exporte
         df_inbound['key_material'] = (df_inbound['POrg'] + '/' + df_inbound['Material']).astype(str).str.strip()
 
         # Guardar los archivos transformados
-        df_inbound.to_csv(inbound_processed_path, index=False, encoding='latin1')
-        df_inbound.to_csv(inbound_exported_path, index=False, encoding='latin1')
+        df_inbound.to_csv(inbound_processed_path, index=False, encoding='latin1', sep='|')
+        df_inbound.to_csv(inbound_exported_path, index=False, encoding='latin1', sep='|')
+        df_inbound.to_csv(inbound_uploaded_path, index=False, encoding='latin1', sep='|')
+
 
         return df_inbound
 
@@ -72,5 +88,5 @@ def transform_inbound(inbound_file_path, inbound_processed_path, inbound_exporte
 
 if __name__ == "__main__":
     base_path = os.getcwd()
-    inbound_file_path, inbound_processed_path, inbound_exported_path = get_file_paths(base_path)
-    transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path)
+    inbound_file_path, inbound_processed_path, inbound_exported_path, inbound_uploaded_path = get_file_paths(base_path)
+    transform_inbound(inbound_file_path, inbound_processed_path, inbound_exported_path, inbound_uploaded_path)

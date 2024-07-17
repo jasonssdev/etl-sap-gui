@@ -1,5 +1,18 @@
 import pandas as pd
 import os
+from dotenv import load_dotenv
+
+# Get base path
+base_path = os.getcwd()
+
+# Get env path
+env_path = os.path.join(base_path, '.env')
+
+# Load environment variables from .env
+load_dotenv(env_path)
+
+#get variables from .env
+mapped_network_path = os.getenv("MAPPED_SERVER_PATH")
 
 def get_file_paths(base_path):
     material_mobr_path = os.path.join(base_path, 'data', 'raw', 'tbl_material_8300.txt')
@@ -8,7 +21,8 @@ def get_file_paths(base_path):
     sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
     mat_sql_data_path = os.path.join(sql_data_path, 'mat')
     material_8300_exported_path = os.path.join(mat_sql_data_path, 'tbl_material_8300.csv')
-    return material_mobr_path, material_8300_processed_path, material_8300_exported_path
+    material_8300_uploaded_path = os.path.join(mapped_network_path, 'data', 'tbl_material_8300.csv')
+    return material_mobr_path, material_8300_processed_path, material_8300_exported_path, material_8300_uploaded_path
 
 def clean_column_names(df):
     new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
@@ -44,7 +58,7 @@ def transform_columns(df):
     for col in date_columns:
         df[col] = pd.to_datetime(df[col], errors="coerce", format='%d.%m.%Y')
 
-def transform_mat_8300(material_mobr_path, processed_path, exported_path):
+def transform_mat_8300(material_mobr_path, processed_path, exported_path, uploaded_path):
     try:
         df_material_mobr = pd.read_csv(material_mobr_path, sep='\t', skiprows=3, encoding='latin1', low_memory=False)
         unnamed_columns = [col for col in df_material_mobr.columns if 'Unnamed:' in col]
@@ -58,8 +72,10 @@ def transform_mat_8300(material_mobr_path, processed_path, exported_path):
         df_material_mobr['key_material'] = (df_material_mobr['SOrg'] + '/' + df_material_mobr['Material']).astype(str).str.strip()
 
         # Guardar los archivos transformados
-        df_material_mobr.to_csv(processed_path, index=False, encoding='latin1')
-        df_material_mobr.to_csv(exported_path, index=False, encoding='latin1')
+        df_material_mobr.to_csv(processed_path, index=False, encoding='latin1', sep='|')
+        df_material_mobr.to_csv(exported_path, index=False, encoding='latin1', sep='|')
+        df_material_mobr.to_csv(uploaded_path, index=False, encoding='latin1', sep='|')
+
 
         return df_material_mobr
 
@@ -74,8 +90,8 @@ def transform_mat_8300(material_mobr_path, processed_path, exported_path):
 
 if __name__ == "__main__":
     base_path = os.getcwd()
-    material_mobr_path, material_8300_processed_path, material_8300_exported_path = get_file_paths(base_path)
-    transform_mat_8300(material_mobr_path, material_8300_processed_path, material_8300_exported_path)
+    material_mobr_path, material_8300_processed_path, material_8300_exported_path, material_8300_uploaded_path = get_file_paths(base_path)
+    transform_mat_8300(material_mobr_path, material_8300_processed_path, material_8300_exported_path, material_8300_uploaded_path)
 
 
 

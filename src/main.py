@@ -51,6 +51,10 @@ def load_environment_variables(env_path):
         'SQL_USERNAME': os.getenv("SQL_USERNAME"),
         'SQL_PASSWORD': os.getenv("SQL_PASSWORD"),
 
+        #Server
+        'SERVER_PATH': os.getenv("SERVER_PATH"),
+        'MAPPED_SERVER_PATH': os.getenv("MAPPED_SERVER_PATH"),
+
         # Plants
         'PLANT_AR1': os.getenv("PLANT_AR1"),
         'PLANT_AR2': os.getenv("PLANT_AR2"),
