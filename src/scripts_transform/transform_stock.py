@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+
 plant_to_sorg = {
     "8750": "8750", "8760": "8750",
     "8330": "8300", "8302": "8300",
@@ -64,3 +65,4 @@ if __name__ == "__main__":
     base_path = os.getcwd()
     stock_file_path, stock_processed_path, stock_exported_path = get_file_paths(base_path)
     transform_stock(stock_file_path, stock_processed_path, stock_exported_path)
+

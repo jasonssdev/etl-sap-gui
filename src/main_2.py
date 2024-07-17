@@ -45,6 +45,9 @@ def load_environment_variables(env_path):
         'SAP_FILE_PATH': os.getenv("SAP_FILE_PATH"),
         'SAP_LAYOUT': os.getenv("SAP_LAYOUT"),
 
+        # Server Path
+        'SERVER_PATH' : os.getenv("SERVER_PATH"),
+
         # SQL Server
         'SQL_SERVER': os.getenv("SQL_SERVER"),
         'SQL_DATABASE': os.getenv("SQL_DATABASE"),
@@ -166,7 +169,7 @@ def get_file_paths(base_path):
         "bo2cs": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_bo2cs.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_bo2cs.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv')            
         },
         "inbound": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_inbound.txt'),
@@ -201,7 +204,7 @@ def get_file_paths(base_path):
         "stock": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_stock_mb52.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_stock.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_stock.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_stock.csv'),
         }
     }
 
