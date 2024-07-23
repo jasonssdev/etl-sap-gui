@@ -1899,7 +1899,7 @@
 	2100958	Gas nail X-C 39 G3 MX	0001		3002	PC	         1.200	             0	             0	             0	             0	             0	             0
 	2100958	Gas nail X-C 39 G3 MX	0001		3016	PC	         1.200	             0	             0	             0	             0	             0	             0
 	2100958	Gas nail X-C 39 G3 MX	0001		3022	PC	         6.000	             0	             0	             0	             0	             0	             0
-	2100958	Gas nail X-C 39 G3 MX	0001		8662	PC	         9.600	             0	             0	             0	             0	             0	             0
+	2100958	Gas nail X-C 39 G3 MX	0001		8662	PC	         6.000	             0	             0	             0	             0	             0	             0
 	2100958	Gas nail X-C 39 G3 MX	0001		8750	PC	        19.200	             0	             0	             0	             0	             0	             0
 	2101046	Gas nail X-P 17 G3 MX	0001		3000	PC	        67.200	             0	             0	             0	             0	             0	             0
 	2101047	Gas nail X-P 20 G3 MX	0001		8750	PC	        13.200	             0	             0	             0	             0	             0	             0
@@ -1947,7 +1947,7 @@
 	2105698	Gas can GC 42	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2105698	Gas can GC 42	0001		3018	PC	             2	             0	             0	             0	             0	             0	             0
 	2105698	Gas can GC 42	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
-	2105698	Gas can GC 42	0001		8662	PC	            17	             0	             0	             0	             0	             0	             0
+	2105698	Gas can GC 42	0001		8662	PC	            12	             0	             0	             0	             0	             0	             0
 	2105714	Stud anchor HST3 M10x110 50/30	0001		8750	PC	         1.200	             0	             0	             0	             0	             0	             0
 	2105715	Stud anchor HST3 M10x130 70/50	0001		8750	PC	           225	             0	             0	             0	             0	             0	             0
 	2105719	Stud anchor HST3 M12x115 40/20	0001		8750	PC	           575	             0	             0	             0	             0	             0	             0
@@ -2105,7 +2105,6 @@
 	2121386	Filter VC 20/40 dry	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
 	2121386	Filter VC 20/40 dry	0001		8750	PC	             5	             0	             0	             0	             0	             0	             0
 	2121387	Filter VC 20/40/150 univ	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
-	2121387	Filter VC 20/40/150 univ	0001		8662	PC	             3	             0	             0	             0	             0	             0	             0
 	2121387	Filter VC 20/40/150 univ	0001		8750	PC	            29	             0	             0	             0	             0	             0	             0
 	2121621	Battery GX120 kit	0001		3000	PC	             6	             0	             0	             0	             0	             0	             0
 	2121621	Battery GX120 kit	0001		8750	PC	             7	             0	             0	             0	             0	             0	             0
@@ -2641,7 +2640,7 @@
 	2163831	Cordl. lamp SL 2-A12 box	0001		8750	PC	             4	             0	             0	             0	             0	             0	             0
 	2164505	Adhesive capsule HVU2 M8x80	0001		8750	PC	           260	             0	             0	             0	             0	             0	             0
 	2164506	Adhesive capsule HVU2 M10x90	0001		8750	PC	           460	             0	             0	             0	             0	             0	             0
-	2164507	Adhesive capsule HVU2 M12x110	0001		8750	PC	         1.180	             0	             0	             0	             0	             0	             0
+	2164507	Adhesive capsule HVU2 M12x110	0001		8750	PC	         1.140	             0	             0	             0	             0	             0	             0
 	2164508	Adhesive capsule HVU2 M16x125	0001		8750	PC	           160	             0	             0	             0	             0	             0	             0
 	2164509	Adhesive capsule HVU2 M20x170	0001		8750	PC	           270	             0	             0	             0	             0	             0	             0
 	2164562	Adhesive capsule HVU2 M30x270	0001		8750	PC	            36	             0	             0	             0	             0	             0	             0
@@ -3374,7 +3373,7 @@
 	2207450	Dia. polishing disc 130 SPX (6) G.	0001		3016	PC	             6	             0	             0	             0	             0	             0	             0
 	2207450	Dia. polishing disc 130 SPX (6) G.	0001		3018	PC	            12	             0	             0	             0	             0	             0	             0
 	2207450	Dia. polishing disc 130 SPX (6) G.	0001		3022	PC	             6	             0	             0	             0	             0	             0	             0
-	2207451	Dia. polishing disc 130 SPX (30) G	0001		8750	PC	         1.440	             0	             0	             0	             0	             0	             0
+	2207451	Dia. polishing disc 130 SPX (30) G	0001		8750	PC	         1.410	             0	             0	             0	             0	             0	             0
 	2207452	Dia. polishing disc 130 SPX (6) G.	0001		3000	PC	            12	             0	             0	             0	             0	             0	             0
 	2207452	Dia. polishing disc 130 SPX (6) G.	0001		3014	PC	             6	             0	             0	             0	             0	             0	             0
 	2207452	Dia. polishing disc 130 SPX (6) G.	0001		3016	PC	             6	             0	             0	             0	             0	             0	             0
@@ -3639,14 +3638,14 @@
 	2223707	Anchor rod HAS-U 5.8 M10x130	0001		8750	PC	         3.920	             0	             0	             0	             0	             0	             0
 	2223820	Anchor rod HAS-U 5.8 M10x190	0001		8750	PC	           940	             0	             0	             0	             0	             0	             0
 	2223822	Anchor rod HAS-U 5.8 M12x120	0001		8750	PC	            80	             0	             0	             0	             0	             0	             0
-	2223823	Anchor rod HAS-U 5.8 M12x160	0001		8750	PC	         1.540	             0	             0	             0	             0	             0	             0
+	2223823	Anchor rod HAS-U 5.8 M12x160	0001		8750	PC	         1.500	             0	             0	             0	             0	             0	             0
 	2223827	Anchor rod HAS-U 5.8 M12x220	0001		8750	PC	            20	             0	             0	             0	             0	             0	             0
 	2223828	Anchor rod HAS-U 5.8 M16x150	0001		8750	PC	           160	             0	             0	             0	             0	             0	             0
 	2223830	Anchor rod HAS-U 5.8 M16x190	0001		3000	PC	           360	             0	             0	             0	             0	             0	             0
 	2223830	Anchor rod HAS-U 5.8 M16x190	0001		8750	PC	             0	             0	           100	             0	             0	             0	             0
 	2223832	Anchor rod HAS-U 5.8 M16x220	0001		8750	PC	         4.680	             0	             0	             0	             0	             0	             0
 	2223833	Anchor rod HAS-U 8.8 M10x190	0001		8750	PC	           420	             0	             0	             0	             0	             0	             0
-	2223834	Anchor rod HAS-U 8.8 M12x220	0001		8750	PC	            40	             0	             0	             0	             0	             0	             0
+	2223834	Anchor rod HAS-U 8.8 M12x220	0001		8750	PC	            20	             0	             0	             0	             0	             0	             0
 	2223839	Anchor rod HAS-U A4 M10x170	0001		8750	PC	            20	             0	             0	             0	             0	             0	             0
 	2223842	Anchor rod HAS-U A4 M12x110	0001		8750	PC	           220	             0	             0	             0	             0	             0	             0
 	2223845	Anchor rod HAS-U A4 M12x180	0001		8750	PC	            60	             0	             0	             0	             0	             0	             0
@@ -4170,7 +4169,7 @@
 	2251355	Battery pack B 22-110 Li-ion	0001		3022	PC	             7	             0	             0	             0	             0	             0	             0
 	2251355	Battery pack B 22-110 Li-ion	0001		8662	PC	             2	             0	             0	             0	             0	             0	             0
 	2251355	Battery pack B 22-110 Li-ion			8750	PC	             0	             2	             0	             0	             0	             0	             2
-	2251355	Battery pack B 22-110 Li-ion	0001		8750	PC	           122	             0	            40	             0	             0	             0	             0
+	2251355	Battery pack B 22-110 Li-ion	0001		8750	PC	             2	             0	            40	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3000	PC	             4	             0	             0	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3010	PC	             1	             0	             0	             0	             0	             0	             0
 	2251359	Battery pack B 22-170 Li-ion	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
@@ -4216,7 +4215,6 @@
 	2252194	Cordl. cut-out tool SCO 6-22 box	0001		8750	PC	            19	             0	             0	             0	             0	             0	             0
 	2252195	Elec. connector X-BT-ER M6/3 SN 8	0001		3000	PC	         3.600	             0	             0	             0	             0	             0	             0
 	2252199	Threaded stud X-BT-MR M6/10 SN 8	0001		3000	PC	         5.100	             0	             0	             0	             0	             0	             0
-	2252514	Cordl. cable cutter NCT 85 C-22 ca	0001		8750	PC	             4	             0	             0	             0	             0	             0	             0
 	2252531	Cordl. knockout punch NPU 100-22 c	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
 	2252534	Cordl. crimper NUN 54-22 case	0001		8750	PC	             9	             0	             0	             0	             0	             0	             0
 	2252535	Case DCH 150-SL	0001		3000	PC	             5	             0	             0	             0	             0	             0	             0
@@ -4354,7 +4352,7 @@
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3016	PC	             1	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3018	PC	             6	             0	             0	             0	             0	             0	             0
 	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		3022	PC	             2	             0	             0	             0	             0	             0	             0
-	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		8750	PC	            60	             0	             0	             0	             0	             0	             0
+	2254883	Cordl. ham. dr. driver SF 6H-22 ca	0001		8750	PC	            40	             0	             0	             0	             0	             0	             0
 	2256552	Premium exp anc KB1 3/4x10	0001		3000	PC	           220	             0	             0	             0	             0	             0	             0
 	2256552	Premium exp anc KB1 3/4x10	0001		3010	PC	            30	             0	             0	             0	             0	             0	             0
 	2256552	Premium exp anc KB1 3/4x10	0001		3018	PC	            20	             0	             0	             0	             0	             0	             0
@@ -4613,7 +4611,7 @@
 	2267012	Recip. saw blade SP 20 1014 (175)	0001		8750	PC	           175	             0	             0	             0	             0	             0	             0
 	2267013	Recip. saw blade SP 30 1014 (5) un	0001		3000	PC	            85	             0	             0	             0	             0	             0	             0
 	2267023	Die grinder GDG 6-22 case	0001		3000	PC	            13	             0	             0	             0	             0	             0	             0
-	2267023	Die grinder GDG 6-22 case	0001		8750	PC	            70	             0	             0	             0	             0	             0	             0
+	2267023	Die grinder GDG 6-22 case	0001		8750	PC	            50	             0	             0	             0	             0	             0	             0
 	2267590	Adapter NEMA 5-20P / 5-15P	0001		3000	PC	           104	             0	             0	             0	             0	             0	             0
 	2267590	Adapter NEMA 5-20P / 5-15P	0001		3010	PC	             3	             0	             0	             0	             0	             0	             0
 	2267590	Adapter NEMA 5-20P / 5-15P	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
@@ -5133,7 +5131,7 @@
 	2325195	Carbide burr GDG-6mm ball	0001		3000	PC	             8	             0	             0	             0	             0	             0	             0
 	2325196	Carbide burr GDG - bn tree - 1/4"	0001		3000	PC	            72	             0	             0	             0	             0	             0	             0
 	2325247	Backing pad DGH 130	0001		3000	PC	             3	             0	             0	             0	             0	             0	             0
-	2325247	Backing pad DGH 130	0001		8750	PC	            23	             0	             0	             0	             0	             0	             0
+	2325247	Backing pad DGH 130	0001		8750	PC	            19	             0	             0	             0	             0	             0	             0
 	2325739	Cordl. circular saw SC 6WL-22 box	0001		3000	PC	             8	             0	             0	             0	             0	             0	             0
 	2325739	Cordl. circular saw SC 6WL-22 box	0001		8750	PC	             4	             0	             0	             0	             0	             0	             0
 	2326037	Band saw SB 6-22 case	0001		3000	PC	             4	             0	             0	             0	             0	             0	             0
@@ -5353,7 +5351,7 @@
 	2341239	Pointed chisel TE-SX SM 50	0001		3014	PC	             3	             0	             0	             0	             0	             0	             0
 	2341239	Pointed chisel TE-SX SM 50	0001		3018	PC	             1	             0	             0	             0	             0	             0	             0
 	2341239	Pointed chisel TE-SX SM 50	0001		3022	PC	             4	             0	             0	             0	             0	             0	             0
-	2341239	Pointed chisel TE-SX SM 50	0001		8662	PC	             4	             0	             0	             0	             0	             0	             0
+	2341239	Pointed chisel TE-SX SM 50	0001		8662	PC	             2	             0	             0	             0	             0	             0	             0
 	2341239	Pointed chisel TE-SX SM 50	0001		8750	PC	            75	             0	             0	             0	             0	             0	             0
 	2341250	Pointed chisel TE-SX SM 70	0001		3000	PC	             2	             0	             0	             0	             0	             0	             0
 	2341250	Pointed chisel TE-SX SM 70	0001		3010	PC	             2	             0	             0	             0	             0	             0	             0
@@ -5542,7 +5540,7 @@
 	2386420	Tool holder EXO-T-22 I-shaped	0001		3000	PC	             1	             0	             0	             0	             0	             0	             0
 	2388147	Anchor rod HAS-E-55 7/8"x36"	0001		3000	PC	           112	             0	             0	             0	             0	             0	             0
 	2388396	Battery charger C 4-22 220V box			8750	PC	             0	             2	             0	             0	             0	             0	             2
-	2388396	Battery charger C 4-22 220V box	0001		8750	PC	            50	             0	           197	             0	             0	             0	             0
+	2388396	Battery charger C 4-22 220V box	0001		8750	PC	            16	             0	           197	             0	             0	             0	             0
 	2388488	Anchor rod HAS-E-55 1"x36"	0001		3000	PC	           100	             0	             0	             0	             0	             0	             0
 	2388543	Anchor rod HAS-E-55 3/4"x36"	0001		3000	PC	            28	             0	             0	             0	             0	             0	             0
 	2388621	Anchor rod HAS-E-55 1-1/4"x36"	0001		3000	PC	            28	             0	             0	             0	             0	             0	             0
