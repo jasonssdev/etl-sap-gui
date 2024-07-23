@@ -45,15 +45,15 @@ def load_environment_variables(env_path):
         'SAP_FILE_PATH': os.getenv("SAP_FILE_PATH"),
         'SAP_LAYOUT': os.getenv("SAP_LAYOUT"),
 
+        # Server Path
+        'SERVER_PATH' : os.getenv("SERVER_PATH"),
+        'MAPPED_SERVER_PATH': os.getenv("MAPPED_SERVER_PATH"),
+
         # SQL Server
         'SQL_SERVER': os.getenv("SQL_SERVER"),
         'SQL_DATABASE': os.getenv("SQL_DATABASE"),
         'SQL_USERNAME': os.getenv("SQL_USERNAME"),
         'SQL_PASSWORD': os.getenv("SQL_PASSWORD"),
-
-        #Server
-        'SERVER_PATH': os.getenv("SERVER_PATH"),
-        'MAPPED_SERVER_PATH': os.getenv("MAPPED_SERVER_PATH"),
 
         # Plants
         'PLANT_AR1': os.getenv("PLANT_AR1"),
@@ -165,47 +165,56 @@ def get_file_paths(base_path):
     root_path = os.path.abspath(os.sep)
     sql_data_path = os.path.join(root_path, 'SQLdata', 'data')
     mat_sql_data_path = os.path.join(sql_data_path, 'mat')
+    mapped_network_path = os.getenv("MAPPED_SERVER_PATH")
 
     file_paths = {
         "bo2cs": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_bo2cs.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_bo2cs.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_bo2cs.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_bo2cs.csv')      
         },
         "inbound": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_inbound.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_inbound.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_inbound.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_inbound.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_inbound.csv')   
         },
         "material_3000": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_material_3000.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_material_3000.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_material_3000.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_material_3000.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_material_3000.csv') 
         },
         "material_8300": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_material_8300.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_material_8300.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8300.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8300.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_material_8300.csv') 
         },
         "material_8650": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_material_8650.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_material_8650.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8650.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8650.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_material_8650.csv') 
         },
         "material_8750": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_material_8750.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_material_8750.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8750.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_material_8750.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_material_8750.csv') 
         },
         "outbound": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_vl06o.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_outbound.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_outbound.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_outbound.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_outbound.csv') 
         },
         "stock": {
             "raw": os.path.join(base_path, 'data', 'raw', 'tbl_stock_mb52.txt'),
             "processed": os.path.join(base_path, 'data', 'processed', 'tbl_stock.csv'),
-            "exported": os.path.join(mat_sql_data_path, 'tbl_stock.csv')
+            "exported": os.path.join(mat_sql_data_path, 'tbl_stock.csv'),
+            "uploaded": os.path.join(mapped_network_path, 'data', 'tbl_stock.csv') 
         }
     }
 
@@ -246,21 +255,21 @@ def main():
     # TRANSFORM -> (00:00:10)
     paths = get_file_paths(base_path)
     bo2cs_paths = paths["bo2cs"]
-    transform_bo2cs(bo2cs_paths["raw"], bo2cs_paths["processed"], bo2cs_paths["exported"])
+    transform_bo2cs(bo2cs_paths["raw"], bo2cs_paths["processed"], bo2cs_paths["exported"], bo2cs_paths["uploaded"])
     inbound_paths = paths["inbound"]
-    transform_inbound(inbound_paths["raw"], inbound_paths["processed"], inbound_paths["exported"])
+    transform_inbound(inbound_paths["raw"], inbound_paths["processed"], inbound_paths["exported"], inbound_paths["uploaded"])
     material_3000_paths = paths["material_3000"]
-    transform_mat_3000(material_3000_paths["raw"], material_3000_paths["processed"], material_3000_paths["exported"])
+    transform_mat_3000(material_3000_paths["raw"], material_3000_paths["processed"], material_3000_paths["exported"],  material_3000_paths["uploaded"])
     material_8300_paths = paths["material_8300"]
-    transform_mat_8300(material_8300_paths["raw"], material_8300_paths["processed"], material_8300_paths["exported"])
+    transform_mat_8300(material_8300_paths["raw"], material_8300_paths["processed"], material_8300_paths["exported"],  material_8300_paths["uploaded"])
     material_8650_paths = paths["material_8650"]
-    transform_mat_8650(material_8650_paths["raw"], material_8650_paths["processed"], material_8650_paths["exported"])
+    transform_mat_8650(material_8650_paths["raw"], material_8650_paths["processed"], material_8650_paths["exported"],  material_8650_paths["uploaded"])
     material_8750_paths = paths["material_8750"]
-    transform_mat_8750(material_8750_paths["raw"], material_8750_paths["processed"], material_8750_paths["exported"])
+    transform_mat_8750(material_8750_paths["raw"], material_8750_paths["processed"], material_8750_paths["exported"],  material_8750_paths["uploaded"])
     outbound_paths = paths["outbound"]
-    transform_outbound(outbound_paths["raw"], outbound_paths["processed"], outbound_paths["exported"])
+    transform_outbound(outbound_paths["raw"], outbound_paths["processed"], outbound_paths["exported"], outbound_paths["uploaded"])
     stock_paths = paths["stock"]
-    transform_stock(stock_paths["raw"], stock_paths["processed"], stock_paths["exported"])
+    transform_stock(stock_paths["raw"], stock_paths["processed"], stock_paths["exported"], stock_paths["uploaded"])
     time.sleep(30)
     print('data transformation phase was completed')
     # LOAD -> (00:00:10)
