@@ -23,6 +23,14 @@ sorg_br = os.getenv("SORG_BR")
 sorg_cl = os.getenv("SORG_CL")
 sorg_mx = os.getenv("SORG_MX")
 
+# Get plants
+PLANT_AR1 = os.getenv("PLANT_AR1")
+PLANT_BR1 = os.getenv("PLANT_BR1")
+PLANT_CL1 = os.getenv("PLANT_CL1")
+PLANT_MX1 = os.getenv("PLANT_MX1")
+
+
+
 
 
 # Function to connect to the active SAP session
@@ -51,7 +59,7 @@ def get_active_session():
         return None
 
 # Function to download outbound report from SAP
-def download_outbound_report(session, trans_code, file_path, file_name, layout, sorgs):
+def download_outbound_report(session, trans_code, file_path, file_name, layout, plants):
     try:
         session.findById("wnd[0]").maximize()
         session.findById("wnd[0]/tbar[0]/okcd").text = trans_code
@@ -61,9 +69,9 @@ def download_outbound_report(session, trans_code, file_path, file_name, layout, 
         session.findById("wnd[0]/usr/btn[0]").press()
 
         # Enter values in the cells
-        for index, sorg in enumerate(sorgs):
+        for index, plant in enumerate(plants):
             cell_id = f"wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE/ctxt[1,{index}]"
-            session.findById(cell_id).text = sorg
+            session.findById(cell_id).text = plant
         
         session.findById("wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE/ctxt[1,3]").setFocus()
         session.findById("wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE/ctxt[1,3]").caretPosition = 4
@@ -102,5 +110,5 @@ if __name__ == "__main__":
 
     # Download the report if the session is obtained successfully
     if session:
-        sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
-        download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, sorgs)
+        plants = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
+        download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, plants)

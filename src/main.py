@@ -252,9 +252,9 @@ def main():
                 plant_ranges = [(os.getenv("PLANT_AR_START"), os.getenv("PLANT_AR_END")), (os.getenv("PLANT_BR_START"), os.getenv("PLANT_BR_END")), (os.getenv("PLANT_CL_START"), os.getenv("PLANT_CL_END")), (os.getenv("PLANT_MX_START"), os.getenv("PLANT_MX_END"))]
                 # reports download 1 - EXTRACT -> (00:01:18)
                 download_report_zbo2cs(session, env_vars['TRANS_BO'],env_vars['SAP_FILE_PATH'], env_vars['FILE_BO'], env_vars['SAP_LAYOUT'], sorgs)
-                download_inbound_report(session, env_vars['TRANS_INBOUND'], env_vars['SAP_FILE_PATH'], env_vars['FILE_INBOUND'], env_vars['SAP_LAYOUT'], sorgs, company_codes, date)
+                download_inbound_report(session, env_vars['TRANS_INBOUND'], env_vars['SAP_FILE_PATH'], env_vars['FILE_INBOUND'], env_vars['SAP_LAYOUT'], plants, company_codes, date)
                 download_report_mb52(session, env_vars['TRANS_STOCK'], env_vars['SAP_FILE_PATH'], env_vars['FILE_STOCK'], env_vars['SAP_LAYOUT'], plant_ranges)
-                download_outbound_report(session, env_vars['TRANS_OUTBOUND'],env_vars['SAP_FILE_PATH'], env_vars['FILE_OUTBOUND'], env_vars['SAP_LAYOUT'], sorgs)
+                download_outbound_report(session, env_vars['TRANS_OUTBOUND'],env_vars['SAP_FILE_PATH'], env_vars['FILE_OUTBOUND'], env_vars['SAP_LAYOUT'], plants)
                 # reports download 2 - EXTRACT -> (00:07:35)
                 download_material_report(session, env_vars['TRANS_MATAR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATAR'], env_vars['SAP_LAYOUT'], env_vars['SORG_AR'], env_vars['PLANT_AR1'])
                 download_material_report(session, env_vars['TRANS_MATBR'], env_vars['SAP_FILE_PATH'], env_vars['FILE_MATBR'], env_vars['SAP_LAYOUT'], env_vars['SORG_BR'], env_vars['PLANT_BR1'])

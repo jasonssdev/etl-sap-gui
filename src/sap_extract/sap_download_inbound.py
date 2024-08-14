@@ -38,11 +38,17 @@ code_br = os.getenv("CODE_BR")
 code_cl = os.getenv("CODE_CL")
 code_mx = os.getenv("CODE_MX")
 
+# Get plants
+PLANT_AR1 = os.getenv("PLANT_AR1")
+PLANT_BR1 = os.getenv("PLANT_BR1")
+PLANT_CL1 = os.getenv("PLANT_CL1")
+PLANT_MX1 = os.getenv("PLANT_MX1")
+
 # Get today's date in the desired format
 date = datetime.today().strftime('%d.%m.%Y')
 
 # Function to download inbound report from SAP
-def download_inbound_report(session, trans_code, file_path, file_name, layout, sorgs, company_codes, date):
+def download_inbound_report(session, trans_code, file_path, file_name, layout, plants, company_codes, date):
     try:
         print("Maximizing window...")
         session.findById("wnd[0]").maximize()
@@ -98,7 +104,7 @@ def download_inbound_report(session, trans_code, file_path, file_name, layout, s
         session.findById("wnd[0]/usr/ctxt[10]").caretPosition = 4
         session.findById("wnd[0]/usr/btn[7]").press()
         
-        for cell, value in zip(cells, sorgs):
+        for cell, value in zip(cells, plants):
             session.findById(cell).text = value
         
         print("Pressing button 8 once more...")
@@ -152,7 +158,7 @@ if __name__ == "__main__":
     session = get_active_session()
     # Download the report if the session is obtained successfully
     if session:
-        sorgs = [sorg_ar, sorg_br, sorg_cl, sorg_mx]
+        plants = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
         company_codes = [code_ar, code_br, code_cl, code_mx]
-        download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, sorgs, company_codes, date)
+        download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, plants, company_codes, date)
 
