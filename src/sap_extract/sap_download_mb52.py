@@ -2,7 +2,7 @@ import sys
 import os
 from dotenv import load_dotenv
 
-# Agregar el directorio base al PYTHONPATH
+# base path
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(base_path)
 
@@ -22,49 +22,34 @@ sap_file_path = os.getenv("SAP_FILE_PATH")
 trans_stock = os.getenv("TRANS_STOCK")
 file_stock = os.getenv("FILE_STOCK")
 
-# Get the plants from environment variables
-plants = [
-    os.getenv("PLANT_AR1"),
-    os.getenv("PLANT_AR2"),
-    os.getenv("PLANT_BR1"),
-    os.getenv("PLANT_BR2"),
-    os.getenv("PLANT_CL1"),
-    os.getenv("PLANT_CL2"),
-    os.getenv("PLANT_CL3"),
-    os.getenv("PLANT_CL4"),
-    os.getenv("PLANT_CL5"),
-    os.getenv("PLANT_CL6"),
-    os.getenv("PLANT_MX1"),
-    os.getenv("PLANT_MX2"),
-    os.getenv("PLANT_MX3"),
-    os.getenv("PLANT_MX4"),
-    os.getenv("PLANT_MX5"),
-    os.getenv("PLANT_MX6"),
-    os.getenv("PLANT_MX7")
+# Define the plant ranges
+plant_ranges = [
+    (os.getenv("PLANT_AR_START"), os.getenv("PLANT_AR_END")),
+    (os.getenv("PLANT_BR_START"), os.getenv("PLANT_BR_END")),
+    (os.getenv("PLANT_CL_START"), os.getenv("PLANT_CL_END")),
+    (os.getenv("PLANT_MX_START"), os.getenv("PLANT_MX_END"))
 ]
 
 # Function to execute transaction MB52 and download the report
-def download_report_mb52(session, trans_stock, file_path, file_name, layout, plants):
+def download_report_mb52(session, trans_stock, file_path, file_name, layout, plant_ranges):
     try:
         session.findById("wnd[0]").maximize()
         session.findById("wnd[0]/tbar[0]/okcd").text = trans_stock
         session.findById("wnd[0]").sendVKey(0)
         session.findById("wnd[0]/usr/btn[1]").press()
 
-        # Enter values in the cells with scrolling
-        cell_index = 0
-        for plant in plants:
-            cell_id = f"wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE/ctxt[1,{cell_index}]"
-            session.findById(cell_id).text = plant
-            cell_index += 1
-            if cell_index > 7:  # If cell index exceeds 7, scroll down and reset index
-                session.findById("wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE").verticalScrollbar.position += 1
-                cell_index = 0
-        
+        # Select the "Interval" tab (this simulates the VBA command)
+        session.findById("wnd[1]/usr/tabsTAB_STRIP/tabpINTL").select()
+
+        # Enter plant ranges
+        for i, (start_plant, end_plant) in enumerate(plant_ranges):
+            session.findById(f"wnd[1]/usr/tabsTAB_STRIP/tabpINTL/ssub/1/2/tblSAPLALDBINTERVAL/ctxt[1,{i}]").text = start_plant
+            session.findById(f"wnd[1]/usr/tabsTAB_STRIP/tabpINTL/ssub/1/2/tblSAPLALDBINTERVAL/ctxt[2,{i}]").text = end_plant
+
+        # Press the "Execute" button
         session.findById("wnd[1]/tbar[0]/btn[8]").press()
 
-        # Set download options
-        session.findById("wnd[0]/usr/chk[3]").selected = True
+        # Set layout and download the report
         session.findById("wnd[0]/usr/ctxt[16]").text = layout
         session.findById("wnd[0]/usr/ctxt[16]").setFocus()
         session.findById("wnd[0]/usr/ctxt[16]").caretPosition = len(layout)
@@ -96,6 +81,4 @@ if __name__ == "__main__":
 
     # Download the report if the session is obtained successfully
     if session:
-        download_report_mb52(session, trans_stock, sap_file_path, file_stock, sap_layout, plants)
-
-
+        download_report_mb52(session, trans_stock, sap_file_path, file_stock, sap_layout, plant_ranges)
