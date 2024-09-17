@@ -59,7 +59,7 @@ def get_active_session():
         return None
 
 # Function to download outbound report from SAP
-def download_outbound_report(session, trans_code, file_path, file_name, layout, plants):
+def download_outbound_report(session, trans_code, file_path, file_name, layout, plants_sorg):
     try:
         session.findById("wnd[0]").maximize()
         session.findById("wnd[0]/tbar[0]/okcd").text = trans_code
@@ -69,7 +69,7 @@ def download_outbound_report(session, trans_code, file_path, file_name, layout, 
         session.findById("wnd[0]/usr/btn[0]").press()
 
         # Enter values in the cells
-        for index, plant in enumerate(plants):
+        for index, plant in enumerate(plants_sorg):
             cell_id = f"wnd[1]/usr/tabsTAB_STRIP/tabpSIVA/ssub/1/2/tblSAPLALDBSINGLE/ctxt[1,{index}]"
             session.findById(cell_id).text = plant
         
@@ -110,5 +110,5 @@ if __name__ == "__main__":
 
     # Download the report if the session is obtained successfully
     if session:
-        plants = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
-        download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, plants)
+        plants_sorg = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
+        download_outbound_report(session, trans_outbound, sap_file_path, file_outbound, sap_layout, plants_sorg)

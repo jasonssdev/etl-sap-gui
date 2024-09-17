@@ -94,11 +94,12 @@ def download_inbound_report(session, trans_code, file_path, file_name, layout, p
         ]
         for cell, value in zip(cells, company_codes):
             session.findById(cell).text = value
+            print(value)
         
         print("Pressing button 8 again...")
         session.findById("wnd[1]/tbar[0]/btn[8]").press()
         
-        print("Entering sales organizations...")
+        print("Entering plants...")
         session.findById("wnd[0]/usr/ctxt[10]").text = sorg_ar
         session.findById("wnd[0]/usr/ctxt[10]").setFocus()
         session.findById("wnd[0]/usr/ctxt[10]").caretPosition = 4
@@ -106,6 +107,7 @@ def download_inbound_report(session, trans_code, file_path, file_name, layout, p
         
         for cell, value in zip(cells, plants):
             session.findById(cell).text = value
+            print(value)
         
         print("Pressing button 8 once more...")
         session.findById("wnd[1]/tbar[0]/btn[8]").press()
@@ -158,7 +160,7 @@ if __name__ == "__main__":
     session = get_active_session()
     # Download the report if the session is obtained successfully
     if session:
-        plants = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
+        plants_sorg = [PLANT_AR1, PLANT_BR1, PLANT_CL1, PLANT_MX1]
         company_codes = [code_ar, code_br, code_cl, code_mx]
-        download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, plants, company_codes, date)
+        download_inbound_report(session, trans_inbound, sap_file_path, file_inbound, sap_layout, plants_sorg, company_codes, date)
 
