@@ -1,5 +1,5 @@
 @echo off
-cd /d "C:\Users\sepujas\Dev\mat"
+cd /d "C:\Users\yourusername\repository"
 call .\.venv\Scripts\activate.bat
 python src\main.py
 
