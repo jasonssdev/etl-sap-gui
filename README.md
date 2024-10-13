@@ -6,20 +6,26 @@ git clone
 ##### Create virtual environment
 python -m venv .venv
 
-##### Virtual environment activation on Git BASH
+##### Virtual environment activation on Git BASH (Window)
 source .venv/Scripts/activate
 
-##### Run scripts in power shell
+##### Virtual environment activation on Terminal (MacOS)
+source .venv/bin/activate  
+
+##### Run scripts in power shell (Window)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-##### Virtual environment activation on Git CMD
+##### Virtual environment activation on Git CMD (Window)
 .venv\Scripts\activate.bat
 
-##### Virtual environment activation on Power Shell
+##### Virtual environment activation on Power Shell (Window)
 .venv\Scripts\activate.ps1
 
-##### install dependencies
+##### install dependencies (Window)
 pip install -r requirements.txt
+
+##### install dependencies (MacOS)
+pip3 install -r requirements.txt  
 
 #### CDM
 set PYTHONPATH=%PYTHONPATH%;C:\Users\sepujas\Dev\mat
@@ -44,8 +50,6 @@ notepad %APPDATA%\Code\User\settings.json
     }
 }
 ```
-
-
 
 
 ```cdm
