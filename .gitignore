@@ -87,3 +87,6 @@ src/sqlserver_load/__pycache__/
 __pycache__/
 **__pycache__/
 **/__init__.py
+/data/*
+/data/raw
+/data/preprocessed

@@ -50,7 +50,7 @@ def transform_columns(df):
 
 def transform_outbound(outbound_file_path, processed_path, exported_path, uploaded_path):
     try:
-        df_outbound = pd.read_csv(outbound_file_path, sep='\t', skiprows=3, encoding='latin1', low_memory=False)
+        df_outbound = pd.read_csv(outbound_file_path, sep='\t', skiprows=1, encoding='latin1', low_memory=False)
         unnamed_columns = [col for col in df_outbound.columns if 'Unnamed:' in col]
         df_outbound.drop(columns=unnamed_columns, inplace=True)
 

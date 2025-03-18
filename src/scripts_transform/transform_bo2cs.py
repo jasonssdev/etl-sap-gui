@@ -38,9 +38,9 @@ def fix_duplicate_columns(df):
 # BOstat_changed = BO_status_changed
 def transform_columns(df):
     str_columns = [
-        'SOrg', 'SaTy', 'Sales_Doc', 'Sold_to', 'Name_1', 'Name_11', 'CustLoy', 'FocCust', 'Territory',
-        'Typ', 'Material', 'Item_Description', 'SU', 'BO_value', 'Curr', 'DS', 'DB', 'BOstatus',
-        'BO', 'GM', 'unc', 'Description', 'SC', 'Route'
+        'SaTy', 'Sales_Doc', 'Sold_to', 'Name_1', 'Name_11', 'CustLoy', 'FocCust', 'Territory',
+        'Typ', 'Material', 'Item_Description', 'SU', 'BO_value', 'Crcy', 'DS', 'DB', 'BOstatus',
+        'BO', 'GM', 'unc', 'Description', 'Shp_Cond', 'Route'
     ]
     for col in str_columns:
         df[col] = df[col].astype(str).str.strip()
@@ -50,7 +50,7 @@ def transform_columns(df):
         df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
     date_columns = [
-        'Created_on', 'InitReqDt', 'promised', 'MatAvDt', 'DlvDate', 'BO_status_changed', 'Reqdlvdt'
+        'Created_On', 'InitReqDt', 'promised', 'MatAvDt', 'DlvDate', 'BO_status_changed', 'Reqdlvdt'
     ]
     for col in date_columns:
         df[col] = pd.to_datetime(df[col], errors='coerce', format='%d.%m.%Y')
@@ -63,7 +63,7 @@ def transform_columns(df):
 
 def transform_bo2cs(bo2cs_file_path, bo2cs_processed_path, bo2cs_exported_path, bo2cs_uploaded_path):
     try:
-        df_bo2cs = pd.read_csv(bo2cs_file_path, sep='\t', skiprows=3, encoding='latin1')
+        df_bo2cs = pd.read_csv(bo2cs_file_path, sep='\t', skiprows=1, encoding='latin1', low_memory=False)
 
         # Eliminar columnas sin nombre
         unnamed_columns = [col for col in df_bo2cs.columns if 'Unnamed:' in col]

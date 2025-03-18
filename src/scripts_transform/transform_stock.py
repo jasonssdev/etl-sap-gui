@@ -75,7 +75,7 @@ def clean_column_names(df):
     df.rename(columns=new_column_titles, inplace=True)
 
 def transform_columns(df):
-    str_columns = ['Material', 'Material_Description', 'SLoc', 'SL', 'Plnt', 'BUn']
+    str_columns = ['Material', 'Material_Description', 'Loca', 'SL', 'Plnt', 'BUn']
     for col in str_columns:
         df[col] = df[col].astype(str).str.strip()
 
