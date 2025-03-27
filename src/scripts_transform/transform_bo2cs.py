@@ -50,7 +50,7 @@ def transform_columns(df):
         df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
     date_columns = [
-        'Created_On', 'InitReqDt', 'promised', 'MatAvDt', 'DlvDate', 'BO_status_changed', 'Reqdlvdt'
+        'On', 'InitReqDt', 'promised', 'MatAvDt', 'DlvDate', 'BOstat_changed', 'Reqdlvdt'
     ]
     for col in date_columns:
         df[col] = pd.to_datetime(df[col], errors='coerce', format='%d.%m.%Y')

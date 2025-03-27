@@ -27,7 +27,7 @@ def get_file_paths(base_path):
 def clean_column_names(df):
     new_column_titles = {col: col.strip().replace(' ', '_').replace('-', '_').replace('.', '') for col in df.columns}
     df.rename(columns=new_column_titles, inplace=True)
-
+# SpecStock_No = SpStck_No
 def transform_columns(df):
     str_columns = [
         'SOrg', 'Material', 'Item_Description', 'SU', 'GM', 'Route',
@@ -40,7 +40,7 @@ def transform_columns(df):
     for col in int_columns:
         df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int).astype(str)
 
-    float_columns = ['DlvQty', 'Batch', 'OPS', 'PickingSts', 'WM', 'SpStck_No']
+    float_columns = ['DlvQty', 'Batch', 'OPS', 'PickingSts', 'WM', 'SpecStock_No']
     for col in float_columns:
         df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(float)
 
